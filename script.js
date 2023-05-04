@@ -6,7 +6,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
     // Create a new map centered on the user's location
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: userLat, lng: userLng},
-        zoom: 9
+        zoom: 10
     });
 
     // Query the database for location details

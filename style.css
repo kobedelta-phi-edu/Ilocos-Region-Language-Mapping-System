@@ -1,0 +1,22 @@
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    font-family: 'Bebas Neue', sans-serif;     
+    background: linear-gradient(#020202,#2e2e30 50%);                         
+}
+
+#map {
+	height: 500px;
+    width: 900px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 40px;
+}    
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
