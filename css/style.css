@@ -10,6 +10,20 @@ body {
     width: 100%; 
 }
 
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    background-color: #fff;
+    overflow-y: scroll;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  .sidebar-content {
+    padding: 20px;
+}
+
 #geocoder {
 	position: absolute;
 	top: 20px;
