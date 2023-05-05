@@ -1,0 +1,299 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.366955,16.322274]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",		
+			  "MUNICIPALITY": "Agoo",
+			  "POSTAL_CODE": "2504",
+			  "DESCRIPTION": "Known for its historical landmarks, beautiful beaches, and rich cultural heritage.",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.354351,16.394667]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",
+			  "MUNICIPALITY": "Aringay",
+			  "POSTAL_CODE": "2503",
+			  "DESCRIPTION": "Known for its natural attractions such as beaches, waterfalls, and caves.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.352594,16.720256]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",
+			  "MUNICIPALITY": "Bacnotan",
+			  "POSTAL_CODE": "2512",
+			  "DESCRIPTION": "Known for its long coastline and beautiful beaches, as well as for being the birthplace of the Philippine surfing scene.",
+			  "LANGUAGES": "Ilocano"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.478438,16.587265]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Bagulin",
+			  "POSTAL_CODE": "2512",
+			  "DESCRIPTION": "Known for its scenic mountainous terrain and beautiful waterfalls, such as the Tangadan Falls and the Tupanggat Falls.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.402586,16.820829]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",		
+			  "MUNICIPALITY": "Balaoan",
+			  "POSTAL_CODE": "2517",
+			  "DESCRIPTION": "Known for its stunning beaches and natural attractions such as the Balaoan Sand Dunes, as well as its rich cultural heritage reflected in its historical landmarks such as the Balaoan Church and the Balaoan Watchtower.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.42296,16.893781]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",				
+			  "MUNICIPALITY": "Bangar",
+			  "POSTAL_CODE": "2519",
+			  "DESCRIPTION": "Known for its beautiful beaches and historical landmarks such as the Bangar Petrified Forest and the St. Catherine of Alexandria Church.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.329282,16.526595]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Bauang",
+			  "POSTAL_CODE": "2501",
+			  "DESCRIPTION": "Known for its beautiful beaches, water activities, historical landmarks, and agricultural produce.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.458328,16.51893]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Burgos",
+			  "POSTAL_CODE": "2510",
+			  "DESCRIPTION": "Known for its stunning beaches, natural attractions such as the Tangadan Falls, and historical landmarks such as the Burgos Watchtower.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.345618,16.431838]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Caba",
+			  "POSTAL_CODE": "2502",
+			  "DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Caba Wetlands and the Agoo-Damortis National Seashore Park.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			  }
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.405221,16.243137]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Damortis",
+			  "POSTAL_CODE": "2507",
+			  "DESCRIPTION": "Known for its natural attractions such as the Damortis River and the Damortis Hanging Bridge.",
+			  "LANGUAGES": "Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.377677,16.853603]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Luna",
+			  "POSTAL_CODE": "2518",
+			  "DESCRIPTION": "Known for its scenic coastline and beautiful beaches, as well as for being the site of the Luna Watchtower and the Baluarte Watchtower.",
+			  "LANGUAGES": "Ilocano"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.394122,16.531338]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Naguillian",
+			  "POSTAL_CODE": "2511",
+			  "DESCRIPTION": "Known for its natural attractions such as the Naguilian River and the Naguilian Rice Terraces, which are considered as a National Cultural Treasure.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.467352,16.320299]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Pugo",
+			  "POSTAL_CODE": "2508",
+			  "DESCRIPTION": "Known for its natural attractions such as the Pugo Adventure Park.",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.487704,16.22994]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Rosario",
+			  "POSTAL_CODE": "2506",
+			  "DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Ma-Cho Temple.",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.317104,16.616268]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "San Fernando",
+			  "POSTAL_CODE": "2500",
+			  "DESCRIPTION": "Known for its beautiful beaches and historical landmarks such as the La Union Botanical Garden and the Christ the Redeemer Statue.",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.440447,16.691603]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "San Gabriel",
+			  "POSTAL_CODE": "2513",
+			  "DESCRIPTION": "Known for its natural attractions such as the Tangadan Falls, a scenic waterfall nestled in the mountains, and the Kapurpurawan Rock Formation.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.338551,16.669933]
+			},
+			"properties": {
+			"PROVINCE": "La Union",	
+			"MUNICIPALITY": "San Juan",
+			"POSTAL_CODE": "2514",
+			"DESCRIPTION": "Known for its world-class surf spots such as Urbiztondo Beach, which attracts surfers from all over the world.",
+			"LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.386715,16.28235]
+			},
+			"properties": {
+			"PROVINCE": "La Union",	
+			"MUNICIPALITY": "Santo Tomas",
+			"POSTAL_CODE": "2505",
+			"DESCRIPTION": "Known for its natural attractions such as the Mt. Damas and the Tinongdan Rice Terraces.",
+			"LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.460056,16.77217]
+			},
+			"properties": {
+			"PROVINCE": "La Union",	
+			"MUNICIPALITY": "Santol",
+			"POSTAL_CODE": "2516",
+			"DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Sabangan Cove and the Tangadan Tunnel.",
+			"LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.461839,16.906071]
+			},
+			"properties": {
+			"PROVINCE": "La Union",		
+			"MUNICIPALITY": "Sudipen",
+			"POSTAL_CODE": "2520",
+			"DESCRIPTION": "Known for its natural attractions such as the Balay Anito Falls and the Asin Hot Spring.",
+			"LANGUAGES": "Ilocano, Pangasinan, Kankanaey, Ibaloi, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.412615,16.347033]
+			},
+			"properties": {
+			"PROVINCE": "La Union",	
+			"MUNICIPALITY": "Tubao",
+			"POSTAL_CODE": "2509",
+			"DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Pugo Adventure Park.",
+			"LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		}
+	]
+}

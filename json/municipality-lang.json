@@ -1,0 +1,1768 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.903571,18.461311]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",
+			  "MUNICIPALITY": "Adams",
+			  "POSTAL_CODE" : "2922",
+			  "DESCRIPTION": "Known for its unspoiled natural beauty, including pristine rivers, waterfalls, and forests. The town offers a peaceful and secluded getaway for nature enthusiasts, hikers, and those seeking to escape the hustle and bustle of city life.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.610659,18.251738]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",
+			  "MUNICIPALITY": "Bacarra",
+			  "POSTAL_CODE" : "2916",
+			  "DESCRIPTION": "Known for its beautiful Spanish colonial church, the Bacarra Church, and its vibrant pottery industry. The town offers a glimpse into the region's rich history and culture",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.474089,17.926701]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",	
+			  "MUNICIPALITY": "Badoc",
+			  "POSTAL_CODE" : "2904",
+			  "DESCRIPTION": "Known for its historic church, the St. John the Baptist Parish Church, and its connection to the national hero, Juan Luna, who was born and raised in the town. The town offers a glimpse into Philippine history and culture",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.654968,17.979955]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",
+			  "MUNICIPALITY": "Banna",
+			  "POSTAL_CODE" : "2908",
+			  "DESCRIPTION": "Known for its traditional handicrafts such as abel Iloko, a handwoven textile made from cotton or cotton blend. The town is also known for its pottery, where skilled artisans create pots, vases, and other decorative items",
+			  "LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.765756,18.536739]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",	
+			  "MUNICIPALITY": "Bangui",
+			  "POSTAL_CODE" : "2920",
+			  "DESCRIPTION": "Known for its iconic Bangui Wind Farm, which features 20 towering wind turbines that generate renewable energy. The town offers a picturesque view of the sea and the wind turbines and is a popular destination for tourists",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.564524,18.055504]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",	
+			  "MUNICIPALITY": "Batac",
+			  "POSTAL_CODE" : "2906",
+			  "DESCRIPTION": "The city offers a glimpse into Philippine history and culture, with attractions such as the Marcos Museum and Mausoleum, the Batac Riverside Empanadaan, and the Paoay Lake National Park.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.643631,18.511009]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",	
+			  "MUNICIPALITY": "Burgos",
+			  "POSTAL_CODE" : "2918",
+			  "DESCRIPTION": "Known for its stunning rock formations, such as the Kapurpurawan Rock Formation and the Cape Bojeador Lighthouse. ",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.792847,18.166215]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",	
+			  "MUNICIPALITY": "Carasi",
+			  "POSTAL_CODE" : "2911",
+			  "DESCRIPTION": "Known for its beautiful mountainous terrain, rolling hills, and picturesque waterfalls. The town offers a serene and peaceful environment for tourists",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.486828,18.019448]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",	
+			  "MUNICIPALITY": "Currimao",
+			  "POSTAL_CODE" : "2903",
+			  "DESCRIPTION": "Known for its beautiful beaches and crystal-clear waters. The town offers a peaceful and relaxing destination for beachgoers, and a chance to experience the local culture and cuisine.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.701473,18.102447]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",
+			  "MUNICIPALITY": "Dingras",
+			  "POSTAL_CODE" : "2913",
+			  "DESCRIPTION": "Known for its rich history and cultural heritage. The town is home to the Dingras Church, a historical landmark and a significant part of the region's colonial past.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.812245,18.520392]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",
+			  "MUNICIPALITY": "Dumalneg",
+			  "POSTAL_CODE" : "2921",
+			  "DESCRIPTION": "Known for its rugged terrain, pristine rivers, and waterfalls. It is a great destination for nature enthusiasts and adventure seekers, offering visitors a chance to experience the natural beauty of the region",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.593543,18.197324]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "Laoag City",
+			  "POSTAL_CODE" : "2900",
+			  "DESCRIPTION": "It is known for its historical landmarks, such as the St. William's Cathedral and the Marcos Museum, and its delicious local cuisine, including the famous Ilocos empanada.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.67831,18.043495]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",	
+			  "MUNICIPALITY": "Marcos",
+			  "POSTAL_CODE" : "2907",
+			  "DESCRIPTION": "The town offers a glimpse into the Marcos family's history and legacy, with several landmarks and museums dedicated to the late president and his family.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.664411,17.915278]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "Nueva Era",
+			  "POSTAL_CODE" : "2909",
+			  "DESCRIPTION": "Known for its scenic mountains, rolling hills, and cascading waterfalls, such as the Kabigan Falls. The town offers a great opportunity for outdoor activities, such as trekking, hiking, and camping, and a chance to experience the beauty of the Philippine highlands.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.788762,18.560172]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "Pagudpud",
+			  "POSTAL_CODE" : "2919",
+			  "DESCRIPTION": "Known for its pristine beaches, crystal-clear waters, and stunning sunsets. The town offers a wide range of activities, from swimming and surfing to exploring",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.519509,18.061781]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "Paoay",
+			  "POSTAL_CODE" : "2902",
+			  "DESCRIPTION": "Known for its UNESCO World Heritage Site, the Paoay Church, which is a magnificent example of the Baroque architecture in the Philippines.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.619489,18.333982]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "Pasuquin",
+			  "POSTAL_CODE" : "2917",
+			  "DESCRIPTION": "Known for its production of the famous Pasuquin Salt and its rich cultural heritage. The town offers a glimpse into the traditional way of salt-making, and a chance to explore the local delicacies and traditions.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.716526,18.163592]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",
+			  "MUNICIPALITY": "Piddig",
+			  "POSTAL_CODE" : "2912",
+			  "DESCRIPTION": "Known for its beautiful natural attractions, such as the Pinacanauan River, the Sta. Rosa Lagoon, and the Kapur-purawan rock formation. The town offers a tranquil and peaceful environment for tourists seeking to explore",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.527388,17.952612]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "Pinili",
+			  "POSTAL_CODE" : "2905",
+			  "DESCRIPTION": "known for its traditional product, the Pinili Longganisa, which is a savory sausage made from pork, garlic, and other local spices. The town offers a great opportunity for foodies to taste the local cuisine.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.594367,18.174906]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "San Nicolas",
+			  "POSTAL_CODE" : "2901",
+			  "DESCRIPTION": "known for its historic sites, such as the sinking bell tower of St. William's Cathedral and the Tobacco Monopoly Monument. The town is a great place to experience Philippine culture and history.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.644346,18.156844]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",	
+			  "MUNICIPALITY": "Sarrat",
+			  "POSTAL_CODE" : "2914",
+			  "DESCRIPTION": "Known for its historic sites, such as the Sarrat Church, the largest church in Ilocos Norte, and the birthplace of former Philippine President Ferdinand Marcos. The town offers a glimpse of the country's rich cultural and political history.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.773212,18.095356]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "Solsona",
+			  "POSTAL_CODE" : "2910",
+			  "DESCRIPTION": "Known for its scenic landscapes, mountain ranges, and verdant forests. The town offers a serene environment for those who seek adventure.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.649108,18.229883]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",		
+			  "MUNICIPALITY": "Vintar",
+			  "POSTAL_CODE" : "2915",
+			  "DESCRIPTION": "Known for its lush forests, pristine rivers, and historic landmarks such as the 17th-century Vintar Church. The town offers a great opportunity for nature lovers to experience the region's ecological diversity.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.53069,16.885999]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Alilem",
+			  "POSTAL_CODE" : "2716",
+			  "DESCRIPTION": "The town offers a great opportunity for outdoor activities, such as hiking, camping, and swimming, and a chance to experience the local culture and way of life.",
+			  "LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.479738,17.236284]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Banayoyo",
+			  "POSTAL_CODE" : "2708",
+			  "DESCRIPTION": "Known for its historic church, the Santo Tomas de Villanueva Parish Church, and its tranquil countryside setting. The town offers a peaceful retreat for those seeking to escape the hustle and bustle of the city",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.389629,17.582018]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "Bantay",
+			  "POSTAL_CODE" : "2727",
+			  "DESCRIPTION": "Known for its iconic Bantay Church Bell Tower, a symbol of the town's rich cultural heritage. The town also offers a stunning view of the surrounding mountains and rice fields",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.494777,17.333533]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Burgos",
+			  "POSTAL_CODE" : "2724",
+			  "DESCRIPTION": "The town got its name in honor of Father José Burgos during the Spanish era.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.455319,17.794315]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Cabugao",
+			  "POSTAL_CODE" : "2732",
+			  "DESCRIPTION": "Known for its beautiful beaches, marine sanctuaries, and delicious seafood cuisine. It is a popular destination for beachgoers and seafood lovers, offering a relaxing and enjoyable experience for visitors.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.447919,17.195408]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Candon",
+			  "POSTAL_CODE" : "2710",
+			  "DESCRIPTION": "Known for its salt-making industry, which has been a source of livelihood for many of its residents for generations. The salt farms can be found along the coastline of the city",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.384208,17.543812]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Caoayan",
+			  "POSTAL_CODE" : "2702",
+			  "DESCRIPTION": "Known for its beautiful natural scenery, including the Bantay Abot Cave, which is located near the coast and is known for its unique rock formations",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.735456,16.989946]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Cervantes",
+			  "POSTAL_CODE" : "2718",
+			  "DESCRIPTION": "How it got the name is not known or documented but it is believed that it was named after the famous poet Miguel de Cervantes. But the town's history was tied to the poet's name and the people living on the town adopted it as their own official name.",
+			  "LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.469224,17.183128]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "Galimuyod",
+			  "POSTAL_CODE" : "2709",
+			  "DESCRIPTION": "This town, formerly known as Cabisilan, was once the biggest barrio of Candon during the Spanish Regime. A land dispute between them and residents of neighboring Sapang, another barrio of Candon, resulted in a 'gin-nuyod' ('tug-of-war') contest, a common game during those days, to settle it.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.611832,17.14603]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Gregorio del Pilar",
+			  "POSTAL_CODE" : "2720",
+			  "DESCRIPTION": "Formerly named Concepcion (in honor of its patron saint, Nuestra Senora de Concepcion), it was renamed after general Gregorio del Pilar  The municipality was the site of the Battle of Tirad Pass where General del Pilar fought to the death against the Americans."
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.521062,17.251771]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "Lidlidda",
+			  "POSTAL_CODE" : "2723",
+			  "DESCRIPTION": "It is home to the Lidlidda Protected Landscape, a protected area situated in the municipality's watershed.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.425734,17.68519]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "Magsingal",
+			  "POSTAL_CODE" : "2730",
+			  "DESCRIPTION": "The name of the municipality came from the term 'Mayisingal,'an Ilocano term which means 'to be moved.' It was applied when the belltower was moved from a previous location to its current site.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.526032,17.447277]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "Nagbukel",
+			  "POSTAL_CODE" : "2725",
+			  "DESCRIPTION": "The name of the municipality was thought to have come from the round shape of one of the hills in the area. People in the area would utter, 'Anian nga nagbukel' (Ilocano meaning 'How round it is.').",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.476917,17.419424]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Narvacan",
+			  "POSTAL_CODE" : "2704",
+			  "DESCRIPTION": "Known for its historical landmarks, including the St. Lucy's Church, and its picturesque landscape surrounded by mountains and rivers. It is a great place for those interested in Philippine history and culture",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.676999,17.137558]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Quirino",
+			  "POSTAL_CODE" : "2721",
+			  "DESCRIPTION": "Formerly known as Angaki (also spelled Angkaki in some sources), the municipality was renamed in June 1964 to Quirino in honor of Elpidio Quirino, an Ilocos Sur native who served as the sixth President of the Philippines.",
+			  "LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.536337,17.151069]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Salcedo",
+			  "POSTAL_CODE" : "2711",
+			  "DESCRIPTION": "The town got its name after Juan de Salcedo, a Spanish conquistador.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.578704,17.238293]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "San Emilio",
+			  "POSTAL_CODE" : "2722",
+			  "DESCRIPTION": "Known for its mountainous terrain, lush forests, and beautiful waterfalls. It is a great destination for hiking and outdoor activities, offering visitors a chance to explore the natural beauty of the region.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.444964,17.329098]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "San Esteban",
+			  "POSTAL_CODE" : "2706",
+			  "DESCRIPTION": "Known for its scenic beaches, stunning sunsets, and interesting rock formations. It is a popular destination for beachgoers, photographers, and nature lovers.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.393125,17.624976]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "San Ildefonso",
+			  "POSTAL_CODE" : "2728",
+			  "DESCRIPTION": "The town got its name from Saint Ildephonsus.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.458307,17.742234]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "San Juan",
+			  "POSTAL_CODE" : "2731",
+			  "DESCRIPTION": "Known for its surfing destination, the Urbiztondo Beach. The town offers a laid-back vibe and a great opportunity for surfing enthusiasts to enjoy the waves and explore the local culture and cuisine.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.374617,17.59391]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "San Vicente",
+			  "POSTAL_CODE" : "2726",
+			  "DESCRIPTION": "Known for its scenic beaches, natural rock formations, and rich marine life. It is a great place for beachgoers, nature enthusiasts, and adventure seekers, with opportunities for swimming, snorkeling, and hiking.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.434536,17.48599]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Santa",
+			  "POSTAL_CODE" : "27203",
+			  "DESCRIPTION": "Governor-General of the Philippines Theodore Roosevelt, Jr. on his visit to the town in 1925 said that “The mountain in the east, the winding roping river in the north, and the immense sea in the west make Santa a poetic town.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.36332,17.588876]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Santa Catalina",
+			  "POSTAL_CODE" : "2701",
+			  "DESCRIPTION": "The town offers a tranquil and serene environment for tourists seeking to experience nature's beauty and explore the region's ecological diversity.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.454787,17.084693]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Santa Cruz",
+			  "POSTAL_CODE" : "2713",
+			  "DESCRIPTION": "Known for its picturesque beaches, crystal-clear waters, and vibrant marine life. It is a popular destination for beachgoers, snorkelers, and divers, and a great place to enjoy the beauty of the Philippine coast.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.449123,17.120447]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Santa Lucia",
+			  "POSTAL_CODE" : "2712",
+			  "DESCRIPTION": "Known for its natural beauty and agricultural products such as rice and tobacco. The town offers views of rolling hills and lush forests and is a great place to experience the local culture and way of life.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.480817,17.369862]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",		
+			  "MUNICIPALITY": "Santa Maria",
+			  "POSTAL_CODE" : "2705",
+			  "DESCRIPTION": "Known for its stunning UNESCO World Heritage Site, the Santa Maria Church. The church is a magnificent example of the Earthquake Baroque style and a popular destination",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.445317,17.294088]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Santiago",
+			  "POSTAL_CODE" : "2707",
+			  "DESCRIPTION": "Known for its historic Spanish colonial church, the St. James the Apostle Parish Church, and its picturesque landscape surrounded by mountains and rivers. It offers a natural setting for tourists seeking to explore the beauty of the region.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.409813,17.639023]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Santa Domingo",
+			  "POSTAL_CODE" : "2729",
+			  "DESCRIPTION": "Known for its beautiful Spanish colonial church and serene rural landscapes. It is a charming destination for history buffs and nature lovers alike",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.58048,17.042584]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Sigay",
+			  "POSTAL_CODE" : "2719",
+			  "DESCRIPTION": " It is a peaceful and secluded, known for its pristine beaches, scenic coastline, and rich marine life",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.457186,17.865743]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Sinait",
+			  "POSTAL_CODE" : "2733",
+			  "DESCRIPTION": "Known for its centuries-old Spanish-era church, the St. Matthew Church. It is also a center of agricultural production, with rice, tobacco, and corn as its main crops.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.516718,16.844457]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "Sugpon",
+			  "POSTAL_CODE" : "2717",
+			  "DESCRIPTION": "Known for its natural beauty, including stunning waterfalls, hot springs, and rice terraces. It is a popular destination for hikers and nature lovers who want to explore the wilderness of the region.",
+			  "LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.515137,16.983764]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "MUNICIPALITY": "Suyo",
+			  "POSTAL_CODE" : "2715",
+			  "DESCRIPTION": "The town is home to various attractions such as natural wonders, historical sites, and festivities that showcase the town's traditions and customs.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.445017,16.934566]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Tagudin",
+			  "POSTAL_CODE" : "2714",
+			  "DESCRIPTION": "The name was given by a Spanish explorer who mistook the name of a cotton drying rack (tagudan) used by a local resident as the town's name.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.387263,17.575549]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",	
+			  "MUNICIPALITY": "Vigan",
+			  "POSTAL_CODE" : "2700",
+			  "DESCRIPTION": "A city known for its well-preserved Spanish colonial architecture. It was declared a UNESCO World Heritage Site in 1999",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.366955,16.322274]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",		
+			  "MUNICIPALITY": "Agoo",
+			  "POSTAL_CODE": "2504",
+			  "DESCRIPTION": "Known for its historical landmarks, beautiful beaches, and rich cultural heritage.",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.354351,16.394667]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",
+			  "MUNICIPALITY": "Aringay",
+			  "POSTAL_CODE": "2503",
+			  "DESCRIPTION": "Known for its natural attractions such as beaches, waterfalls, and caves.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.352594,16.720256]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",
+			  "MUNICIPALITY": "Bacnotan",
+			  "POSTAL_CODE": "2512",
+			  "DESCRIPTION": "Known for its long coastline and beautiful beaches, as well as for being the birthplace of the Philippine surfing scene.",
+			  "LANGUAGES": "Ilocano"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.478438,16.587265]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Bagulin",
+			  "POSTAL_CODE": "2512",
+			  "DESCRIPTION": "Known for its scenic mountainous terrain and beautiful waterfalls, such as the Tangadan Falls and the Tupanggat Falls.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.402586,16.820829]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",		
+			  "MUNICIPALITY": "Balaoan",
+			  "POSTAL_CODE": "2517",
+			  "DESCRIPTION": "Known for its stunning beaches and natural attractions such as the Balaoan Sand Dunes, as well as its rich cultural heritage reflected in its historical landmarks such as the Balaoan Church and the Balaoan Watchtower.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.42296,16.893781]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",				
+			  "MUNICIPALITY": "Bangar",
+			  "POSTAL_CODE": "2519",
+			  "DESCRIPTION": "Known for its beautiful beaches and historical landmarks such as the Bangar Petrified Forest and the St. Catherine of Alexandria Church.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.329282,16.526595]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Bauang",
+			  "POSTAL_CODE": "2501",
+			  "DESCRIPTION": "Known for its beautiful beaches, water activities, historical landmarks, and agricultural produce.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.458328,16.51893]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Burgos",
+			  "POSTAL_CODE": "2510",
+			  "DESCRIPTION": "Known for its stunning beaches, natural attractions such as the Tangadan Falls, and historical landmarks such as the Burgos Watchtower.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.345618,16.431838]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Caba",
+			  "POSTAL_CODE": "2502",
+			  "DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Caba Wetlands and the Agoo-Damortis National Seashore Park.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			  }
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.405221,16.243137]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Damortis",
+			  "POSTAL_CODE": "2507",
+			  "DESCRIPTION": "Known for its natural attractions such as the Damortis River and the Damortis Hanging Bridge.",
+			  "LANGUAGES": "Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.377677,16.853603]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Luna",
+			  "POSTAL_CODE": "2518",
+			  "DESCRIPTION": "Known for its scenic coastline and beautiful beaches, as well as for being the site of the Luna Watchtower and the Baluarte Watchtower.",
+			  "LANGUAGES": "Ilocano"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.394122,16.531338]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Naguillian",
+			  "POSTAL_CODE": "2511",
+			  "DESCRIPTION": "Known for its natural attractions such as the Naguilian River and the Naguilian Rice Terraces, which are considered as a National Cultural Treasure.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.467352,16.320299]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Pugo",
+			  "POSTAL_CODE": "2508",
+			  "DESCRIPTION": "Known for its natural attractions such as the Pugo Adventure Park.",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.487704,16.22994]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "Rosario",
+			  "POSTAL_CODE": "2506",
+			  "DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Ma-Cho Temple.",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.317104,16.616268]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "San Fernando",
+			  "POSTAL_CODE": "2500",
+			  "DESCRIPTION": "Known for its beautiful beaches and historical landmarks such as the La Union Botanical Garden and the Christ the Redeemer Statue.",
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.440447,16.691603]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",	
+			  "MUNICIPALITY": "San Gabriel",
+			  "POSTAL_CODE": "2513",
+			  "DESCRIPTION": "Known for its natural attractions such as the Tangadan Falls, a scenic waterfall nestled in the mountains, and the Kapurpurawan Rock Formation.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.338551,16.669933]
+			},
+			"properties": {
+			"PROVINCE": "La Union",	
+			"MUNICIPALITY": "San Juan",
+			"POSTAL_CODE": "2514",
+			"DESCRIPTION": "Known for its world-class surf spots such as Urbiztondo Beach, which attracts surfers from all over the world.",
+			"LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.386715,16.28235]
+			},
+			"properties": {
+			"PROVINCE": "La Union",	
+			"MUNICIPALITY": "Santo Tomas",
+			"POSTAL_CODE": "2505",
+			"DESCRIPTION": "Known for its natural attractions such as the Mt. Damas and the Tinongdan Rice Terraces.",
+			"LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.460056,16.77217]
+			},
+			"properties": {
+			"PROVINCE": "La Union",	
+			"MUNICIPALITY": "Santol",
+			"POSTAL_CODE": "2516",
+			"DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Sabangan Cove and the Tangadan Tunnel.",
+			"LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.461839,16.906071]
+			},
+			"properties": {
+			"PROVINCE": "La Union",		
+			"MUNICIPALITY": "Sudipen",
+			"POSTAL_CODE": "2520",
+			"DESCRIPTION": "Known for its natural attractions such as the Balay Anito Falls and the Asin Hot Spring.",
+			"LANGUAGES": "Ilocano, Pangasinan, Kankanaey, Ibaloi, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.412615,16.347033]
+			},
+			"properties": {
+			"PROVINCE": "La Union",	
+			"MUNICIPALITY": "Tubao",
+			"POSTAL_CODE": "2509",
+			"DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Pugo Adventure Park.",
+			"LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			}
+		},	
+	    {
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.799026, 16.115663]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Agno",
+			"POSTAL_CODE": "2408",
+			"DESCRIPTION": "Known for its rich fishing grounds and abundant marine resources, Agno is a municipality located in the province of Pangasinan in the Philippines.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+	  	},
+	  	{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.239562, 15.888723]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Aguilar",
+			"POSTAL_CODE": "2415",
+			"DESCRIPTION": "Known for its thriving agricultural industry, particularly its production of rice, corn, and vegetables, as well as its vibrant culture and festivals.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+	  	},
+	  	{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.97922, 16.155386]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Alaminos",
+			"POSTAL_CODE": "2404",
+			"DESCRIPTION": "Known for its delicious seafood and other local delicacies, as well as its rich cultural heritage and landmarks such as the St. Joseph Cathedral and the Bolo Beach.",
+			"LANGUAGES": "Pangasinan, Ilocano, Bolinao, Tagalog"
+			}
+	  	},
+	  	{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.5213, 15.8443]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Alcala",
+			"POSTAL_CODE": "2425",
+			"DESCRIPTION": "Known for its large-scale production of garlic and other agricultural products.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+	  	},
+	  	{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.949646, 16.28963]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Anda",
+			"POSTAL_CODE": "2405",
+			"DESCRIPTION": "Known for its picturesque beaches and natural attractions such as the Tondol White Sand Beach and the Cabongaoan Beach and Death Pool.",
+			"LANGUAGES": "Pangasinan, Ilocano, Bolinao, Tagalog"
+			}
+	  	},
+	  	{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.67024, 16.00378]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Asingan",
+			"POSTAL_CODE": "2439",
+			"DESCRIPTION": "Known for its vibrant agricultural industry and abundant rice fields.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+	  	},
+	  	{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.672455,15.898374]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Balungao",
+			"POSTAL_CODE": "2442",
+			"DESCRIPTION": "Known for its beautiful natural attractions such as the Balungao Hilltop Adventure, which offers breathtaking views of the surrounding mountains and valleys.",
+			"LANGUAGES": "Pangasinan, Ilocano, Kapampangan, Tagalog"
+			}
+	  	},
+	  	{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.862518,16.183331]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Bani",
+			"POSTAL_CODE": "2407",
+			"DESCRIPTION": "Known for its abundant salt farms and production of high-quality sea salt.",
+			"LANGUAGES": "Pangasinan, Ilocano, Sambal, Tagalog"
+			}
+	  	},
+	  	{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.402501,15.85235]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Basista",
+			"POSTAL_CODE": "2422",
+			"DESCRIPTION": "Known for its vibrant festivals such as the Basista Town Fiesta and the Basi Festival.",
+			"LANGUAGES": "Pangasinan, Ilocano, Bolinao, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.476147,15.810434]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Bautista",
+			"POSTAL_CODE": "2424",
+			"DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Agno River and the Balincaguin River.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.454075,15.808803]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Bayambang",
+			"POSTAL_CODE": "2423",
+			"DESCRIPTION": "Known for its efforts in promoting eco-tourism, with its various natural attractions such as the Balincaguin River and the Bugallon Hills providing breathtaking views and outdoor activities.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.591771,16.044448]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Binalonan",
+			"POSTAL_CODE": "2436",
+			"DESCRIPTION": "Known for its vibrant culture and traditions, highlighted by the annual celebration of the Bagoong Festival, which showcases the town's famous fermented fish sauce or bagoong",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.269516,16.030529]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Binmaley",
+			"POSTAL_CODE": "2417",
+			"DESCRIPTION": "Known for its rich history and cultural heritage.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.899081,16.382868]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Bolinao",
+			"POSTAL_CODE": "2406",
+			"DESCRIPTION": "Known for its beautiful beaches and pristine natural attractions such as the Bolinao Falls and the Patar White Sand Beach.",
+			"LANGUAGES": "Pangasinan, Ilocano, Sambal, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.214961,15.954063]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Bugallon",
+			"POSTAL_CODE": "2416",
+			"DESCRIPTION": "Known for its picturesque natural scenery and peaceful rural charm.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.864928,16.059394]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Burgos",
+			"POSTAL_CODE": "2410",
+			"DESCRIPTION": "Known for its rich history and cultural heritage, evident in landmarks such as the Burgos Lighthouse and the Cape Bojeador Spanish-era lighthouse, the latter being the oldest of its kind in the country.",
+			"LANGUAGES": "Pangasinan, Ilocano, Sambal, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.357194,16.008949]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Calasiao",
+			"POSTAL_CODE": "2418",
+			"DESCRIPTION": "Known for its delicious puto (rice cake) and colorful annual Puto Festival.",
+			"LANGUAGES": "Pangasinan, Ilocano, Sambal, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.3337627,16.043021]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Dagupan City",
+			"POSTAL_CODE": "2400",
+			"DESCRIPTION": "Known for its delicious bangus or milkfish and vibrant Pangasinan culture.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.881144,15.990235]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Dasol",
+			"POSTAL_CODE": "2411",
+			"DESCRIPTION": "Known for its unique geological formations such as the Dasol Rock Formation and the Cabongaoan Death Pool, as well as its rich marine biodiversity that attracts divers and snorkelers.",
+			"LANGUAGES": "Pangasinan, Ilocano, Sambal, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.905662,15.825094]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Infanta",
+			"POSTAL_CODE": "2412",
+			"DESCRIPTION": "Known for its thriving fishing industry, particularly its production of bangus or milkfish, and is often referred to as the Bangus Capital of the North.",
+			"LANGUAGES": "Pangasinan, Ilocano, Sambal, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.146464,16.025725]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Labrador",
+			"POSTAL_CODE": "2402",
+			"DESCRIPTION": "Known for its thriving fishing industry, producing various types of seafood such as squid, crabs, and fish.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.547106,16.0481]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Laoac",
+			"POSTAL_CODE": "2437",
+			"DESCRIPTION": "Known for its thriving fishing industry, producing various types of seafood such as squid, crabs, and fish.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.230709,16.020636]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Lingayen",
+			"POSTAL_CODE": "2401",
+			"DESCRIPTION": "Known for its historical significance as the site of the formal surrender of Japanese forces in the Philippines during World War II.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [119.939483,16.069859]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Mabini",
+			"POSTAL_CODE": "2409",
+			"DESCRIPTION": "Known for its beautiful white sand beaches, crystal-clear waters, and coral reefs.",
+			"LANGUAGES": "Pangasinan, Ilocano, Sambal, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.413958,15.919184]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Malasiqui",
+			"POSTAL_CODE": "2421",
+			"DESCRIPTION": "Known for its historical landmarks such as the St. John the Evangelist Parish Church and the Malasiqui Freedom Tree, a symbol of the town's struggle for independence during the Spanish colonial period.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.487329,16.043566]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Manaoag",
+			"POSTAL_CODE": "2430",
+			"DESCRIPTION": "Known for the Shrine of Our Lady of the Rosary of Manaoag, a famous pilgrimage site for Catholics in the Philippines.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.401047,16.066613]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Mangaldan",
+			"POSTAL_CODE": "2432",
+			"DESCRIPTION": "Known for its thriving agriculture industry, particularly its production of rice and corn.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.293864,15.788536]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Mangatarem",
+			"POSTAL_CODE": "2413",
+			"DESCRIPTION": "Known for its agricultural industry, particularly its production of rice and corn.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.453629,16.026289]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Mapandan",
+			"POSTAL_CODE": "2429",
+			"DESCRIPTION": "Known for its thriving agricultural industry, particularly its production of rice, corn, and sugarcane, as well as its picturesque landscapes and natural attractions such as the Mapandan River and the Pugaro River.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.794681,16.042747]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Natividad",
+			"POSTAL_CODE": "2446",
+			"DESCRIPTION": "Known for its colorful Nuestra Señora de la Natividad Festival.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.545229,16.110281]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Pozorrubio",
+			"POSTAL_CODE": "2435",
+			"DESCRIPTION": "Known for its rich history and cultural heritage, as evidenced by the St. James the Great Parish Church and the World War II Memorial Shrine.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.633165,15.891548]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Rosales",
+			"POSTAL_CODE": "2441",
+			"DESCRIPTION": "Known for its vibrant agricultural industry, particularly its production of rice, corn, and sugarcane.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.347558,15.926773]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "San Carlos City",
+			"POSTAL_CODE": "2420",
+			"DESCRIPTION": "Known for its rich agricultural resources, particularly its sugar industry.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.403245,16.122122]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "San Fabian",
+			"POSTAL_CODE": "2433",
+			"DESCRIPTION": "Known for its scenic beaches and historical landmarks such as the San Fabian Church.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.437072,16.07354]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "San Jacinto",
+			"POSTAL_CODE": "2431",
+			"DESCRIPTION": "Known for its natural attractions such as the Balungao Hilltop Adventure, offering various outdoor activities such as zipline, rappelling, and trekking, as well as the Apa-Angay Caves, a popular spot for spelunking.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.668181,16.064379]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "San Manuel",
+			"POSTAL_CODE": "2438",
+			"DESCRIPTION": "Known for its vibrant culture and festivities, such as the annual town fiesta, which features colorful parades and cultural presentations.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.762471,16.070351]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "San Nicolas",
+			"POSTAL_CODE": "2447",
+			"DESCRIPTION": "Known for its centuries-old St. Nicholas of Tolentino Parish Church and the colorful Bagoong Industry.",
+			"LANGUAGES": "Pangasinan, Ilocano, Kallahan, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.813157,15.984312]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "San Quintin",
+			"POSTAL_CODE": "2444",
+			"DESCRIPTION": "Known for its scenic rice paddies and abundant agricultural resources.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.5097, 16.1727]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Sison",
+			"POSTAL_CODE": "2434",
+			"DESCRIPTION": "Known for its natural attractions, agricultural produce, vibrant local culture and traditions, and historical landmarks.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.405127,15.999924]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Santa Barbara",
+			"POSTAL_CODE": "2419",
+			"DESCRIPTION": "Known for its vibrant culture and rich history, as well as its beautiful natural attractions.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.700365,15.979253]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",	
+			"MUNICIPALITY": "Santa Maria",
+			"POSTAL_CODE": "2440",
+			"DESCRIPTION": "Known for its beautiful natural attractions, particularly the serene and picturesque Tondol White Sand Beach, which has become a popular destination for both locals and tourists.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.570229,15.871324]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",
+			"MUNICIPALITY": "Santo Tomas",
+			"POSTAL_CODE": "2426",
+			"DESCRIPTION": "Known for its cultural landmarks, such as the St. Thomas Aquinas Parish Church, a historic church that dates back to the Spanish colonial period.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.075896,16.074532]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Sual",
+			"POSTAL_CODE": "2403",
+			"DESCRIPTION": "Known for its beautiful beaches, picturesque fishing villages, and thriving marine industry.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.744364,16.027552]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Tayug",
+			"POSTAL_CODE": "2445",
+			"DESCRIPTION": "One of the most famous landmarks in Tayug is the Minor Basilica of Our Lady of the Rosary of Manaoag, which is located in the nearby town of Manaoag.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.833491,15.929277]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Umingan",
+			"POSTAL_CODE": "2443",
+			"DESCRIPTION": "Umingan is also a popular destination for tourists who come to enjoy its natural beauty and outdoor activities.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.359785,15.822987]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Urbiztondo",
+			"POSTAL_CODE": "2414",
+			"DESCRIPTION": "Known for its long stretch of white sand beaches, crystal-clear waters, and a variety of water sports activities.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.566899,15.976]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Urdaneta",
+			"POSTAL_CODE": "2428",
+			"DESCRIPTION": "Considered as the Gateway to Northern Luzon as it serves as a major transportation hub connecting the provinces in the region.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			"type": "Point",
+			"coordinates": [120.588308,15.901586]
+			},
+			"properties": {
+			"PROVINCE": "Pangasinan",		
+			"MUNICIPALITY": "Villasis",
+			"POSTAL_CODE": "2427",
+			"DESCRIPTION": "Known for its agricultural productivity, particularly its high-quality rice, which has earned it the title Rice Granary of Pangasinan.",
+			"LANGUAGES": "Pangasinan, Ilocano, Tagalog"
+			}
+	  	}
+	]
+}

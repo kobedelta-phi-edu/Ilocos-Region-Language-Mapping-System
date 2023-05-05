@@ -1,0 +1,35 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+}
+      
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+#geocoder {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 1;
+	width: 600px;
+}
+
+.place-name { 
+    font-weight: bold; 
+}
+      
+.place-postal { 
+    margin-top: 5px; 
+}
+      
+.place-description { 
+    margin-top: 5px; 
+}
+      
+.place-languages { 
+    margin-top: 20px; 
+}

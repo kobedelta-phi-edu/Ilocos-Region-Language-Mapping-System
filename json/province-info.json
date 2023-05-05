@@ -1,0 +1,57 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.5935433,18.1973235]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Norte",
+			  "IMAGE" : "NLP/ilocos_norte.jpg",
+			  "DESCRIPTION": "A province located in the northern part of the Philippines, known for its rich history, cultural heritage, and natural beauty. The province offers a unique blend of historic landmarks, picturesque landscapes, and a vibrant local culture that attracts tourists from all over the world.",
+			  "LANGUAGES": "Ilocano, Tagalog"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.3872632,17.5755487]
+			},
+			"properties": {
+			  "PROVINCE": "Ilocos Sur",
+			  "IMAGE" : "NLP/ilocos_sur.jpg",
+			  "DESCRIPTION": "It's famous for it's cultural heritage, picturesque landscapes, and historic sites like Vigan City, a UNESCO World Heritage Site featuring Spanish colonial architecture. It offers a unique mix of history, culture, and natural beauty that draws visitors from everywhere.",
+			  "LANGUAGES": "Kankanaey, Tagalog, Ilocano"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.317104,16.6162676]
+			},
+			"properties": {
+			  "PROVINCE": "La Union",
+			  "IMAGE" : "NLP/la_union.jpg",
+			  "DESCRIPTION": "Known for its beautiful beaches, surfing spots, and scenic landscapes. It is a popular destination for tourists seeking to enjoy the sun, sand, and waves, and a great place to experience the local culture and cuisine.",
+			  "LANGUAGES": "Kankanaey, Pangasinan, Tagalog, Ilocano"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+			  "type": "Point",
+			  "coordinates": [120.2307093,16.0206363]
+			},
+			"properties": {
+			  "PROVINCE": "Pangasinan",
+			  "IMAGE" : "NLP/pangasinan.jpeg",
+			  "DESCRIPTION": "Known for its beautiful beaches, stunning waterfalls, and delicious seafood cuisine. The province offers a wide range of activities for tourists, including swimming, surfing, island hopping, and sightseeing, and is a popular destination for both local and international visitors.",
+			  "LANGUAGES": "Pangasinan, Bolinao, Sambal, Kallahan, Tagalog, Ilocano"
+			}
+		}
+	]
+}	
