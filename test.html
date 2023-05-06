@@ -30,8 +30,8 @@
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v10',
-        center: [120.4714, 16.8179], // Region 1 center point
-        zoom: 7 // Zoom to Region 1 level
+        center: [120.256, 17.193], // Region 1 center point
+        zoom: 7.2 // Zoom to Region 1 level
       });
 
       // Add the geocoder search bar
@@ -43,7 +43,6 @@
         zoom: 10
       });
       document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
-
 
       // Wait for the map to load
       map.on('load', function () {
@@ -78,6 +77,8 @@
             }
         ];
 
+        var selectedProvince = null;
+
         geocoder.on('result', function (e) {
             // Get the selected search result
             var result = e.result;
@@ -85,7 +86,7 @@
             // Check if the result has a province property
             if (result.context && result.context.length > 0) {
                 var provinceName = result.context.find(function (context) {
-                return context.id.startsWith('region');
+                    return context.id.startsWith('region');
                 }).text;
 
                 // Loop through the provinces and find the matching province
@@ -104,6 +105,9 @@
                         map.setLayoutProperty(province.name + '-municipality-labels', 'visibility', 'visible');
 
                         previousProvince = province.name;
+
+                        // Set the selected province
+                        selectedProvince = province;
 
                         map.addLayer({
                             id: province.name + '-municipality-labels',
@@ -125,6 +129,25 @@
                             filter: ['==', 'PROVINCE', province.name]
                         });
                     }
+                });
+            }
+        });
+
+        // Add a clear event listener to the geocoder search input
+        geocoder.on('clear', function () {
+        // Check if there is a selected province
+            if (selectedProvince !== null) {
+                // Hide the selected fill boundary layer
+                map.setLayoutProperty(selectedProvince.name + '-fill-boundary', 'visibility', 'visible');
+                map.setLayoutProperty(selectedProvince.name + '-municipality-labels', 'visibility', 'none');
+
+                // Reset the selected province
+                selectedProvince = null;
+
+                // Zoom back to the map center coordinates
+                map.flyTo({
+                    center: [120.256, 17.193],
+                    zoom: 7.2
                 });
             }
         });
@@ -156,22 +179,9 @@
                 var provinceDescription = e.features[0].properties.DESCRIPTION;
                 var provinceLanguages = e.features[0].properties.LANGUAGES;
 
-               // Show the sidebar
-                document.getElementById('sidebar').style.width = '350px';
-
-                // Set the sidebar content
-                document.getElementById('sidebar-image').style.backgroundImage = 'url(' + displayImage + ')';
-                document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>';
-            
-
-                // Add the close event for the sidebar
-                document.getElementById("sidebar-close").addEventListener("click", function() {
-                document.getElementById("sidebar").style.width = "0";
-                });
-
             new mapboxgl.Popup()
                 .setLngLat(coordinates)
-                .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-descrip">' + provinceDescription + '</div>' + '<div class="place-lang">' + provinceLanguages + '</div>')
+                .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-description>' + provinceDescription + '</div>' + '<div class="place-languages">' + provinceLanguages + '</div>')
                 .addTo(map);
             });
         
@@ -239,8 +249,24 @@
                         .addTo(map);
                     });
                 });
-            });
 
+                // Check if any feature matches the fill boundary layer ID
+                var isFillLayerClicked = features.some(function (feature) {
+                    return feature.layer.id === province.name + '-fill-boundary';
+                });
+
+                // Check if any clickable element (municipality labels) was clicked
+                var isClickableElementClicked = features.some(function (feature) {
+                    return feature.layer.id === province.name + '-municipality-labels';
+                });
+
+                if (!isFillLayerClicked && !isClickableElementClicked) {
+                    // Unhide the fill boundary layer
+                    map.setLayoutProperty(province.name + '-fill-boundary', 'visibility', 'visible');
+                    map.setLayoutProperty(province.name + '-municipality-labels', 'visibility', 'none');
+                }
+            });
+            
             // Change the cursor to a pointer when hovering over the municipalities layer
             map.on('mouseenter', province.name +'-municipality-labels', function () {
                 map.getCanvas().style.cursor = 'pointer';
@@ -250,7 +276,7 @@
             map.on('mouseleave', province.name +'-municipality-labels', function () {
                 map.getCanvas().style.cursor = '';
             });
-        });
+        }); 
 
         //Fix: Text layer removed outside the for each loop 
         map.addLayer({
