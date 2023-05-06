@@ -39,7 +39,8 @@
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
         countries: 'PH',
-        placeholder: 'Search for a place...'
+        placeholder: 'Search for a place...',
+        zoom: 10
       });
       document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
@@ -77,6 +78,57 @@
             }
         ];
 
+        geocoder.on('result', function (e) {
+            // Get the selected search result
+            var result = e.result;
+
+            // Check if the result has a province property
+            if (result.context && result.context.length > 0) {
+                var provinceName = result.context.find(function (context) {
+                return context.id.startsWith('region');
+                }).text;
+
+                // Loop through the provinces and find the matching province
+                provinces.forEach(function (province) {
+                    if (province.name.toLowerCase() === provinceName.toLowerCase()) {
+                        // Hide the previously clicked layer if it exists
+                        if (previousProvince !== null) {
+                            map.setLayoutProperty(previousProvince + '-fill-boundary', 'visibility', 'visible');
+                            map.setLayoutProperty(previousProvince + '-municipality-labels', 'visibility', 'none');
+                        }
+
+                        // Hide the current fill boundary layer
+                        map.setLayoutProperty(province.name + '-fill-boundary', 'visibility', 'none');
+
+                        // Show the layer you want to display
+                        map.setLayoutProperty(province.name + '-municipality-labels', 'visibility', 'visible');
+
+                        previousProvince = province.name;
+
+                        map.addLayer({
+                            id: province.name + '-municipality-labels',
+                            type: 'symbol',
+                            source: {
+                                type: 'geojson',
+                                data: province.muniJson
+                            },
+                            layout: {
+                                'text-field': ['get', 'MUNICIPALITY'],
+                                'text-font': [
+                                'DIN Offc Pro Medium',
+                                'Arial Unicode MS Regular'],
+                                'text-size': 17
+                                },
+                            paint: {
+                                'text-color': 'black'
+                                },
+                            filter: ['==', 'PROVINCE', province.name]
+                        });
+                    }
+                });
+            }
+        });
+
         // Define a variable to keep track of the currently clicked layer ID
         var previousProvince = null;
 
@@ -104,27 +156,27 @@
                 var provinceDescription = e.features[0].properties.DESCRIPTION;
                 var provinceLanguages = e.features[0].properties.LANGUAGES;
 
-
-                // Show the sidebar
+               // Show the sidebar
                 document.getElementById('sidebar').style.width = '350px';
 
                 // Set the sidebar content
                 document.getElementById('sidebar-image').style.backgroundImage = 'url(' + displayImage + ')';
                 document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>';
+            
 
                 // Add the close event for the sidebar
                 document.getElementById("sidebar-close").addEventListener("click", function() {
-                    document.getElementById("sidebar").style.width = "0";
+                document.getElementById("sidebar").style.width = "0";
                 });
 
-            /*new mapboxgl.Popup()
+            new mapboxgl.Popup()
                 .setLngLat(coordinates)
                 .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-descrip">' + provinceDescription + '</div>' + '<div class="place-lang">' + provinceLanguages + '</div>')
-                .addTo(map);*/
+                .addTo(map);
             });
         
             // Add click event listener to the map
-            map.on('click', function (e) {
+            map.on('click', function (e) { 
                 // Get a list of all the features that were clicked on
                 var features = map.queryRenderedFeatures(e.point);
 
@@ -179,7 +231,7 @@
                         var municipalityName = e.features[0].properties.MUNICIPALITY;
                         var postalCode = e.features[0].properties.POSTAL_CODE;
                         var placeDescription = e.features[0].properties.DESCRIPTION;
-                        var placeLanguages = e.features[0].properties.LANGUAGES
+                        var placeLanguages = e.features[0].properties.LANGUAGES;
 
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
