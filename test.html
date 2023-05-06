@@ -26,6 +26,7 @@
     </div>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoicmlyaXpibGFhYSIsImEiOiJjbGg4aHY5NnEwNWNpM2trZ2ppbWw4YXUxIn0.q9ehzctjfDqZGGxIn0ff3w';
+      
       // Initialize the map
       var map = new mapboxgl.Map({
         container: 'map',
@@ -33,6 +34,7 @@
         center: [120.256, 17.193], // Region 1 center point
         zoom: 7.2 // Zoom to Region 1 level
       });
+
       // Add the geocoder search bar
       var geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
@@ -43,6 +45,7 @@
       });
       document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
       // Wait for the map to load
+
       map.on('load', function () {
         var provinces = [
             {
