@@ -192,14 +192,14 @@
                 });
 
 
-            new mapboxgl.Popup()
-                .setLngLat(coordinates)
-                .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-description>' + provinceDescription + '</div>' + '<div class="place-languages">' + provinceLanguages + '</div>')
-                .addTo(map);
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-description>' + provinceDescription + '</div>' + '<div class="place-languages">' + provinceLanguages + '</div>')
+                    .addTo(map);
             });
-        
+
             // Add click event listener to the map
-            map.on('click', function (e) { 
+            map.on('click', function (e) {
                 // Get a list of all the features that were clicked on
                 var features = map.queryRenderedFeatures(e.point);
 
@@ -237,88 +237,90 @@
                             layout: {
                                 'text-field': ['get', 'MUNICIPALITY'],
                                 'text-font': [
-                                'DIN Offc Pro Medium',
-                                'Arial Unicode MS Regular'],
+                                    'DIN Offc Pro Medium',
+                                    'Arial Unicode MS Regular'],
                                 'text-size': 17
-                                },
+                            },
                             paint: {
                                 'text-color': 'black'
-                                },
+                            },
                             filter: ['==', 'PROVINCE', province.name]
                         });
                     }
-                    
+
                     // Add the click event for the municipalities
-                    map.on('click', province.name +'-municipality-labels', function (e) {
+                    map.on('click', province.name + '-municipality-labels', function (e) {
                         var coordinates = e.features[0].geometry.coordinates.slice();
                         var municipalityName = e.features[0].properties.MUNICIPALITY;
                         var postalCode = e.features[0].properties.POSTAL_CODE;
                         var placeDescription = e.features[0].properties.DESCRIPTION;
                         var placeLanguages = e.features[0].properties.LANGUAGES;
 
-                    new mapboxgl.Popup()
-                        .setLngLat(coordinates)
-                        .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
-                        .addTo(map);
+                        new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
+                            .addTo(map);
                     });
                 });
 
-                // Check if any feature matches the fill boundary layer ID
-                var isFillLayerClicked = features.some(function (feature) {
-                    return feature.layer.id === province.name + '-fill-boundary';
+                // Add a click event listener to the map container
+                map.on('click', function (e) {
+                    var features = map.queryRenderedFeatures(e.point);
+                    var isFillLayerClicked = features.some(function (feature) {
+                        return feature.layer.id === province.name + '-fill-boundary';
+                    });
+                    var isClickableElementClicked = features.some(function (feature) {
+                        return feature.layer.id === province.name + '-municipality-labels';
+                    });
+
+                    // Check if any clickable element (municipality labels) was clicked
+                    if (!isFillLayerClicked && !isClickableElementClicked) {
+                        // Zoom out the map
+                        map.flyTo({center: [120.256, 17.193], zoom: 7.2});
+                    }
                 });
 
-                // Check if any clickable element (municipality labels) was clicked
-                var isClickableElementClicked = features.some(function (feature) {
-                    return feature.layer.id === province.name + '-municipality-labels';
+
+                // Change the cursor to a pointer when hovering over the municipalities layer
+                map.on('mouseenter', province.name + '-municipality-labels', function () {
+                    map.getCanvas().style.cursor = 'pointer';
                 });
 
-                if (!isFillLayerClicked && !isClickableElementClicked) {
-                    // Unhide the fill boundary layer
-                    map.setLayoutProperty(province.name + '-fill-boundary', 'visibility', 'visible');
-                    map.setLayoutProperty(province.name + '-municipality-labels', 'visibility', 'none');
+                // Change the cursor back to a default when leaving the places layer
+                map.on('mouseleave', province.name + '-municipality-labels', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+            });
+
+            //Fix: Text layer removed outside the for each loop
+            map.addLayer({
+                id: 'province-labels',
+                type: 'symbol',
+                source: {
+                    type: 'geojson',
+                    data: 'json/province-info.json'
+                },
+                layout: {
+                    'text-field': ['get', 'PROVINCE'],
+                    'text-font': [
+                        'DIN Offc Pro Medium',
+                        'Arial Unicode MS Regular'],
+                    'text-size': 20
+                },
+                paint: {
+                    'text-color': 'black'
                 }
             });
-            
-            // Change the cursor to a pointer when hovering over the municipalities layer
-            map.on('mouseenter', province.name +'-municipality-labels', function () {
+
+            // Change the cursor to a pointer when hovering over the places layer
+            map.on('mouseenter', 'province-labels', function () {
                 map.getCanvas().style.cursor = 'pointer';
             });
 
             // Change the cursor back to a default when leaving the places layer
-            map.on('mouseleave', province.name +'-municipality-labels', function () {
+            map.on('mouseleave', 'province-labels', function () {
                 map.getCanvas().style.cursor = '';
             });
-        }); 
-
-        //Fix: Text layer removed outside the for each loop 
-        map.addLayer({
-          id: 'province-labels',
-          type: 'symbol',
-          source: {
-            type: 'geojson',
-            data: 'json/province-info.json'
-          },
-          layout: {
-            'text-field': ['get', 'PROVINCE'],
-            'text-font': [
-              'DIN Offc Pro Medium',
-              'Arial Unicode MS Regular'],
-            'text-size': 20
-          },
-          paint: {
-            'text-color': 'black'
-          }
-        });
-
-        // Change the cursor to a pointer when hovering over the places layer
-        map.on('mouseenter', 'province-labels', function () {
-            map.getCanvas().style.cursor = 'pointer';
-        });
-
-        // Change the cursor back to a default when leaving the places layer
-        map.on('mouseleave', 'province-labels', function () {
-            map.getCanvas().style.cursor = '';
         });
     });
     </script>
