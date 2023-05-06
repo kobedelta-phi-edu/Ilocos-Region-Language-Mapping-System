@@ -158,13 +158,16 @@
                 var displayImage = e.features[0].properties.IMAGE;
                 var provinceDescription = e.features[0].properties.DESCRIPTION;
                 var provinceLanguages = e.features[0].properties.LANGUAGES;
+                var phrase = e.features[0].properties.PHRASES;
 
                 // Show the sidebar
                 document.getElementById('sidebar').style.width = '350px';
 
                 // Set the sidebar content
                 document.getElementById('sidebar-image').style.backgroundImage = 'url(' + displayImage + ')';
-                document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>';
+                document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + 
+                    provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>' + 
+                    '</p><p>Common Phrases: ' + phrase;
 
                 // Add the close event for the sidebar
                 document.getElementById("sidebar-close").addEventListener("click", function() {

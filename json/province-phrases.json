@@ -1,0 +1,154 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "LANGUAGE": "Ilocano",
+        "PHRASES": [
+          "Mapanakon",
+          "Agsubli ak",
+          "Asidegakon",
+          "Para/Ditoyen Manong!",
+          "Pakiyawat man atoy pletek!",
+          "Kablaaw",
+          "Naimbag nga bigat!",
+          "Naimbag nga malem!",
+          "Naimbag nga rabi-i!",
+          "Kumusta ka?",
+          "Agyamanak unay!"
+        ],
+        "TRANS": [
+          "I’m leaving/Going now.",
+          "I’ll be back.",
+          "I’m almost there.",
+          "Please, pull over!",
+          "Please pass my fare.",
+          "Hello!",
+          "Goodmorning",
+          "Goodafternoon",
+          "Goodevening",
+          "How are you?",
+          "Thank you very much"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LANGUAGE": "Tagalog",
+        "PHRASES": [
+          "Goodmorning",
+          "Goodafternoon",
+          "Goodevening",
+          "How are you?",
+          "Take Care",
+          "Goodbye",
+          "How much?",
+          "Left",
+          "Right",
+          "Is this the way to [Makati] location?"
+        ],
+        "TRANS": [
+          "Magandang Umaga",
+          "Magandang Tanghali",
+          "Magandang Gabi",
+          "Kamusta ka",
+          "Ingat",
+          "Paalam",
+          "Magkano?",
+          "Kaliwa",
+          "Kanan",
+          "Papunta ba to sa [Makati]"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LANGUAGE": "Kankanaey",
+        "PHRASES": [
+          "Gawis ay agew mo",
+          "Gawis ay agsapa",
+          "Gawis ay masdem",
+          "Gawis ay labi",
+          "Nalpuam",
+          "Umayam?",
+          "Entako"
+        ],
+        "TRANS": [
+          "Good Day to you",
+          "Goodmorning",
+          "Goodafternoon",
+          "Goodevening",
+          "Where did you come from?",
+          "Where are you going?",
+          "Let's go"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LANGUAGE": "Pangasinan",
+        "PHRASES": [
+          "Antoy gagawaen mo ditan?",
+          "Masantos ya kabwasan/kaagwan/labi ed sikayon amin.",
+          "Narasan kala?",
+          "Magangana ka.",
+          "Kanto ka unla?",
+          "Ampetang so panaon natan.",
+          "Maliket ak no sika so ibak.",
+          "Manluto ka lay nasira",
+          "Inararo ta ka.",
+          "Kanto ka la?",
+          "Wadya ak"
+        ],
+        "TRANS": [
+          "What are you doing there?",
+          "Good morning/afternoon/evening to all of you.",
+          "Are you hungry?",
+          "You're so beautiful",
+          "Where are you going?",
+          "The weather is hot today",
+          "The weather today is cold",
+          "Cook something to eat",
+          "I love you",
+          "Where are you?",
+          "I'm here"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LANGUAGE": "Sambal",
+        "PHRASES": [
+          "Kamusta cay na",
+          "Anyay ngalan",
+          "Ayti ca taga?",
+          "Ayti ca?",
+          "Maabig a yabi",
+          "Anlabyon cata",
+          "Miligaliga tamo",
+          "Umali acoy na",
+          "Laco a salamat",
+          "Humin anya man"
+        ],
+        "TRANS": [
+          "How are you?",
+          "What is your name?",
+          "Where are you from?",
+          "Where are you?",
+          "Goodafternoon",
+          "I love you",
+          "Let's party",
+          "I am leaving now",
+          "Thankyou very much",
+          "You're welcome"
+        ]
+      }
+     
+    }
+  ]
+}
