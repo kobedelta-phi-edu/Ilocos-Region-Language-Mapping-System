@@ -57,8 +57,8 @@ body {
 
 #geocoder {
 	position: absolute;
-	top: 20px;
-	left: 20px;
+	top: 35px;
+	left: 40px;
 	z-index: 1;
 	width: 600px;
 }
@@ -161,11 +161,12 @@ body {
 .close-icon {
     width: 19px;
     height: 19px;
-    background: url("icon/close.png");
+    background: url("../icon/close.png");
     opacity: 1;
     position: relative;
     top: 120px;
     left: 440px;
+    /* border: 1; */
 }
 /* I-edit ko pa itoo -ky */
 /* .v1_11 {
