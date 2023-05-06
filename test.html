@@ -167,8 +167,12 @@
                 document.getElementById('sidebar-image').style.backgroundImage = 'url(' + displayImage + ')';
                 document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + 
                     provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>' + 
-                    '</p><p>Common Phrases: ' + phrase;
+                    '</p><p>Common Phrases: </p><ul>';
 
+                    /*for (var i = 0; i < phrases.length; i++) {
+                        document.getElementById('sidebar-text').innerHTML += '<li>' + phrases[i] + '</li>';
+                    }*/
+                    
                 // Add the close event for the sidebar
                 document.getElementById("sidebar-close").addEventListener("click", function() {
                     document.getElementById("sidebar").style.width = "0";
