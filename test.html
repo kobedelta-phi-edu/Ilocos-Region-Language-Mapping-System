@@ -14,16 +14,20 @@
   <body>
     <div id="map"></div>
     <div id="geocoder" class="geocoder"></div>
+    
     <div id="sidebar" class="sidebar-container">
         <div class="board">
-          <span class="province-name" id="sidebar-province"></span>
-          <span class="region-name" id="sidebar-region"></span>
-          <!-- <div class="v1_24"> icon dapat -->
-            <!-- <div class="v1_35"></div> icon din -->
-          <span class="region-desciption " id="sidebar-description"></span>
+            <span class="province-name" id="sidebar-province"></span>
+            <span class="region-name" id="sidebar-region"></span>
+            <div class="sidebar-image">
+              <img src="" alt="Selected Province" width="450" height="200" id="sidebar-image">
+            </div>
+            <span class="region-desciption " id="sidebar-description"></span>
+          
+          <div class="close-icon" id="sidebar-close"></div>
         </div>
-        <div class="close-icon" id="sidebar-close"></div>
     </div>
+    
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoicmlyaXpibGFhYSIsImEiOiJjbGg4aHY5NnEwNWNpM2trZ2ppbWw4YXUxIn0.q9ehzctjfDqZGGxIn0ff3w';
       
@@ -157,11 +161,12 @@
                     'fill-opacity': 0.7
                 }
             });
+
             // Add the click event for the places
             map.on('click', 'province-labels', function (e) {
                 var coordinates = e.features[0].geometry.coordinates.slice();
                 var provinceName = e.features[0].properties.PROVINCE;
-                var displayImage= e.features[0].properties.IMAGE;
+                var displayImage = e.features[0].properties.IMAGE;
                 var provinceRegion = e.features[0].properties.REGION;
                 var provinceDescription = e.features[0].properties.DESCRIPTION;
 
@@ -183,6 +188,7 @@
                 sidebarContainer.style.display = 'block';
 
                 // Set the sidebar content
+                document.getElementById('sidebar-image').src = displayImage;
                 document.getElementById('sidebar-province').textContent = provinceName;
                 document.getElementById('sidebar-region').textContent = provinceRegion;
                 document.getElementById('sidebar-description').textContent = provinceDescription;
