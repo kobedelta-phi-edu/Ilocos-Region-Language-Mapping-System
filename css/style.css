@@ -167,12 +167,13 @@ body {
 .close-icon {
     width: 19px;
     height: 19px;
-    background: url("../icon/close.png");
+    background-image: url("../icon/close.png");
+    background-size: cover;
     opacity: 1;
-    position: relative;
-    top: 120px;
-    left: 440px;
-    /* border: 1; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 /* I-edit ko pa itoo -ky */
 /* .v1_11 {
