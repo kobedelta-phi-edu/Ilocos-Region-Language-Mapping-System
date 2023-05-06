@@ -17,14 +17,13 @@
 
     <div class="sidebar">
         <div class="sidebar-content">
+          <div class="sidebar-header">
+            <img id="sidebar-image" src="" alt="Your Image" />
+          </div>
           <h2>Locations</h2>
-          <ul>
-            <li><a href="#location1">Location 1</a></li>
-            <li><a href="#location2">Location 2</a></li>
-            <li><a href="#location3">Location 3</a></li>
-          </ul>
+          <ul id="location-list"></ul>
         </div>
-    </div>
+      </div>
 
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoicmlyaXpibGFhYSIsImEiOiJjbGg4aHY5NnEwNWNpM2trZ2ppbWw4YXUxIn0.q9ehzctjfDqZGGxIn0ff3w';
@@ -45,6 +44,10 @@
         placeholder: 'Search for a place...'
       });
       document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+
+      //Add images to the sidebar
+      var sidebarImage = document.getElementById('sidebar-image');
+      sidebarImage.src = 'LANGUAGE-MAPPER-1/images/pangasinan.jpeg';
 
       // Wait for the map to load
       map.on('load', function () {
