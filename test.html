@@ -43,9 +43,6 @@
       });
       document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
-      //Add images to the sidebar
-      var sidebarImage = document.getElementById('sidebar-image');
-      sidebarImage.src = 'LANGUAGE-MAPPER-1/images/pangasinan.jpeg';
 
       // Wait for the map to load
       map.on('load', function () {
@@ -107,23 +104,23 @@
                 var provinceDescription = e.features[0].properties.DESCRIPTION;
                 var provinceLanguages = e.features[0].properties.LANGUAGES;
 
-               // Show the sidebar
+
+                // Show the sidebar
                 document.getElementById('sidebar').style.width = '350px';
 
                 // Set the sidebar content
                 document.getElementById('sidebar-image').style.backgroundImage = 'url(' + displayImage + ')';
                 document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>';
-            
 
                 // Add the close event for the sidebar
                 document.getElementById("sidebar-close").addEventListener("click", function() {
-                document.getElementById("sidebar").style.width = "0";
+                    document.getElementById("sidebar").style.width = "0";
                 });
 
-            new mapboxgl.Popup()
+            /*new mapboxgl.Popup()
                 .setLngLat(coordinates)
                 .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-descrip">' + provinceDescription + '</div>' + '<div class="place-lang">' + provinceLanguages + '</div>')
-                .addTo(map);
+                .addTo(map);*/
             });
         
             // Add click event listener to the map
