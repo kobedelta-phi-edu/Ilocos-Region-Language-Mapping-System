@@ -47,7 +47,9 @@ body {
 .place-languages { 
     margin-top: 20px; 
 }
-
+p{
+    font-weight: bold;
+}
 /* Media queries */
 @media screen and (max-width: 768px) {
     #geocoder {
