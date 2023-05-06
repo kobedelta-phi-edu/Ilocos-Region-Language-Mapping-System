@@ -47,3 +47,26 @@ body {
 .place-languages { 
     margin-top: 20px; 
 }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #geocoder {
+        top: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .place-description {
+        font-size: 14px;
+    }
+
+    .place-languages {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .place-description {
+        font-size: 12px;
+    }
+}
