@@ -9,17 +9,20 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="icon/logo.png">
   </head>
   <body>
     <div id="map"></div>
     <div id="geocoder" class="geocoder"></div>
-   <div id="sidebar">
-        <div id="sidebar-content">
-         <div id="sidebar-close">&times;</div>
-         <div id="sidebar-image"></div>
-         <div id="sidebar-text"></div>
-         </div>
+    <div id="sidebar" class="sidebar-container">
+        <div class="board">
+          <span class="province-name" id="sidebar-province"></span>
+          <span class="region-name" id="sidebar-region"></span>
+          <!-- <div class="v1_24"> icon dapat -->
+            <!-- <div class="v1_35"></div> icon din -->
+          <span class="region-desciption " id="sidebar-description"></span>
+        </div>
+        <div class="close-icon" id="sidebar-close"></div>
     </div>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoicmlyaXpibGFhYSIsImEiOiJjbGg4aHY5NnEwNWNpM2trZ2ppbWw4YXUxIn0.q9ehzctjfDqZGGxIn0ff3w';
@@ -120,7 +123,7 @@
         });
         // Add a clear event listener to the geocoder search input
         geocoder.on('clear', function () {
-        // Check if there is a selected province
+            // Check if there is a selected province
             if (selectedProvince !== null) {
                 // Hide the selected fill boundary layer
                 map.setLayoutProperty(selectedProvince.name + '-fill-boundary', 'visibility', 'visible');
@@ -155,31 +158,54 @@
             map.on('click', 'province-labels', function (e) {
                 var coordinates = e.features[0].geometry.coordinates.slice();
                 var provinceName = e.features[0].properties.PROVINCE;
-                var displayImage = e.features[0].properties.IMAGE;
+                var displayImage= e.features[0].properties.IMAGE;
+                var provinceRegion = e.features[0].properties.REGION;
                 var provinceDescription = e.features[0].properties.DESCRIPTION;
-                var provinceLanguages = e.features[0].properties.LANGUAGES;
-                var phrase = e.features[0].properties.PHRASES;
+
+                if (selectedProvince !== null) {
+                    // Hide the selected fill boundary layer
+                    map.setLayoutProperty(provinceName + '-fill-boundary', 'visibility', 'visible');
+                    map.setLayoutProperty(provinceName + '-municipality-labels', 'visibility', 'none');
+                    // Reset the selected province
+                    selectedProvince = null;
+
+                    map.flyTo({
+                        center: coordinates,
+                        zoom: 9
+                    });
+                }
 
                 // Show the sidebar
-                document.getElementById('sidebar').style.width = '350px';
+                var sidebarContainer = document.getElementById('sidebar');
+                sidebarContainer.style.display = 'block';
 
                 // Set the sidebar content
-                document.getElementById('sidebar-image').style.backgroundImage = 'url(' + displayImage + ')';
-                document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + 
-                    provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>' + 
-                    '</p><p>Common Phrases: ' + phrase;
+                document.getElementById('sidebar-province').textContent = provinceName;
+                document.getElementById('sidebar-region').textContent = provinceRegion;
+                document.getElementById('sidebar-description').textContent = provinceDescription;
 
                 // Add the close event for the sidebar
-                document.getElementById("sidebar-close").addEventListener("click", function() {
-                    document.getElementById("sidebar").style.width = "0";
-                });
-
-                map.flyTo({
-                    center: coordinates,
-                    zoom: 9
+                document.getElementById('sidebar-close').addEventListener('click', function () {
+                    sidebarContainer.style.display = 'none';
+                    map.setLayoutProperty(provinceName + '-fill-boundary', 'visibility', 'visible');
+                    map.setLayoutProperty(provinceName + '-municipality-labels', 'visibility', 'none');
+                    
+                    // Reset the selected province
+                    selectedProvince = null;
+                    // Zoom back to the map center coordinates
+                        
+                    map.flyTo({
+                        center: [120.256, 17.193],
+                        zoom: 7.2
+                    });
                 });
             });
-        
+
+            // Add the close event for the sidebar
+            document.getElementById('sidebar-close').addEventListener('click', function () {
+                document.getElementById('sidebar').style.display = 'none';
+            });
+
             // Add click event listener to the map
             map.on('click', function (e) { 
                 // Get a list of all the features that were clicked on
@@ -237,6 +263,7 @@
                         .addTo(map);
                     });
                 });
+
                 // Check if any feature matches the fill boundary layer ID
                 var isFillLayerClicked = features.some(function (feature) {
                     return feature.layer.id === province.name + '-fill-boundary';

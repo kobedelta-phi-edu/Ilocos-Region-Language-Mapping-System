@@ -9,9 +9,9 @@
 			},
 			"properties": {
 			  "PROVINCE": "Ilocos Norte",
+			  "REGION": "Region I",
 			  "IMAGE" : "<img src='images/ilocos_norte.jpg' alt='Ilocos Norte Image' width='100' height='100' >",
-			  "DESCRIPTION": "A province located in the northern part of the Philippines, known for its rich history, cultural heritage, and natural beauty. The province offers a unique blend of historic landmarks, picturesque landscapes, and a vibrant local culture that attracts tourists from all over the world.",
-			  "LANGUAGES": "<p>Ilocano, Tagalog</p>"
+			  "DESCRIPTION": "A province located in the northern part of the Philippines, known for its rich history, cultural heritage, and natural beauty. The province offers a unique blend of historic landmarks, picturesque landscapes, and a vibrant local culture that attracts tourists from all over the world."
 			}
 		},
 		{
@@ -22,9 +22,9 @@
 			},
 			"properties": {
 			  "PROVINCE": "Ilocos Sur",
+			  "REGION": "Region I",
 			  "IMAGE" : "<img src='images/ilocos_sur.jpg' alt='Ilocos Sur Image' width='100' height='100' >",
-			  "DESCRIPTION": "It's famous for it's cultural heritage, picturesque landscapes, and historic sites like Vigan City, a UNESCO World Heritage Site featuring Spanish colonial architecture. It offers a unique mix of history, culture, and natural beauty that draws visitors from everywhere.",
-			  "LANGUAGES": "<p>Kankanaey, Tagalog, Ilocano</p>"
+			  "DESCRIPTION": "It's famous for it's cultural heritage, picturesque landscapes, and historic sites like Vigan City, a UNESCO World Heritage Site featuring Spanish colonial architecture. It offers a unique mix of history, culture, and natural beauty that draws visitors from everywhere."
 			}
 		},
 		{
@@ -35,9 +35,9 @@
 			},
 			"properties": {
 			  "PROVINCE": "La Union",
+			  "REGION": "Region I",
 			  "IMAGE" : "<img src='images/la_union.jpg' alt='La Union Image' width='100' height='100' >",
-			  "DESCRIPTION": "Known for its beautiful beaches, surfing spots, and scenic landscapes. It is a popular destination for tourists seeking to enjoy the sun, sand, and waves, and a great place to experience the local culture and cuisine.",
-			  "LANGUAGES": "<p>Kankanaey, Pangasinan, Tagalog, Ilocano</p>"
+			  "DESCRIPTION": "Known for its beautiful beaches, surfing spots, and scenic landscapes. It is a popular destination for tourists seeking to enjoy the sun, sand, and waves, and a great place to experience the local culture and cuisine."
 			}
 		},
 		{
@@ -48,9 +48,9 @@
 			},
 			"properties": {
 			  "PROVINCE": "Pangasinan",
+			  "REGION": "Region I",
 			  "IMAGE" : "<img src='images/pangasinan.jpeg' alt='Pangasinan Image' width='100' height='100' >",
-			  "DESCRIPTION": "Known for its beautiful beaches, stunning waterfalls, and delicious seafood cuisine. The province offers a wide range of activities for tourists, including swimming, surfing, island hopping, and sightseeing, and is a popular destination for both local and international visitors.",
-			  "LANGUAGES": "<p>Pangasinan, Bolinao, Sambal, Kallahan, Tagalog, Ilocano</p>"
+			  "DESCRIPTION": "Known for its beautiful beaches, stunning waterfalls, and delicious seafood cuisine. The province offers a wide range of activities for tourists, including swimming, surfing, island hopping, and sightseeing, and is a popular destination for both local and international visitors."
 			}
 		}
 	]
