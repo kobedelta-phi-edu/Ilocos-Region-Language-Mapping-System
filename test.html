@@ -170,6 +170,11 @@
                 document.getElementById("sidebar-close").addEventListener("click", function() {
                     document.getElementById("sidebar").style.width = "0";
                 });
+
+                map.flyTo({
+                    center: coordinates,
+                    zoom: 9
+                });
             });
         
             // Add click event listener to the map
@@ -253,6 +258,7 @@
                 map.getCanvas().style.cursor = '';
             });
         }); 
+
         //Fix: Text layer removed outside the for each loop 
         map.addLayer({
           id: 'province-labels',
@@ -272,6 +278,7 @@
             'text-color': 'black'
           }
         });
+
         // Change the cursor to a pointer when hovering over the places layer
         map.on('mouseenter', 'province-labels', function () {
             map.getCanvas().style.cursor = 'pointer';
