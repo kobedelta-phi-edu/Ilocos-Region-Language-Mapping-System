@@ -65,6 +65,8 @@ body {
 
 .place-name { 
     font-weight: bold; 
+    font-size: 16px;
+    margin-top: 5px; 
 }
       
 .place-postal { 
@@ -76,11 +78,14 @@ body {
 }
       
 .place-languages { 
-    margin-top: 20px; 
+    margin-top: 20px;
+    font-weight: bold;
 }
+
 p{
     font-weight: bold;
 }
+
 /* Media queries */
 @media screen and (max-width: 768px) {
     #geocoder {
@@ -90,7 +95,7 @@ p{
     }
 
     .place-description {
-        font-size: 14px;
+        margin-top: 5px; 
     }
 
     .place-languages {
