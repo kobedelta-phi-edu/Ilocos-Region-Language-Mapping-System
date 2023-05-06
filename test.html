@@ -179,6 +179,19 @@
                 var provinceDescription = e.features[0].properties.DESCRIPTION;
                 var provinceLanguages = e.features[0].properties.LANGUAGES;
 
+                // Show the sidebar
+                document.getElementById('sidebar').style.width = '350px';
+
+                // Set the sidebar content
+                document.getElementById('sidebar-image').style.backgroundImage = 'url(' + displayImage + ')';
+                document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>';
+
+                // Add the close event for the sidebar
+                document.getElementById("sidebar-close").addEventListener("click", function() {
+                    document.getElementById("sidebar").style.width = "0";
+                });
+
+
             new mapboxgl.Popup()
                 .setLngLat(coordinates)
                 .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-description>' + provinceDescription + '</div>' + '<div class="place-languages">' + provinceLanguages + '</div>')
