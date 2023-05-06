@@ -15,15 +15,13 @@
     <div id="map"></div>
     <div id="geocoder" class="geocoder"></div>
 
-    <div class="sidebar">
-        <div class="sidebar-content">
-          <div class="sidebar-header">
-            <img id="sidebar-image" src="" alt="Your Image" />
-          </div>
-          <h2>Locations</h2>
-          <ul id="location-list"></ul>
-        </div>
-      </div>
+   <div id="sidebar">
+        <div id="sidebar-content">
+         <div id="sidebar-close">&times;</div>
+         <div id="sidebar-image"></div>
+         <div id="sidebar-text"></div>
+         </div>
+    </div>
 
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoicmlyaXpibGFhYSIsImEiOiJjbGg4aHY5NnEwNWNpM2trZ2ppbWw4YXUxIn0.q9ehzctjfDqZGGxIn0ff3w';
@@ -109,6 +107,19 @@
                 var provinceDescription = e.features[0].properties.DESCRIPTION;
                 var provinceLanguages = e.features[0].properties.LANGUAGES;
 
+               // Show the sidebar
+                document.getElementById('sidebar').style.width = '350px';
+
+                // Set the sidebar content
+                document.getElementById('sidebar-image').style.backgroundImage = 'url(' + displayImage + ')';
+                document.getElementById('sidebar-text').innerHTML = '<h2>' + provinceName + '</h2><p>' + provinceDescription + '</p><p>Languages: ' + provinceLanguages + '</p>';
+            
+
+                // Add the close event for the sidebar
+                document.getElementById("sidebar-close").addEventListener("click", function() {
+                document.getElementById("sidebar").style.width = "0";
+                });
+
             new mapboxgl.Popup()
                 .setLngLat(coordinates)
                 .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-descrip">' + provinceDescription + '</div>' + '<div class="place-lang">' + provinceLanguages + '</div>')
@@ -171,7 +182,7 @@
                         var municipalityName = e.features[0].properties.MUNICIPALITY;
                         var postalCode = e.features[0].properties.POSTAL_CODE;
                         var placeDescription = e.features[0].properties.DESCRIPTION;
-                        var placeLanguages = e.features[0].properties.LANGUAGES;
+                        var placeLanguages = e.features[0].properties.LANGUAGES
 
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
