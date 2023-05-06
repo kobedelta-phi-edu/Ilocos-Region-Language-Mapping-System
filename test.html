@@ -14,7 +14,6 @@
   <body>
     <div id="map"></div>
     <div id="geocoder" class="geocoder"></div>
-
    <div id="sidebar">
         <div id="sidebar-content">
          <div id="sidebar-close">&times;</div>
@@ -22,10 +21,8 @@
          <div id="sidebar-text"></div>
          </div>
     </div>
-
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoicmlyaXpibGFhYSIsImEiOiJjbGg4aHY5NnEwNWNpM2trZ2ppbWw4YXUxIn0.q9ehzctjfDqZGGxIn0ff3w';
-
       // Initialize the map
       var map = new mapboxgl.Map({
         container: 'map',
@@ -33,7 +30,6 @@
         center: [120.256, 17.193], // Region 1 center point
         zoom: 7.2 // Zoom to Region 1 level
       });
-
       // Add the geocoder search bar
       var geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
@@ -43,7 +39,6 @@
         zoom: 10
       });
       document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
-
       // Wait for the map to load
       map.on('load', function () {
         var provinces = [
@@ -76,19 +71,15 @@
                 muniJson: 'json/prov-municipalities/pangasinan-municipalities.json'
             }
         ];
-
         var selectedProvince = null;
-
         geocoder.on('result', function (e) {
             // Get the selected search result
             var result = e.result;
-
             // Check if the result has a province property
             if (result.context && result.context.length > 0) {
                 var provinceName = result.context.find(function (context) {
                     return context.id.startsWith('region');
                 }).text;
-
                 // Loop through the provinces and find the matching province
                 provinces.forEach(function (province) {
                     if (province.name.toLowerCase() === provinceName.toLowerCase()) {
@@ -97,18 +88,13 @@
                             map.setLayoutProperty(previousProvince + '-fill-boundary', 'visibility', 'visible');
                             map.setLayoutProperty(previousProvince + '-municipality-labels', 'visibility', 'none');
                         }
-
                         // Hide the current fill boundary layer
                         map.setLayoutProperty(province.name + '-fill-boundary', 'visibility', 'none');
-
                         // Show the layer you want to display
                         map.setLayoutProperty(province.name + '-municipality-labels', 'visibility', 'visible');
-
                         previousProvince = province.name;
-
                         // Set the selected province
                         selectedProvince = province;
-
                         map.addLayer({
                             id: province.name + '-municipality-labels',
                             type: 'symbol',
@@ -132,7 +118,6 @@
                 });
             }
         });
-
         // Add a clear event listener to the geocoder search input
         geocoder.on('clear', function () {
         // Check if there is a selected province
@@ -140,10 +125,8 @@
                 // Hide the selected fill boundary layer
                 map.setLayoutProperty(selectedProvince.name + '-fill-boundary', 'visibility', 'visible');
                 map.setLayoutProperty(selectedProvince.name + '-municipality-labels', 'visibility', 'none');
-
                 // Reset the selected province
                 selectedProvince = null;
-
                 // Zoom back to the map center coordinates
                 map.flyTo({
                     center: [120.256, 17.193],
@@ -151,10 +134,8 @@
                 });
             }
         });
-
         // Define a variable to keep track of the currently clicked layer ID
         var previousProvince = null;
-
         // Loop over each province and add a click event
         provinces.forEach(function (province) {
             // Add the boundary layers of each provinces in Region 1
@@ -170,7 +151,6 @@
                     'fill-opacity': 0.7
                 }
             });
-
             // Add the click event for the places
             map.on('click', 'province-labels', function (e) {
                 var coordinates = e.features[0].geometry.coordinates.slice();
@@ -190,19 +170,12 @@
                 document.getElementById("sidebar-close").addEventListener("click", function() {
                     document.getElementById("sidebar").style.width = "0";
                 });
-
-
-                new mapboxgl.Popup()
-                    .setLngLat(coordinates)
-                    .setHTML('<h3>' + provinceName + '</h3><div class="place-postal">' + displayImage + '</div>' + '<div class="place-description>' + provinceDescription + '</div>' + '<div class="place-languages">' + provinceLanguages + '</div>')
-                    .addTo(map);
             });
-
+        
             // Add click event listener to the map
-            map.on('click', function (e) {
+            map.on('click', function (e) { 
                 // Get a list of all the features that were clicked on
                 var features = map.queryRenderedFeatures(e.point);
-
                 // Loop through the clicked features and check if any of them match the ID of the fill boundary layer you want to target
                 features.forEach(function (feature) {
                     if (feature.layer.id === province.name + '-fill-boundary') {
@@ -211,22 +184,17 @@
                             map.setLayoutProperty(previousProvince + '-fill-boundary', 'visibility', 'visible');
                             map.setLayoutProperty(previousProvince + '-municipality-labels', 'visibility', 'none');
                         }
-
                         // Hide the current fill boundary layer
                         map.setLayoutProperty(province.name + '-fill-boundary', 'visibility', 'none');
-
                         // Show the layer you want to display
                         map.setLayoutProperty(province.name + '-municipality-labels', 'visibility', 'visible');
-
                         // Zoom in to the center of coordinates
                         map.flyTo({
                             center: province.coordinates,
                             zoom: 9
                         });
-
                         // Set the current province as the previously clicked province
                         previousProvince = province.name;
-
                         map.addLayer({
                             id: province.name + '-municipality-labels',
                             type: 'symbol',
@@ -237,90 +205,80 @@
                             layout: {
                                 'text-field': ['get', 'MUNICIPALITY'],
                                 'text-font': [
-                                    'DIN Offc Pro Medium',
-                                    'Arial Unicode MS Regular'],
+                                'DIN Offc Pro Medium',
+                                'Arial Unicode MS Regular'],
                                 'text-size': 17
-                            },
+                                },
                             paint: {
                                 'text-color': 'black'
-                            },
+                                },
                             filter: ['==', 'PROVINCE', province.name]
                         });
                     }
-
+                    
                     // Add the click event for the municipalities
-                    map.on('click', province.name + '-municipality-labels', function (e) {
+                    map.on('click', province.name +'-municipality-labels', function (e) {
                         var coordinates = e.features[0].geometry.coordinates.slice();
                         var municipalityName = e.features[0].properties.MUNICIPALITY;
                         var postalCode = e.features[0].properties.POSTAL_CODE;
                         var placeDescription = e.features[0].properties.DESCRIPTION;
                         var placeLanguages = e.features[0].properties.LANGUAGES;
-
-                        new mapboxgl.Popup()
-                            .setLngLat(coordinates)
-                            .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
-                            .addTo(map);
+                    new mapboxgl.Popup()
+                        .setLngLat(coordinates)
+                        .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
+                        .addTo(map);
                     });
                 });
-
-                // Add a click event listener to the map container
-                map.on('click', function (e) {
-                    var features = map.queryRenderedFeatures(e.point);
-                    var isFillLayerClicked = features.some(function (feature) {
-                        return feature.layer.id === province.name + '-fill-boundary';
-                    });
-                    var isClickableElementClicked = features.some(function (feature) {
-                        return feature.layer.id === province.name + '-municipality-labels';
-                    });
-
-                    // Check if any clickable element (municipality labels) was clicked
-                    if (!isFillLayerClicked && !isClickableElementClicked) {
-                        // Zoom out the map
-                        map.flyTo({center: [120.256, 17.193], zoom: 7.2});
-                    }
+                // Check if any feature matches the fill boundary layer ID
+                var isFillLayerClicked = features.some(function (feature) {
+                    return feature.layer.id === province.name + '-fill-boundary';
                 });
-
-
-                // Change the cursor to a pointer when hovering over the municipalities layer
-                map.on('mouseenter', province.name + '-municipality-labels', function () {
-                    map.getCanvas().style.cursor = 'pointer';
+                // Check if any clickable element (municipality labels) was clicked
+                var isClickableElementClicked = features.some(function (feature) {
+                    return feature.layer.id === province.name + '-municipality-labels';
                 });
-
-                // Change the cursor back to a default when leaving the places layer
-                map.on('mouseleave', province.name + '-municipality-labels', function () {
-                    map.getCanvas().style.cursor = '';
-                });
-            });
-
-            //Fix: Text layer removed outside the for each loop
-            map.addLayer({
-                id: 'province-labels',
-                type: 'symbol',
-                source: {
-                    type: 'geojson',
-                    data: 'json/province-info.json'
-                },
-                layout: {
-                    'text-field': ['get', 'PROVINCE'],
-                    'text-font': [
-                        'DIN Offc Pro Medium',
-                        'Arial Unicode MS Regular'],
-                    'text-size': 20
-                },
-                paint: {
-                    'text-color': 'black'
+                if (!isFillLayerClicked && !isClickableElementClicked) {
+                    // Unhide the fill boundary layer
+                    map.setLayoutProperty(province.name + '-fill-boundary', 'visibility', 'visible');
+                    map.setLayoutProperty(province.name + '-municipality-labels', 'visibility', 'none');
                 }
             });
-
-            // Change the cursor to a pointer when hovering over the places layer
-            map.on('mouseenter', 'province-labels', function () {
+            
+            // Change the cursor to a pointer when hovering over the municipalities layer
+            map.on('mouseenter', province.name +'-municipality-labels', function () {
                 map.getCanvas().style.cursor = 'pointer';
             });
-
             // Change the cursor back to a default when leaving the places layer
-            map.on('mouseleave', 'province-labels', function () {
+            map.on('mouseleave', province.name +'-municipality-labels', function () {
                 map.getCanvas().style.cursor = '';
             });
+        }); 
+        //Fix: Text layer removed outside the for each loop 
+        map.addLayer({
+          id: 'province-labels',
+          type: 'symbol',
+          source: {
+            type: 'geojson',
+            data: 'json/province-info.json'
+          },
+          layout: {
+            'text-field': ['get', 'PROVINCE'],
+            'text-font': [
+              'DIN Offc Pro Medium',
+              'Arial Unicode MS Regular'],
+            'text-size': 20
+          },
+          paint: {
+            'text-color': 'black'
+          }
+        });
+        // Change the cursor to a pointer when hovering over the places layer
+        map.on('mouseenter', 'province-labels', function () {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+        // Change the cursor back to a default when leaving the places layer
+        map.on('mouseleave', 'province-labels', function () {
+            map.getCanvas().style.cursor = '';
         });
     });
     </script>
