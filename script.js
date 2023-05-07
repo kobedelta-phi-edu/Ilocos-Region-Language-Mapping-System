@@ -120,6 +120,20 @@ map.on('load', function () {
                     newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
 
+                    fetch('sample-phrases.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        // create HTML elements to display the data
+                        var languages = document.createElement('h2');
+                        languages.textContent = data.LANGUAGE;
+                        var phrases = document.createElement('p');
+                        phrases.textContent = data.PHRASES;
+
+                        // append the HTML elements to the new container
+                        newContainer.appendChild(languages);
+                        newContainer.appendChild(phrases);
+                    });
+
                     // create back button
                     var backButton = document.createElement("button");
                     backButton.classList.add("back-button");
