@@ -12,11 +12,11 @@
 			"MUNICIPALITY": "Agno",
 			"POSTAL_CODE": "2408",
 			"DESCRIPTION": "Known for its rich fishing grounds and abundant marine resources, Agno is a municipality located in the province of Pangasinan in the Philippines.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 	  	},
 	  	{
@@ -30,11 +30,11 @@
 			"MUNICIPALITY": "Aguilar",
 			"POSTAL_CODE": "2415",
 			"DESCRIPTION": "Known for its thriving agricultural industry, particularly its production of rice, corn, and vegetables, as well as its vibrant culture and festivals.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 	  	},
 	  	{
@@ -48,12 +48,12 @@
 			"MUNICIPALITY": "Alaminos",
 			"POSTAL_CODE": "2404",
 			"DESCRIPTION": "Known for its delicious seafood and other local delicacies, as well as its rich cultural heritage and landmarks such as the St. Joseph Cathedral and the Bolo Beach.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Bolinao",
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 	  	},
 	  	{
@@ -67,11 +67,11 @@
 			"MUNICIPALITY": "Alcala",
 			"POSTAL_CODE": "2425",
 			"DESCRIPTION": "Known for its large-scale production of garlic and other agricultural products.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 	  	},
 	  	{
@@ -85,12 +85,12 @@
 			"MUNICIPALITY": "Anda",
 			"POSTAL_CODE": "2405",
 			"DESCRIPTION": "Known for its picturesque beaches and natural attractions such as the Tondol White Sand Beach and the Cabongaoan Beach and Death Pool.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Bolinao",
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 	  	},
 	  	{
@@ -104,11 +104,11 @@
 			"MUNICIPALITY": "Asingan",
 			"POSTAL_CODE": "2439",
 			"DESCRIPTION": "Known for its vibrant agricultural industry and abundant rice fields.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 	  	},
 	  	{
@@ -122,11 +122,11 @@
 			"MUNICIPALITY": "Balungao",
 			"POSTAL_CODE": "2442",
 			"DESCRIPTION": "Known for its beautiful natural attractions such as the Balungao Hilltop Adventure, which offers breathtaking views of the surrounding mountains and valleys.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 	  	},
 	  	{
@@ -140,12 +140,12 @@
 			"MUNICIPALITY": "Bani",
 			"POSTAL_CODE": "2407",
 			"DESCRIPTION": "Known for its abundant salt farms and production of high-quality sea salt.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Sambal",
 				"Tagalog"
-			  }
+				]
 			}
 	  	},
 	  	{
@@ -159,12 +159,12 @@
 			"MUNICIPALITY": "Basista",
 			"POSTAL_CODE": "2422",
 			"DESCRIPTION": "Known for its vibrant festivals such as the Basista Town Fiesta and the Basi Festival.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Bolinao",
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -178,11 +178,11 @@
 			"MUNICIPALITY": "Bautista",
 			"POSTAL_CODE": "2424",
 			"DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Agno River and the Balincaguin River.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -196,11 +196,11 @@
 			"MUNICIPALITY": "Bayambang",
 			"POSTAL_CODE": "2423",
 			"DESCRIPTION": "Known for its efforts in promoting eco-tourism, with its various natural attractions such as the Balincaguin River and the Bugallon Hills providing breathtaking views and outdoor activities.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -214,11 +214,11 @@
 			"MUNICIPALITY": "Binalonan",
 			"POSTAL_CODE": "2436",
 			"DESCRIPTION": "Known for its vibrant culture and traditions, highlighted by the annual celebration of the Bagoong Festival, which showcases the town's famous fermented fish sauce or bagoong",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -232,11 +232,11 @@
 			"MUNICIPALITY": "Binmaley",
 			"POSTAL_CODE": "2417",
 			"DESCRIPTION": "Known for its rich history and cultural heritage.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -250,12 +250,12 @@
 			"MUNICIPALITY": "Bolinao",
 			"POSTAL_CODE": "2406",
 			"DESCRIPTION": "Known for its beautiful beaches and pristine natural attractions such as the Bolinao Falls and the Patar White Sand Beach.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Sambal",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -269,11 +269,11 @@
 			"MUNICIPALITY": "Bugallon",
 			"POSTAL_CODE": "2416",
 			"DESCRIPTION": "Known for its picturesque natural scenery and peaceful rural charm.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -287,12 +287,13 @@
 			"MUNICIPALITY": "Burgos",
 			"POSTAL_CODE": "2410",
 			"DESCRIPTION": "Known for its rich history and cultural heritage, evident in landmarks such as the Burgos Lighthouse and the Cape Bojeador Spanish-era lighthouse, the latter being the oldest of its kind in the country.",
-			"LANGUAGES": {
+			
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Sambal",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -306,12 +307,12 @@
 			"MUNICIPALITY": "Calasiao",
 			"POSTAL_CODE": "2418",
 			"DESCRIPTION": "Known for its delicious puto (rice cake) and colorful annual Puto Festival.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Sambal",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -325,11 +326,11 @@
 			"MUNICIPALITY": "Dagupan City",
 			"POSTAL_CODE": "2400",
 			"DESCRIPTION": "Known for its delicious bangus or milkfish and vibrant Pangasinan culture.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -343,12 +344,12 @@
 			"MUNICIPALITY": "Dasol",
 			"POSTAL_CODE": "2411",
 			"DESCRIPTION": "Known for its unique geological formations such as the Dasol Rock Formation and the Cabongaoan Death Pool, as well as its rich marine biodiversity that attracts divers and snorkelers.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Sambal",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -362,12 +363,12 @@
 			"MUNICIPALITY": "Infanta",
 			"POSTAL_CODE": "2412",
 			"DESCRIPTION": "Known for its thriving fishing industry, particularly its production of bangus or milkfish, and is often referred to as the Bangus Capital of the North.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Sambal",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -381,11 +382,11 @@
 			"MUNICIPALITY": "Labrador",
 			"POSTAL_CODE": "2402",
 			"DESCRIPTION": "Known for its thriving fishing industry, producing various types of seafood such as squid, crabs, and fish.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -399,11 +400,11 @@
 			"MUNICIPALITY": "Laoac",
 			"POSTAL_CODE": "2437",
 			"DESCRIPTION": "Known for its thriving fishing industry, producing various types of seafood such as squid, crabs, and fish.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -417,11 +418,11 @@
 			"MUNICIPALITY": "Lingayen",
 			"POSTAL_CODE": "2401",
 			"DESCRIPTION": "Known for its historical significance as the site of the formal surrender of Japanese forces in the Philippines during World War II.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -435,12 +436,12 @@
 			"MUNICIPALITY": "Mabini",
 			"POSTAL_CODE": "2409",
 			"DESCRIPTION": "Known for its beautiful white sand beaches, crystal-clear waters, and coral reefs.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Sambal",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -454,11 +455,11 @@
 			"MUNICIPALITY": "Malasiqui",
 			"POSTAL_CODE": "2421",
 			"DESCRIPTION": "Known for its historical landmarks such as the St. John the Evangelist Parish Church and the Malasiqui Freedom Tree, a symbol of the town's struggle for independence during the Spanish colonial period.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -472,11 +473,11 @@
 			"MUNICIPALITY": "Manaoag",
 			"POSTAL_CODE": "2430",
 			"DESCRIPTION": "Known for the Shrine of Our Lady of the Rosary of Manaoag, a famous pilgrimage site for Catholics in the Philippines.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -490,11 +491,11 @@
 			"MUNICIPALITY": "Mangaldan",
 			"POSTAL_CODE": "2432",
 			"DESCRIPTION": "Known for its thriving agriculture industry, particularly its production of rice and corn.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -508,11 +509,11 @@
 			"MUNICIPALITY": "Mangatarem",
 			"POSTAL_CODE": "2413",
 			"DESCRIPTION": "Known for its agricultural industry, particularly its production of rice and corn.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -526,11 +527,11 @@
 			"MUNICIPALITY": "Mapandan",
 			"POSTAL_CODE": "2429",
 			"DESCRIPTION": "Known for its thriving agricultural industry, particularly its production of rice, corn, and sugarcane, as well as its picturesque landscapes and natural attractions such as the Mapandan River and the Pugaro River.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -544,11 +545,11 @@
 			"MUNICIPALITY": "Natividad",
 			"POSTAL_CODE": "2446",
 			"DESCRIPTION": "Known for its colorful Nuestra Señora de la Natividad Festival.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -562,11 +563,11 @@
 			"MUNICIPALITY": "Pozorrubio",
 			"POSTAL_CODE": "2435",
 			"DESCRIPTION": "Known for its rich history and cultural heritage, as evidenced by the St. James the Great Parish Church and the World War II Memorial Shrine.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -580,11 +581,11 @@
 			"MUNICIPALITY": "Rosales",
 			"POSTAL_CODE": "2441",
 			"DESCRIPTION": "Known for its vibrant agricultural industry, particularly its production of rice, corn, and sugarcane.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -598,11 +599,11 @@
 			"MUNICIPALITY": "San Carlos City",
 			"POSTAL_CODE": "2420",
 			"DESCRIPTION": "Known for its rich agricultural resources, particularly its sugar industry.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -616,11 +617,11 @@
 			"MUNICIPALITY": "San Fabian",
 			"POSTAL_CODE": "2433",
 			"DESCRIPTION": "Known for its scenic beaches and historical landmarks such as the San Fabian Church.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -634,11 +635,11 @@
 			"MUNICIPALITY": "San Jacinto",
 			"POSTAL_CODE": "2431",
 			"DESCRIPTION": "Known for its natural attractions such as the Balungao Hilltop Adventure, offering various outdoor activities such as zipline, rappelling, and trekking, as well as the Apa-Angay Caves, a popular spot for spelunking.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -652,11 +653,11 @@
 			"MUNICIPALITY": "San Manuel",
 			"POSTAL_CODE": "2438",
 			"DESCRIPTION": "Known for its vibrant culture and festivities, such as the annual town fiesta, which features colorful parades and cultural presentations.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -670,12 +671,12 @@
 			"MUNICIPALITY": "San Nicolas",
 			"POSTAL_CODE": "2447",
 			"DESCRIPTION": "Known for its centuries-old St. Nicholas of Tolentino Parish Church and the colorful Bagoong Industry.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
-				"Kallahan",
 				"Pangasinan",
+				"Kallahan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -689,11 +690,11 @@
 			"MUNICIPALITY": "San Quintin",
 			"POSTAL_CODE": "2444",
 			"DESCRIPTION": "Known for its scenic rice paddies and abundant agricultural resources.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -707,11 +708,11 @@
 			"MUNICIPALITY": "Sison",
 			"POSTAL_CODE": "2434",
 			"DESCRIPTION": "Known for its natural attractions, agricultural produce, vibrant local culture and traditions, and historical landmarks.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -725,11 +726,11 @@
 			"MUNICIPALITY": "Santa Barbara",
 			"POSTAL_CODE": "2419",
 			"DESCRIPTION": "Known for its vibrant culture and rich history, as well as its beautiful natural attractions.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -743,11 +744,11 @@
 			"MUNICIPALITY": "Santa Maria",
 			"POSTAL_CODE": "2440",
 			"DESCRIPTION": "Known for its beautiful natural attractions, particularly the serene and picturesque Tondol White Sand Beach, which has become a popular destination for both locals and tourists.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -761,11 +762,11 @@
 			"MUNICIPALITY": "Santo Tomas",
 			"POSTAL_CODE": "2426",
 			"DESCRIPTION": "Known for its cultural landmarks, such as the St. Thomas Aquinas Parish Church, a historic church that dates back to the Spanish colonial period.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -779,11 +780,11 @@
 			"MUNICIPALITY": "Sual",
 			"POSTAL_CODE": "2403",
 			"DESCRIPTION": "Known for its beautiful beaches, picturesque fishing villages, and thriving marine industry.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -797,11 +798,11 @@
 			"MUNICIPALITY": "Tayug",
 			"POSTAL_CODE": "2445",
 			"DESCRIPTION": "One of the most famous landmarks in Tayug is the Minor Basilica of Our Lady of the Rosary of Manaoag, which is located in the nearby town of Manaoag.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -815,11 +816,11 @@
 			"MUNICIPALITY": "Umingan",
 			"POSTAL_CODE": "2443",
 			"DESCRIPTION": "Umingan is also a popular destination for tourists who come to enjoy its natural beauty and outdoor activities.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -833,11 +834,11 @@
 			"MUNICIPALITY": "Urbiztondo",
 			"POSTAL_CODE": "2414",
 			"DESCRIPTION": "Known for its long stretch of white sand beaches, crystal-clear waters, and a variety of water sports activities.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -851,11 +852,11 @@
 			"MUNICIPALITY": "Urdaneta",
 			"POSTAL_CODE": "2428",
 			"DESCRIPTION": "Considered as the Gateway to Northern Luzon as it serves as a major transportation hub connecting the provinces in the region.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 		},
 		{
@@ -869,11 +870,11 @@
 			"MUNICIPALITY": "Villasis",
 			"POSTAL_CODE": "2427",
 			"DESCRIPTION": "Known for its agricultural productivity, particularly its high-quality rice, which has earned it the title Rice Granary of Pangasinan.",
-			"LANGUAGES": {
+			"LANGUAGES": [
 				"Ilocano",
 				"Pangasinan",
 				"Tagalog"
-			  }
+				]
 			}
 	  	}
 	]
