@@ -109,10 +109,7 @@ map.on('load', function () {
             if (selectedProvince !== null) {
                 showFillLayerHideLabel(selectedProvince);
                 selectedProvince = null;  // Reset the selected province
-                map.flyTo({
-                    center: coordinates,
-                    zoom: 9
-                });
+                zoomCenterCoordinates(coordinates);
             }
 
             document.getElementById("lang-button").addEventListener('click', function(){
@@ -201,6 +198,7 @@ map.on('load', function () {
                         .setLngLat(coordinates)
                         .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
                         .addTo(map);
+                    popup.close();
                 });
             });
 
