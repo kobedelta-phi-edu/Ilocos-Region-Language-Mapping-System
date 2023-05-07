@@ -183,10 +183,11 @@
                     });
                 }
 
-                var newContainer = null;
-
                 document.getElementById("lang-button").addEventListener('click', function(){
-                    if (newContainer === null) {
+                    // check if the new container has already been created
+                    var newContainer = document.querySelector(".new-container");
+                    if (!newContainer) {
+                        // create new container if it doesn't exist
                         newContainer = document.createElement("div");
                         newContainer.classList.add("new-container");
 
@@ -203,14 +204,17 @@
                             // remove new container and restore sidebar container
                             newContainer.remove();
                             document.getElementById("sidebar").style.display = "block";
-                            newContainer = null;
                         });
 
-                        // hide sidebar container and show new container
-                        document.getElementById("sidebar").style.display = "none";
+                        // add new container to the body
                         document.body.appendChild(newContainer);
                     }
+
+                    // hide sidebar container
+                    document.getElementById("sidebar").style.display = "none";
                 });
+
+
 
 
                 // Show the sidebar
