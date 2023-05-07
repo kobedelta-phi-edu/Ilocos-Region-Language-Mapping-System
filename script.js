@@ -198,25 +198,8 @@ map.on('load', function () {
         });
     }); 
 
-    //Fix: Text layer removed outside the for each loop 
-    map.addLayer({
-        id: 'province-labels',
-        type: 'symbol',
-        source: {
-            type: 'geojson',
-            data: 'json/province-info.json'
-        },
-        layout: {
-            'text-field': ['get', 'PROVINCE'],
-            'text-font': [
-            'DIN Offc Pro Medium',
-                'Arial Unicode MS Regular'],
-            'text-size': 20
-        },
-        paint: {
-            'text-color': 'black'
-        }
-    });
+    //Province label layer
+    handleProvinceLabel();
 
     // Change the cursor to a pointer when hovering over the places layer
     map.on('mouseenter', 'province-labels', function () {
@@ -281,6 +264,27 @@ function handleProvinceFillLayer(e){
         paint: {
             'fill-color': e.fillColor,
             'fill-opacity': 0.7
+        }
+    });
+}
+
+function handleProvinceLabel(){
+    map.addLayer({
+        id: 'province-labels',
+        type: 'symbol',
+        source: {
+            type: 'geojson',
+            data: 'json/province-info.json'
+        },
+        layout: {
+            'text-field': ['get', 'PROVINCE'],
+            'text-font': [
+            'DIN Offc Pro Medium',
+                'Arial Unicode MS Regular'],
+            'text-size': 20
+        },
+        paint: {
+            'text-color': 'black'
         }
     });
 }
