@@ -127,8 +127,6 @@ map.on('load', function () {
                     var backButton = document.createElement("button");
                     backButton.classList.add("back-button");
                     var backButtonImg = document.createElement("img");
-                    backButtonImg.src = "../icon/back.png"; // replace with the path to your PNG image
-                    backButton.appendChild(backButtonImg);
                     newContainer.appendChild(backButton);
 
                     // add event listener to back button
