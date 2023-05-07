@@ -183,6 +183,12 @@
                     });
                 }
 
+                document.getElementById("lang-button").addEventListener('click', function(){
+                    var newContainer = document.createElement("div");
+                    newContainer.classList.add("new-container");
+                    document.body.appendChild(newContainer);
+                });
+
                 // Show the sidebar
                 var sidebarContainer = document.getElementById('sidebar');
                 sidebarContainer.style.display = 'block';

@@ -79,6 +79,21 @@ body {
     left: 10px;
     cursor: pointer;
 }
+.new-container {
+    width: 360px;
+    height: 550px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    overflow: hidden;
+    background: white;
+    opacity: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.25);
+}
 
 .sidebar-image img {
     width: 450px;

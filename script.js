@@ -126,7 +126,7 @@ map.on('load', function () {
             document.getElementById('sidebar-province').textContent = provinceName;
             document.getElementById('sidebar-region').textContent = provinceRegion;
             document.getElementById('sidebar-description').textContent = provinceDescription;
-                        
+
             // Add the close event for the sidebar
             document.getElementById('sidebar-close').addEventListener('click', function () {
                 sidebarContainer.style.display = 'none';
@@ -210,6 +210,7 @@ map.on('load', function () {
         map.getCanvas().style.cursor = '';
     });
 });
+
 
 function hideFillLayerAndLabel(e){
     map.setLayoutProperty(e + '-fill-boundary', 'visibility', 'visible');
