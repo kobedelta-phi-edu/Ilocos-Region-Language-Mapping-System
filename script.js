@@ -115,6 +115,37 @@ map.on('load', function () {
                 });
             }
 
+            document.getElementById("lang-button").addEventListener('click', function(){
+                // check if the new container has already been created
+                var newContainer = document.querySelector(".new-container");
+                if (!newContainer) {
+                    // create new container if it doesn't exist
+                    newContainer = document.createElement("div");
+                    newContainer.classList.add("new-container");
+
+                    // create back button
+                    var backButton = document.createElement("button");
+                    backButton.classList.add("back-button");
+                    var backButtonImg = document.createElement("img");
+                    backButtonImg.src = "../icon/back.png"; // replace with the path to your PNG image
+                    backButton.appendChild(backButtonImg);
+                    newContainer.appendChild(backButton);
+
+                    // add event listener to back button
+                    backButton.addEventListener('click', function(){
+                        // remove new container and restore sidebar container
+                        newContainer.remove();
+                        document.getElementById("sidebar").style.display = "block";
+                    });
+
+                    // add new container to the body
+                    document.body.appendChild(newContainer);
+                }
+
+                // hide sidebar container
+                document.getElementById("sidebar").style.display = "none";
+            });
+
             // Show the sidebar
             var sidebarContainer = document.getElementById('sidebar');
             sidebarContainer.style.display = 'block';
