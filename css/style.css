@@ -10,51 +10,6 @@ body {
     width: 100%; 
 }
 
-/* #sidebar {
-    position: fixed;
-    top: 40 px;
-    left: 0;
-    height: 100%;
-    width: 0;
-    z-index: 999;
-    background-color: #fff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding: 60px 20px 20px;
-} */
-  
-/* #sidebar-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-  
-#sidebar-close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 28px;
-    cursor: pointer;
-}
-  
-#sidebar-image {
-    height: 200px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
-}
-
-#sidebar-text {
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-    margin-bottom: 20px;
-} */
-
 .mapboxgl-ctrl-geocoder {
 	position: absolute;
 	top: 35px;
@@ -81,45 +36,42 @@ body {
     margin-top: 20px;
     font-weight: bold;
 }
-.sidebar-button {
-    background-color: #D9D9D9; /* Set the background color */
-    border: none; /* Remove the border */
-    color: rgb(0, 0, 0); /* Set the text color to white */
-    padding: 10px 10px; /* Set the padding */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline from the text */
-    display: inline-block; /* Set the display to inline block */
-    font-size: 14px; /* Set the font size */
-    margin-top: 80px; /* Add some margin at the top */
-    margin-left: 30px;
-    border-radius: 10px; /* Add rounded corners */
+.lang-button {
+     background-color: white; /* Set the background color */
+     border: 0.3; /*Remove the border*/
+     color: black; /* Set the text color to white */
+     padding: 4px 10px; /* Set the padding */
+     text-align: center; /* Center the text */
+     text-decoration: none; /* Remove underline from the text */
+     display: inline-block; /* Set the display to inline block */
+     font-size: 15px; /* Set the font size */
+     font-family: 'Arial Unicode MS Regular';
+     font-weight: Regular;
+     margin-top: 90px; /* Add some margin at the top */
+     margin-left: 30px;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+ }
+
+.lang-button:hover {
+    background-color: #3e8e41; /* Change the background color on hover */
+    border: 0.3;
+    border-color: #3e8e41;
+    color: white;
 }
 
-.sidebar-button:hover {
-    background-color: #999999; /* Change the background color on hover */
-}
-
-/* Media queries */
-@media screen and (max-width: 768px) {
-    #geocoder {
-        top: 10px;
-        left: 10px;
-        width: calc(100% - 20px);
-    }
-
-    .place-description {
-        margin-top: 5px; 
-    }
-
-    .place-languages {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .place-description {
-        font-size: 12px;
-    }
+.lang-icon {
+    width: 22px;
+    height: 22px;
+    background-image: url("../icon/lang.png");
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
 }
 
 .sidebar-image img {
@@ -152,7 +104,7 @@ body {
     width: 381px;
     color: black;
     position: absolute;
-    top: 212px;
+    top: 220px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Bold;
@@ -161,7 +113,7 @@ body {
 .region-name {
     color: black;
     position: absolute;
-    top: 245px;
+    top: 254px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Medium;
@@ -172,9 +124,8 @@ body {
 
 .region-desciption {
     width: 380px;
-    /* color: bl; */
     position: absolute;
-    top: 335px;
+    top: 349px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-size: 15px;
@@ -182,107 +133,35 @@ body {
     text-align: justify;
 }
 .close-icon {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     background-image: url("../icon/close.png");
     background-size: cover;
-    opacity: 2;
+    opacity: 1;
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     cursor: pointer;
 }
-/* I-edit ko pa itoo -ky */
-/* .v1_11 {
-    width: 19px;
-    height: 19px;
-    background: url("../images/v1_11.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 29px;
-    left: 498px;
-    overflow: hidden;
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #geocoder {
+        top: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .place-description {
+        margin-top: 5px; 
+    }
+
+    .place-languages {
+        margin-top: 10px;
+    }
 }
 
-.v1_24 {
-    width: 188px;
-    height: 46px;
-    position: absolute;
-    top: 300px;
-    left: 33px;
-    overflow: hidden;
+@media screen and (max-width: 480px) {
+    .place-description {
+        font-size: 12px;
+    }
 }
-.v1_35 {
-    width: 188px;
-    height: 46px;
-    background: lightblue;
-    opacity: 1;
-    position: absolute;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    overflow: hidden;
-}
-.v1_28 {
-    color: black;
-    position: absolute;
-    top: 15px;
-    left: 64px;
-    font-family: 'Arial Unicode MS Regular';
-    font-size: 12px;
-    opacity: 1;
-}
-.v1_22 {
-    width: 26px;
-    height: 24px;
-    opacity: 1;
-    position: absolute;
-    top: 11px;
-    left: 24px;
-}
-.v1_23 {
-    width: 7px;
-    height: 7px;
-    opacity: 1;
-    position: absolute;
-    top: 23px;
-    left: 38px;
-}
-.v1_32 {
-    width: 123px;
-    height: 46px;
-    background: url("../images/v1_10.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 300px;
-    left: 239px;
-    overflow: hidden;
-}
-.v1_36 {
-    width: 123px;
-    height: 46px;
-    background: lightblue;
-    opacity: 1;
-    position: absolute;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    overflow: hidden;
-}
-.phrase-label {
-    color: black;
-    position: absolute;
-    top: 14px;
-    left: 53px;
-    font-family: 'Arial Unicode MS Regular';
-    font-size: 12px;
-    opacity: 1;
-} */
