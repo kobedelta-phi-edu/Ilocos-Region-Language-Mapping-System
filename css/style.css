@@ -81,6 +81,22 @@ body {
     margin-top: 20px;
     font-weight: bold;
 }
+.sidebar-button {
+     background-color: #4CAF50; /* Set the background color */
+     border: none; /* Remove the border */
+     color: white; /* Set the text color to white */
+     padding: 5px 3px; /* Set the padding */
+     text-align: center; /* Center the text */
+     text-decoration: none; /* Remove underline from the text */
+     display: inline-block; /* Set the display to inline block */
+     font-size: 9px; /* Set the font size */
+     margin-top: 60px; /* Add some margin at the top */
+     margin-left: 30px;
+ }
+
+.sidebar-button:hover {
+    background-color: #3e8e41; /* Change the background color on hover */
+}
 
 /* Media queries */
 @media screen and (max-width: 768px) {
@@ -135,7 +151,7 @@ body {
     width: 381px;
     color: black;
     position: absolute;
-    top: 200px;
+    top: 212px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Bold;
@@ -144,7 +160,7 @@ body {
 .region-name {
     color: black;
     position: absolute;
-    top: 235px;
+    top: 240px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Medium;
@@ -157,7 +173,7 @@ body {
     width: 380px;
     /* color: bl; */
     position: absolute;
-    top: 375px;
+    top: 300px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-size: 15px;
