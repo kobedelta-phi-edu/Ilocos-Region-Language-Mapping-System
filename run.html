@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Language Mapper</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="icon/logo.png">
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="geocoder" class="geocoder"></div>
+    <div id="sidebar" class="sidebar-container">
+      <div class="board">
+        <span class="province-name" id="sidebar-province"></span>
+        <span class="region-name" id="sidebar-region"></span>
+        <div class="sidebar-image">
+          <img src="" alt="Selected Province" id="sidebar-image">
+        </div>
+        <span class="region-desciption " id="sidebar-description"></span>
+        <div class="close-icon" id="sidebar-close"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
