@@ -126,6 +126,22 @@ map.on('load', function () {
                     var backButtonImg = document.createElement("img");
                     newContainer.appendChild(backButton);
 
+                    // get data from the JSON file
+                    // need i-edit kasi di naka ayos ahha
+                    fetch('sample-phrases.json')
+                        .then(response => response.json())
+                        .then(data => {
+                            // create HTML elements to display the data
+                            var LANGUAGE = document.createElement('h2');
+                            LANGUAGE.textContent = provinceName;
+                            var PHRASES = document.createElement('p');
+                            PHRASES.textContent = data.PHRASES.join(", ");
+
+                            // append the HTML elements to the new container
+                            newContainer.appendChild(LANGUAGE);
+                            newContainer.appendChild(PHRASES);
+                        });
+
                     // add event listener to back button
                     backButton.addEventListener('click', function(){
                         // remove new container and restore sidebar container
@@ -139,6 +155,8 @@ map.on('load', function () {
 
                 // hide sidebar container
                 document.getElementById("sidebar").style.display = "none";
+
+                
             });
 
             // Show the sidebar
