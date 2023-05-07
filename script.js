@@ -67,7 +67,6 @@ map.on('load', function () {
                     // Hide the previously clicked layer if it exists
                     if (previousProvince !== null) {
                         showFillLayerHideLabel(previousProvince);
-                        zoomCenterCoordinates(map.center);
                     }
                     hideCurrFillShowLabel(province.name);
                     previousProvince = province.name;
@@ -82,15 +81,13 @@ map.on('load', function () {
     geocoder.on('clear', function () {
         // Check if there is a selected province
         if (selectedProvince !== null) {
-            showFillLayerHideLabel(selectedProvince);
+            showFillLayerHideLabel(selectedProvince.name);
             selectedProvince = null; // Reset the selected province
-            zoomCenterCoordinates(map.center);
-        } else {
-            // Check if the sidebar is displayed
-            var sidebarContainer = document.getElementById('sidebar');
-            if (sidebarContainer.style.display === 'block') {
-                closeSidebar();
-            }
+            // Zoom back to the map center coordinates
+            map.flyTo({
+                center: [120.256, 17.193],
+                zoom: 7.2
+            });
         }
     });
 
@@ -112,7 +109,10 @@ map.on('load', function () {
             if (selectedProvince !== null) {
                 showFillLayerHideLabel(selectedProvince);
                 selectedProvince = null;  // Reset the selected province
-                zoomCenterCoordinates(coordinates);
+                map.flyTo({
+                    center: coordinates,
+                    zoom: 9
+                });
             }
 
             // Show the sidebar
@@ -125,7 +125,18 @@ map.on('load', function () {
             document.getElementById('sidebar-region').textContent = provinceRegion;
             document.getElementById('sidebar-description').textContent = provinceDescription;
                         
-            document.getElementById('sidebar-close').addEventListener('click', closeSidebar(province));
+            // Add the close event for the sidebar
+            document.getElementById('sidebar-close').addEventListener('click', function () {
+                sidebarContainer.style.display = 'none';
+                showFillLayerHideLabel(provinceName);
+                selectedProvince = null; // Reset the selected province
+                        
+                // Zoom back to the map center coordinates
+                map.flyTo({
+                    center: [120.256, 17.193],
+                    zoom: 7.2
+                });
+            });
         });
 
         // Add click event listener to the map
@@ -138,10 +149,9 @@ map.on('load', function () {
                     // Hide the previously clicked layer if it exists
                     if (previousProvince !== null) {
                         showFillLayerHideLabel(previousProvince);
-                        zoomCenterCoordinates(map.center);
                     }
                     hideCurrFillShowLabel(province.name);
-                    zoomCenterCoordinates(province.coordinates);
+                    zoomCenterCoordinates(province);
 
                     // Set the current province as the previously clicked province
                     previousProvince = province.name;
@@ -173,7 +183,6 @@ map.on('load', function () {
             });
             if (!isFillLayerClicked && !isClickableElementClicked) {
                 showFillLayerHideLabel(province.name);
-                zoomCenterCoordinates(map.center);
             }
         });
                 
@@ -200,7 +209,6 @@ map.on('load', function () {
     });
 });
 
-
 function showFillLayerHideLabel(e){
     map.setLayoutProperty(e + '-fill-boundary', 'visibility', 'visible');
     map.setLayoutProperty(e + '-municipality-labels', 'visibility', 'none');
@@ -216,16 +224,9 @@ function hideCurrFillShowLabel(e){
 function zoomCenterCoordinates(e){
     // Zoom in to the center of coordinates
     map.flyTo({
-        center: e,
+        center: e.coordinates,
         zoom: 9
     });
-}
-
-function closeSidebar(e) {
-    sidebarContainer.style.display = 'none';
-    showFillLayerHideLabel(e);
-    selectedProvince = null; // Reset the selected province
-    zoomCenterCoordinates(e.center);
 }
 
 function handleMunicipalityLabel(e){
