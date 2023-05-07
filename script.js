@@ -211,11 +211,11 @@ map.on('load', function () {
                     var municipalityName = e.features[0].properties.MUNICIPALITY;
                     var postalCode = e.features[0].properties.POSTAL_CODE;
                     var placeDescription = e.features[0].properties.DESCRIPTION;
-                    var placeLanguages = e.features[0].properties.LANGUAGES.join(", ");
+                    var placeLanguages = e.features[0].properties.LANGUAGES.join(",");
                 
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
-                        .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + generateLanguageList(placeLanguages) + '</div>')
+                        .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
                         .addTo(map);
                     popup.close();
                 });
