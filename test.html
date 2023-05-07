@@ -183,32 +183,35 @@
                     });
                 }
 
-                document.getElementById("lang-button").addEventListener('click', function onClick(){
-                    var newContainer = document.createElement("div");
-                    newContainer.classList.add("new-container");
+                var newContainer = null;
 
-                    // create back button
-                    var backButton = document.createElement("button");
-                    backButton.classList.add("back-button");
-                    var backButtonImg = document.createElement("img");
-                    backButtonImg.src = "../icon/back.png"; // replace with the path to your PNG image
-                    backButton.appendChild(backButtonImg);
-                    newContainer.appendChild(backButton);
+                document.getElementById("lang-button").addEventListener('click', function(){
+                    if (newContainer === null) {
+                        newContainer = document.createElement("div");
+                        newContainer.classList.add("new-container");
 
-                    // add event listener to back button
-                    backButton.addEventListener('click', function(){
-                        // remove new container and restore sidebar container
-                        newContainer.remove();
-                        document.getElementById("sidebar").style.display = "block";
-                    });
+                        // create back button
+                        var backButton = document.createElement("button");
+                        backButton.classList.add("back-button");
+                        var backButtonImg = document.createElement("img");
+                        backButtonImg.src = "../icon/back.png"; // replace with the path to your PNG image
+                        backButton.appendChild(backButtonImg);
+                        newContainer.appendChild(backButton);
 
-                    // hide sidebar container and show new container
-                    document.getElementById("sidebar").style.display = "none";
-                    document.body.appendChild(newContainer);
+                        // add event listener to back button
+                        backButton.addEventListener('click', function(){
+                            // remove new container and restore sidebar container
+                            newContainer.remove();
+                            document.getElementById("sidebar").style.display = "block";
+                            newContainer = null;
+                        });
 
-                    // remove the event listener to prevent multiple clicks
-                    document.getElementById("lang-button").removeEventListener('click', onClick);
+                        // hide sidebar container and show new container
+                        document.getElementById("sidebar").style.display = "none";
+                        document.body.appendChild(newContainer);
+                    }
                 });
+
 
                 // Show the sidebar
                 var sidebarContainer = document.getElementById('sidebar');
