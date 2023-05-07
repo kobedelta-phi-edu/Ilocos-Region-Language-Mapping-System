@@ -183,7 +183,7 @@
                     });
                 }
 
-                document.getElementById("lang-button").addEventListener('click', function(){
+                document.getElementById("lang-button").addEventListener('click', function onClick(){
                     var newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
 
@@ -205,6 +205,9 @@
                     // hide sidebar container and show new container
                     document.getElementById("sidebar").style.display = "none";
                     document.body.appendChild(newContainer);
+
+                    // remove the event listener to prevent multiple clicks
+                    document.getElementById("lang-button").removeEventListener('click', onClick);
                 });
 
                 // Show the sidebar
