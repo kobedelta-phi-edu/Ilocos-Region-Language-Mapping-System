@@ -162,7 +162,7 @@ body {
 
 .province-name {
     width: 381px;
-    color: black;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 220px;
     left: 32px;
@@ -171,7 +171,7 @@ body {
     font-size: 25px;
 }
 .region-name {
-    color: black;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 254px;
     left: 32px;
@@ -192,6 +192,7 @@ body {
     opacity: 1;
     text-align: justify;
 }
+
 .close-icon {
     position: absolute;
     top: 10px;
