@@ -170,7 +170,6 @@ body {
     font-weight: Bold;
     font-size: 25px;
 }
-
 .region-name {
     color: black;
     position: absolute;
@@ -183,7 +182,7 @@ body {
     text-align: left;
 }
 
-.region-desciption {
+.region-description {
     width: 295px;
     position: absolute;
     top: 349px;
@@ -193,6 +192,7 @@ body {
     opacity: 1;
     text-align: justify;
 }
+
 .close-icon {
     position: absolute;
     top: 10px;
