@@ -41,7 +41,7 @@ body {
     background-color: white; /* Set the background color */
     border: 0.3; /*Remove the border*/
     color: black; /* Set the text color to white */
-    padding: 4px 10px; /* Set the padding */
+    padding: 8px 14px; /* Set the padding */
     text-align: center; /* Center the text */
     text-decoration: none; /* Remove underline from the text */
     display: inline-block; /* Set the display to inline block */
@@ -54,6 +54,11 @@ body {
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    background-image: url("/icon/lang.png");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 36px;
+    padding-left: 45px;
 }
 
 .lang-button:hover {
