@@ -186,6 +186,24 @@
                 document.getElementById("lang-button").addEventListener('click', function(){
                     var newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
+
+                    // create back button
+                    var backButton = document.createElement("button");
+                    backButton.classList.add("back-button");
+                    var backButtonImg = document.createElement("img");
+                    backButtonImg.src = "../icon/back.png"; // replace with the path to your PNG image
+                    backButton.appendChild(backButtonImg);
+                    newContainer.appendChild(backButton);
+
+                    // add event listener to back button
+                    backButton.addEventListener('click', function(){
+                        // remove new container and restore sidebar container
+                        newContainer.remove();
+                        document.getElementById("sidebar").style.display = "block";
+                    });
+
+                    // hide sidebar container and show new container
+                    document.getElementById("sidebar").style.display = "none";
                     document.body.appendChild(newContainer);
                 });
 
