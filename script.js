@@ -294,7 +294,7 @@ function handleMunicipalityLabel(e){
             'text-size': 17
         },
         paint: {
-            'text-color': 'black'
+            'text-color': 'white'
         },
         filter: ['==', 'PROVINCE', e.name]
     });
@@ -331,7 +331,7 @@ function handleProvinceLabel(){
             'text-size': 20
         },
         paint: {
-            'text-color': 'black'
+            'text-color': 'white'
         }
     });
 }
