@@ -72,6 +72,8 @@ map.on('load', function () {
                     previousProvince = province.name;
                     selectedProvince = province; // Set the selected province
                     handleMunicipalityLabel(province);
+
+                    showSidebar(province.displayImage, provinceName, provinceRegion, provinceDescription);
                 }
             });
         }
@@ -84,10 +86,8 @@ map.on('load', function () {
             showFillLayerHideLabel(selectedProvince.name);
             selectedProvince = null; // Reset the selected province
             // Zoom back to the map center coordinates
-            map.flyTo({
-                center: [120.256, 17.193],
-                zoom: 7.2
-            });
+            zoomCenterMap();
+            hideSideBar();
         }
     });
 
@@ -137,8 +137,7 @@ map.on('load', function () {
                     document.body.appendChild(newContainer);
                 }
 
-                // hide sidebar container
-                document.getElementById("sidebar").style.display = "none";
+                hideSideBar()
             });
 
             // Show the sidebar
@@ -156,12 +155,7 @@ map.on('load', function () {
                 sidebarContainer.style.display = 'none';
                 showFillLayerHideLabel(provinceName);
                 selectedProvince = null; // Reset the selected province
-                        
-                // Zoom back to the map center coordinates
-                map.flyTo({
-                    center: [120.256, 17.193],
-                    zoom: 7.2
-                });
+                zoomCenterMap();
             });
         });
 
@@ -175,6 +169,7 @@ map.on('load', function () {
                     // Hide the previously clicked layer if it exists
                     if (previousProvince !== null) {
                         showFillLayerHideLabel(previousProvince);
+                        hideSideBar();
                     }
                     hideCurrFillShowLabel(province.name);
                     zoomCenterCoordinates(province);
@@ -254,6 +249,18 @@ function zoomCenterCoordinates(e){
         center: e.coordinates,
         zoom: 9
     });
+}
+
+function zoomCenterMap(){
+    map.flyTo({
+        center: [120.256, 17.193],
+        zoom: 7.2
+    });
+}
+
+function hideSideBar(){
+    // hide sidebar container
+    return document.getElementById("sidebar").style.display = "none";
 }
 
 function handleMunicipalityLabel(e){
