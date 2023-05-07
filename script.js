@@ -200,6 +200,7 @@ map.on('load', function () {
     });
 });
 
+
 function showFillLayerHideLabel(e){
     map.setLayoutProperty(e + '-fill-boundary', 'visibility', 'visible');
     map.setLayoutProperty(e + '-municipality-labels', 'visibility', 'none');
