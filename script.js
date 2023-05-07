@@ -127,13 +127,24 @@ map.on('load', function () {
                         // create HTML elements to display the data
                         var languages = document.createElement('h2');
                         languages.textContent = data.LANGUAGE;
-                        var phrases = document.createElement('p');
-                        phrases.textContent = data.PHRASES;
+                        var phrasesTitle = document.createElement('h3');
+                        phrasesTitle.textContent = 'Phrases:';
+                        var phrasesList = document.createElement('ul');
+                        data.PHRASES.forEach(function(phrase, index) {
+                            var phraseItem = document.createElement('li');
+                            phraseItem.innerHTML = `${phrase} - ${data.TRANSLATION[index]}`;
+                            phrasesList.appendChild(phraseItem);
+                        });
 
                         // append the HTML elements to the new container
                         newContainer.appendChild(languages);
-                        newContainer.appendChild(phrases);
+                        newContainer.appendChild(phrasesTitle);
+                        newContainer.appendChild(phrasesList);
+
+                        // append the new container to the page
+                        document.body.appendChild(newContainer);
                     });
+
 
                     // create back button
                     var backButton = document.createElement("button");
