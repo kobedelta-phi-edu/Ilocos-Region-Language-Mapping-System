@@ -26,7 +26,10 @@
 			  "MUNICIPALITY": "Banayoyo",
 			  "POSTAL_CODE" : "2708",
 			  "DESCRIPTION": "Known for its historic church, the Santo Tomas de Villanueva Parish Church, and its tranquil countryside setting. The town offers a peaceful retreat for those seeking to escape the hustle and bustle of the city",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -40,7 +43,10 @@
 			  "MUNICIPALITY": "Bantay",
 			  "POSTAL_CODE" : "2727",
 			  "DESCRIPTION": "Known for its iconic Bantay Church Bell Tower, a symbol of the town's rich cultural heritage. The town also offers a stunning view of the surrounding mountains and rice fields",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -54,7 +60,10 @@
 			  "MUNICIPALITY": "Burgos",
 			  "POSTAL_CODE" : "2724",
 			  "DESCRIPTION": "The town got its name in honor of Father José Burgos during the Spanish era.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -68,7 +77,10 @@
 			  "MUNICIPALITY": "Cabugao",
 			  "POSTAL_CODE" : "2732",
 			  "DESCRIPTION": "Known for its beautiful beaches, marine sanctuaries, and delicious seafood cuisine. It is a popular destination for beachgoers and seafood lovers, offering a relaxing and enjoyable experience for visitors.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -82,7 +94,11 @@
 			  "MUNICIPALITY": "Candon",
 			  "POSTAL_CODE" : "2710",
 			  "DESCRIPTION": "Known for its salt-making industry, which has been a source of livelihood for many of its residents for generations. The salt farms can be found along the coastline of the city",
-			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Pangasinan",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -96,7 +112,11 @@
 			  "MUNICIPALITY": "Caoayan",
 			  "POSTAL_CODE" : "2702",
 			  "DESCRIPTION": "Known for its beautiful natural scenery, including the Bantay Abot Cave, which is located near the coast and is known for its unique rock formations",
-			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Pangasinan",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -110,7 +130,11 @@
 			  "MUNICIPALITY": "Cervantes",
 			  "POSTAL_CODE" : "2718",
 			  "DESCRIPTION": "How it got the name is not known or documented but it is believed that it was named after the famous poet Miguel de Cervantes. But the town's history was tied to the poet's name and the people living on the town adopted it as their own official name.",
-			  "LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Kankanaey",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -124,7 +148,10 @@
 			  "MUNICIPALITY": "Galimuyod",
 			  "POSTAL_CODE" : "2709",
 			  "DESCRIPTION": "This town, formerly known as Cabisilan, was once the biggest barrio of Candon during the Spanish Regime. A land dispute between them and residents of neighboring Sapang, another barrio of Candon, resulted in a 'gin-nuyod' ('tug-of-war') contest, a common game during those days, to settle it.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -138,6 +165,10 @@
 			  "MUNICIPALITY": "Gregorio del Pilar",
 			  "POSTAL_CODE" : "2720",
 			  "DESCRIPTION": "Formerly named Concepcion (in honor of its patron saint, Nuestra Senora de Concepcion), it was renamed after general Gregorio del Pilar  The municipality was the site of the Battle of Tirad Pass where General del Pilar fought to the death against the Americans."
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -151,7 +182,10 @@
 			  "MUNICIPALITY": "Lidlidda",
 			  "POSTAL_CODE" : "2723",
 			  "DESCRIPTION": "It is home to the Lidlidda Protected Landscape, a protected area situated in the municipality's watershed.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -165,7 +199,10 @@
 			  "MUNICIPALITY": "Magsingal",
 			  "POSTAL_CODE" : "2730",
 			  "DESCRIPTION": "The name of the municipality came from the term 'Mayisingal,'an Ilocano term which means 'to be moved.' It was applied when the belltower was moved from a previous location to its current site.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -179,7 +216,10 @@
 			  "MUNICIPALITY": "Nagbukel",
 			  "POSTAL_CODE" : "2725",
 			  "DESCRIPTION": "The name of the municipality was thought to have come from the round shape of one of the hills in the area. People in the area would utter, 'Anian nga nagbukel' (Ilocano meaning 'How round it is.').",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -193,7 +233,10 @@
 			  "MUNICIPALITY": "Narvacan",
 			  "POSTAL_CODE" : "2704",
 			  "DESCRIPTION": "Known for its historical landmarks, including the St. Lucy's Church, and its picturesque landscape surrounded by mountains and rivers. It is a great place for those interested in Philippine history and culture",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -207,7 +250,11 @@
 			  "MUNICIPALITY": "Quirino",
 			  "POSTAL_CODE" : "2721",
 			  "DESCRIPTION": "Formerly known as Angaki (also spelled Angkaki in some sources), the municipality was renamed in June 1964 to Quirino in honor of Elpidio Quirino, an Ilocos Sur native who served as the sixth President of the Philippines.",
-			  "LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Kankanaey",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -221,7 +268,10 @@
 			  "MUNICIPALITY": "Salcedo",
 			  "POSTAL_CODE" : "2711",
 			  "DESCRIPTION": "The town got its name after Juan de Salcedo, a Spanish conquistador.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -235,7 +285,10 @@
 			  "MUNICIPALITY": "San Emilio",
 			  "POSTAL_CODE" : "2722",
 			  "DESCRIPTION": "Known for its mountainous terrain, lush forests, and beautiful waterfalls. It is a great destination for hiking and outdoor activities, offering visitors a chance to explore the natural beauty of the region.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -249,7 +302,10 @@
 			  "MUNICIPALITY": "San Esteban",
 			  "POSTAL_CODE" : "2706",
 			  "DESCRIPTION": "Known for its scenic beaches, stunning sunsets, and interesting rock formations. It is a popular destination for beachgoers, photographers, and nature lovers.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -263,7 +319,10 @@
 			  "MUNICIPALITY": "San Ildefonso",
 			  "POSTAL_CODE" : "2728",
 			  "DESCRIPTION": "The town got its name from Saint Ildephonsus.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -277,7 +336,10 @@
 			  "MUNICIPALITY": "San Juan",
 			  "POSTAL_CODE" : "2731",
 			  "DESCRIPTION": "Known for its surfing destination, the Urbiztondo Beach. The town offers a laid-back vibe and a great opportunity for surfing enthusiasts to enjoy the waves and explore the local culture and cuisine.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -291,7 +353,10 @@
 			  "MUNICIPALITY": "San Vicente",
 			  "POSTAL_CODE" : "2726",
 			  "DESCRIPTION": "Known for its scenic beaches, natural rock formations, and rich marine life. It is a great place for beachgoers, nature enthusiasts, and adventure seekers, with opportunities for swimming, snorkeling, and hiking.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -305,7 +370,10 @@
 			  "MUNICIPALITY": "Santa",
 			  "POSTAL_CODE" : "27203",
 			  "DESCRIPTION": "Governor-General of the Philippines Theodore Roosevelt, Jr. on his visit to the town in 1925 said that “The mountain in the east, the winding roping river in the north, and the immense sea in the west make Santa a poetic town.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -319,7 +387,10 @@
 			  "MUNICIPALITY": "Santa Catalina",
 			  "POSTAL_CODE" : "2701",
 			  "DESCRIPTION": "The town offers a tranquil and serene environment for tourists seeking to experience nature's beauty and explore the region's ecological diversity.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -333,7 +404,10 @@
 			  "MUNICIPALITY": "Santa Cruz",
 			  "POSTAL_CODE" : "2713",
 			  "DESCRIPTION": "Known for its picturesque beaches, crystal-clear waters, and vibrant marine life. It is a popular destination for beachgoers, snorkelers, and divers, and a great place to enjoy the beauty of the Philippine coast.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -347,7 +421,10 @@
 			  "MUNICIPALITY": "Santa Lucia",
 			  "POSTAL_CODE" : "2712",
 			  "DESCRIPTION": "Known for its natural beauty and agricultural products such as rice and tobacco. The town offers views of rolling hills and lush forests and is a great place to experience the local culture and way of life.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -361,7 +438,10 @@
 			  "MUNICIPALITY": "Santa Maria",
 			  "POSTAL_CODE" : "2705",
 			  "DESCRIPTION": "Known for its stunning UNESCO World Heritage Site, the Santa Maria Church. The church is a magnificent example of the Earthquake Baroque style and a popular destination",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -375,7 +455,10 @@
 			  "MUNICIPALITY": "Santiago",
 			  "POSTAL_CODE" : "2707",
 			  "DESCRIPTION": "Known for its historic Spanish colonial church, the St. James the Apostle Parish Church, and its picturesque landscape surrounded by mountains and rivers. It offers a natural setting for tourists seeking to explore the beauty of the region.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -389,7 +472,10 @@
 			  "MUNICIPALITY": "Santa Domingo",
 			  "POSTAL_CODE" : "2729",
 			  "DESCRIPTION": "Known for its beautiful Spanish colonial church and serene rural landscapes. It is a charming destination for history buffs and nature lovers alike",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -403,7 +489,10 @@
 			  "MUNICIPALITY": "Sigay",
 			  "POSTAL_CODE" : "2719",
 			  "DESCRIPTION": " It is a peaceful and secluded, known for its pristine beaches, scenic coastline, and rich marine life",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -417,7 +506,10 @@
 			  "MUNICIPALITY": "Sinait",
 			  "POSTAL_CODE" : "2733",
 			  "DESCRIPTION": "Known for its centuries-old Spanish-era church, the St. Matthew Church. It is also a center of agricultural production, with rice, tobacco, and corn as its main crops.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -431,7 +523,11 @@
 			  "MUNICIPALITY": "Sugpon",
 			  "POSTAL_CODE" : "2717",
 			  "DESCRIPTION": "Known for its natural beauty, including stunning waterfalls, hot springs, and rice terraces. It is a popular destination for hikers and nature lovers who want to explore the wilderness of the region.",
-			  "LANGUAGES": "Kankanaey, Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Kankanaey",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -445,7 +541,10 @@
 			  "MUNICIPALITY": "Suyo",
 			  "POSTAL_CODE" : "2715",
 			  "DESCRIPTION": "The town is home to various attractions such as natural wonders, historical sites, and festivities that showcase the town's traditions and customs.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -459,7 +558,10 @@
 			  "MUNICIPALITY": "Tagudin",
 			  "POSTAL_CODE" : "2714",
 			  "DESCRIPTION": "The name was given by a Spanish explorer who mistook the name of a cotton drying rack (tagudan) used by a local resident as the town's name.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		},
 		{
@@ -473,7 +575,10 @@
 			  "MUNICIPALITY": "Vigan",
 			  "POSTAL_CODE" : "2700",
 			  "DESCRIPTION": "A city known for its well-preserved Spanish colonial architecture. It was declared a UNESCO World Heritage Site in 1999",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": {
+				"Ilocano",
+				"Tagalog"
+			  }
 			}
 		}
 	]
