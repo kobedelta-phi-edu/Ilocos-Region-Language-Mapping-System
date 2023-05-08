@@ -120,50 +120,57 @@ map.on('load', function () {
                     // create new container if it doesn't exist
                     newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
-
-                    fetch('sample-phrases.json')
+            
+                    fetch('json/province-info.json')
                     .then(response => response.json())
                     .then(data => {
                         // create HTML elements to display the data
                         var languages = document.createElement('h2');
-                        languages.textContent = data.LANGUAGE;
-                        var phrasesTitle = document.createElement('h3');
-                        phrasesTitle.textContent = 'Phrases:';
-                        var phrasesList = document.createElement('ul');
-                        data.PHRASES.forEach(function(phrase, index) {
-                            var phraseItem = document.createElement('li');
-                            phraseItem.innerHTML = `${phrase} - ${data.TRANSLATION[index]}`;
-                            phrasesList.appendChild(phraseItem);
+                        languages.textContent = 'Languages:';
+                        var langList = document.createElement('ul');
+                        data.features.forEach(function(feature) {
+                        feature.properties.LANGUAGES.forEach(function(language) {
+                            // create clickable links for each language and add them to the container
+                            var langLink = document.createElement('a');
+                            langLink.textContent = language;
+                            langLink.href = '#';
+                            langLink.addEventListener('click', function() {
+                                console.log('Clicked on language:', language);
+                            });
+                            var langItem = document.createElement('li');
+                            langItem.appendChild(langLink);
+                            langList.appendChild(langItem);
                         });
-
+                    });
+            
                         // append the HTML elements to the new container
                         newContainer.appendChild(languages);
-                        newContainer.appendChild(phrasesTitle);
-                        newContainer.appendChild(phrasesList);
-
+                        newContainer.appendChild(langList);
+            
+                        // create back button
+                        var backButton = document.createElement("button");
+                        backButton.classList.add("back-button");
+                        var backButtonImg = document.createElement("img");
+                        newContainer.appendChild(backButton);
+            
+                        // add event listener to back button
+                        backButton.addEventListener('click', function(){
+                            // remove new container and restore sidebar container
+                            newContainer.remove();
+                            document.getElementById("sidebar").style.display = "block";
+                        });
+            
                         // append the new container to the page
                         document.body.appendChild(newContainer);
                     });
-
-
-                    // create back button
-                    var backButton = document.createElement("button");
-                    backButton.classList.add("back-button");
-                    var backButtonImg = document.createElement("img");
-                    newContainer.appendChild(backButton);
-
-                    // add event listener to back button
-                    backButton.addEventListener('click', function(){
-                        // remove new container and restore sidebar container
-                        newContainer.remove();
-                        document.getElementById("sidebar").style.display = "block";
-                    });
-
-                    // add new container to the body
-                    document.body.appendChild(newContainer);
+            
+                    // hide the sidebar container
+                    document.getElementById("sidebar").style.display = "none";
                 }
+            
 
                 hideSideBar()
+            
             });
 
             // Show the sidebar
@@ -211,7 +218,7 @@ map.on('load', function () {
                     var municipalityName = e.features[0].properties.MUNICIPALITY;
                     var postalCode = e.features[0].properties.POSTAL_CODE;
                     var placeDescription = e.features[0].properties.DESCRIPTION;
-                    var placeLanguages = e.features[0].properties.LANGUAGES.join(",");
+                    var placeLanguages = e.features[0].properties.LANGUAGES//.join(",");
                 
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
