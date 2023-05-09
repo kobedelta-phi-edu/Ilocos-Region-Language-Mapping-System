@@ -28,28 +28,32 @@ map.on('load', function () {
             fillColor: '#ef8a62',
             coordinates: [120.5935433,18.1973235],
             provJson: 'json/boundary/ilocos norte-boundary.json',
-            muniJson: 'json/prov-municipalities/ilocos norte-municipalities.json'
+            muniJson: 'json/prov-municipalities/ilocos norte-municipalities.json',
+            languages: ['Ilocano', 'Tagalog']
         },
         {
             name: "Ilocos Sur",
             fillColor: '#998ec3',
             coordinates: [120.3872632,17.5755487],
             provJson: 'json/boundary/ilocos sur-boundary.json',
-            muniJson: 'json/prov-municipalities/ilocos sur-municipalities.json'
+            muniJson: 'json/prov-municipalities/ilocos sur-municipalities.json',
+            languages: ['Ilocano', 'Kankanaey', 'Tagalog']
         },
         {
             name: "La Union",
             fillColor: '#f1a340',
             coordinates: [120.317104,16.6162676],
             provJson: 'json/boundary/la union-boundary.json',
-            muniJson: 'json/prov-municipalities/la union-municipalities.json'
+            muniJson: 'json/prov-municipalities/la union-municipalities.json',
+            languages: ['Ilocano', 'Pangasinan', 'Kankanaey', 'Tagalog']
         },
         {
             name: "Pangasinan",
             fillColor: '#67a9cf',
             coordinates: [120.2307093,16.0206363],
             provJson: 'json/boundary/pangasinan-boundary.json',
-            muniJson: 'json/prov-municipalities/pangasinan-municipalities.json'
+            muniJson: 'json/prov-municipalities/pangasinan-municipalities.json',
+            languages: ['Bolinao', 'Ilocano', 'Kallahan', 'Pangasinan', 'Sambal', 'Tagalog']
         }
     ];
             
@@ -120,57 +124,58 @@ map.on('load', function () {
                     // create new container if it doesn't exist
                     newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
+
+                    console.log(province.languages); 
             
-                    fetch('json/province-info.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        // create HTML elements to display the data
-                        var languages = document.createElement('h2');
-                        languages.textContent = 'Languages:';
-                        var langList = document.createElement('ul');
-                        data.features.forEach(function(feature) {
-                        feature.properties.LANGUAGES.forEach(function(language) {
+                         
+                    // create HTML elements to display the data
+                    var languages = document.createElement('h2');
+                    languages.textContent = 'Languages:';
+                    var langList = document.createElement('ul');
+                    if (provinceName == province.name){
+                        console.log('true');
+                    }
+                        var lang1 = province.languages;
+                        lang1.forEach(function(language) {
                             // create clickable links for each language and add them to the container
                             var langLink = document.createElement('a');
                             langLink.textContent = language;
                             langLink.href = '#';
                             langLink.addEventListener('click', function() {
-                                console.log('Clicked on language:', language);
+                                console.log('Clicked on language:', province.languages);
                             });
                             var langItem = document.createElement('li');
                             langItem.appendChild(langLink);
                             langList.appendChild(langItem);
+                            //     });
+                                // });
+                    
+                            // append the HTML elements to the new container
+                            newContainer.appendChild(languages);
+                            newContainer.appendChild(langList);
+                    
+                                // create back button
+                            var backButton = document.createElement("button");
+                            backButton.classList.add("back-button");
+                            var backButtonImg = document.createElement("img");
+                            newContainer.appendChild(backButton);
+                    
+                                // add event listener to back button
+                            backButton.addEventListener('click', function(){
+                                    // remove new container and restore sidebar container
+                                newContainer.remove();
+                                document.getElementById("sidebar").style.display = "block";
+                            });
+                
+                                // append the new container to the page
+                            document.body.appendChild(newContainer);
                         });
-                    });
-            
-                        // append the HTML elements to the new container
-                        newContainer.appendChild(languages);
-                        newContainer.appendChild(langList);
-            
-                        // create back button
-                        var backButton = document.createElement("button");
-                        backButton.classList.add("back-button");
-                        var backButtonImg = document.createElement("img");
-                        newContainer.appendChild(backButton);
-            
-                        // add event listener to back button
-                        backButton.addEventListener('click', function(){
-                            // remove new container and restore sidebar container
-                            newContainer.remove();
-                            document.getElementById("sidebar").style.display = "block";
-                        });
-            
-                        // append the new container to the page
-                        document.body.appendChild(newContainer);
-                    });
-            
-                    // hide the sidebar container
-                    document.getElementById("sidebar").style.display = "none";
-                }
-            
-
-                hideSideBar()
-            
+                    
+                            // hide the sidebar container
+                            document.getElementById("sidebar").style.display = "none";
+                        }
+                    hideSideBar();
+                // }
             });
 
             // Show the sidebar
