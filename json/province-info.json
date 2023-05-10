@@ -82,7 +82,31 @@
 			  "REGION": "Region I",
 			  "IMAGE" : "images/pangasinan.jpeg",
 			  "DESCRIPTION": "Known for its beautiful beaches, stunning waterfalls, and delicious seafood cuisine. The province offers a wide range of activities for tourists, including swimming, surfing, island hopping, and sightseeing, and is a popular destination for both local and international visitors.",
-			  "LANGUAGES": "Bolinao, Ilocano, Kallahan, Pangasinan, Sambal, Tagalog"
+			  "LANGUAGES": "Bolinao, Ilocano, Kallahan, Pangasinan, Sambal, Tagalog",
+			  "PHRASES": [
+				"Kamusta cay na",
+				"Anyay ngalan",
+				"Ayti ca taga?",
+				"Ayti ca?",
+				"Maabig a yabi",
+				"Anlabyon cata",
+				"Miligaliga tamo",
+				"Umali acoy na",
+				"Laco a salamat",
+				"Humin anya man"
+			  ],
+			  "TRANSLATION": [
+				"How are you?",
+				"What is your name?",
+				"Where are you from?",
+				"Where are you?",
+				"Goodafternoon",
+				"I love you",
+				"Let's party",
+				"I am leaving now",
+				"Thankyou very much",
+				"You're welcome"
+			  ]
 		
 			}
 		}
