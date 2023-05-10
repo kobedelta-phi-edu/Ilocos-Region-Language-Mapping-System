@@ -12,11 +12,11 @@ body {
 }
 
 .mapboxgl-ctrl-geocoder {
-	position: absolute;
-	top: 35px;
-	left: 40px;
-	z-index: 1;
-	width: 500px;
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    z-index: 1;
+    width: 500px;
 }
 
 .place-name {
@@ -306,7 +306,7 @@ body {
     }
 
     .province-picture {
-        max-width: 100%;
+        width: 150px; /* adjust the width to make it smaller */
         height: auto;
         position: absolute;
         top: 90px;
@@ -326,4 +326,138 @@ body {
         justify-content: center;
     }
 
+    /* reduce the size of the search button */
+    .mapboxgl-ctrl-geocoder button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+}
+
+/* For Android phone screens */
+@media (max-width: 480px) {
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .mapboxgl-ctrl-geocoder {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+        width: 80%;
+        max-width: 200px;
+    }
+
+    /* reduce the size of the search button for screen smaller than 480px */
+    .mapboxgl-ctrl-geocoder--icon-search {
+        width: 20px;
+        height: 20px;
+    }
+
+    .board {
+        width: 90%;
+        height: 75%;
+        position: absolute;
+        top: 60px;
+        left: 5%;
+        overflow: hidden;
+        overflow-y: scroll;
+        background: white;
+        opacity: 1;
+        border-radius: 8px;
+        box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.25);
+    }
+
+    .province-name {
+        width: 90%;
+        color: black;
+        position: absolute;
+        top: 90px;
+        left: 5%;
+        font-family: 'Arial Unicode MS Regular';
+        font-weight: Bold;
+        font-size: 22px;
+    }
+
+    .region-name {
+        color: black;
+        position: absolute;
+        top: 120px;
+        left: 5%;
+        font-family: 'Arial Unicode MS Regular';
+        font-weight: Medium;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .native-lang {
+        width: 90%;
+        color: black;
+        position: absolute;
+        top: 140px;
+        left: 5%;
+        font-family: 'Arial Unicode MS Regular';
+        font-weight: Bold;
+        font-size: 14px;
+    }
+
+    .lang-spoken {
+        color: black;
+        position: absolute;
+        top: 160px;
+        left: 5%;
+        font-family: 'Arial Unicode MS Regular';
+        font-weight: Medium;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+        margin-right: 30px;
+    }
+
+    .region-phrases {
+        color: black;
+        position: absolute;
+        top: 450px;
+        left: 5%;
+        font-family: 'Arial Unicode MS Regular';
+        font-weight: Medium;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+        margin-right: 30px;
+    }
+
+    .region-description {
+        width: 80%;
+        position: absolute;
+        top: 300px;
+        left: 5%;
+        font-family: 'Arial Unicode MS Regular';
+        font-size: 14px;
+        opacity: 1;
+        text-align: justify;
+    }
+
+    .province-picture {
+        width: 150px;
+        height: auto;
+        position: absolute;
+        top: 90px;
+        right: 5%;
+        border-radius: 50%;
+        border: 2px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
 }
