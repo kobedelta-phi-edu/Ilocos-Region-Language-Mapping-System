@@ -28,32 +28,28 @@ map.on('load', function () {
             fillColor: '#ef8a62',
             coordinates: [120.5935433,18.1973235],
             provJson: 'json/boundary/ilocos norte-boundary.json',
-            muniJson: 'json/prov-municipalities/ilocos norte-municipalities.json',
-            //languages: ['Ilocano', 'Tagalog']
+            muniJson: 'json/prov-municipalities/ilocos norte-municipalities.json'
         },
         {
             name: "Ilocos Sur",
             fillColor: '#998ec3',
             coordinates: [120.3872632,17.5755487],
             provJson: 'json/boundary/ilocos sur-boundary.json',
-            muniJson: 'json/prov-municipalities/ilocos sur-municipalities.json',
-            //languages: ['Ilocano', 'Kankanaey', 'Tagalog']
+            muniJson: 'json/prov-municipalities/ilocos sur-municipalities.json'
         },
         {
             name: "La Union",
             fillColor: '#f1a340',
             coordinates: [120.317104,16.6162676],
             provJson: 'json/boundary/la union-boundary.json',
-            muniJson: 'json/prov-municipalities/la union-municipalities.json',
-            //languages: ['Ilocano', 'Pangasinan', 'Kankanaey', 'Tagalog']
+            muniJson: 'json/prov-municipalities/la union-municipalities.json'
         },
         {
             name: "Pangasinan",
             fillColor: '#67a9cf',
             coordinates: [120.2307093,16.0206363],
             provJson: 'json/boundary/pangasinan-boundary.json',
-            muniJson: 'json/prov-municipalities/pangasinan-municipalities.json',
-            //languages: ['Bolinao', 'Ilocano', 'Kallahan', 'Pangasinan', 'Sambal', 'Tagalog']
+            muniJson: 'json/prov-municipalities/pangasinan-municipalities.json'
         }
     ];
             
@@ -120,17 +116,16 @@ map.on('load', function () {
             var sidebarContainer = document.getElementById('sidebar');
             sidebarContainer.style.display = 'block';
 
-            // Set the sidebar content
             document.getElementById('sidebar-image').src = displayImage;
             document.getElementById('sidebar-province').textContent = provinceName;
             document.getElementById('sidebar-region').textContent = provinceRegion;
             document.getElementById('sidebar-lang').textContent = regionLang;
             document.getElementById('sidebar-description').textContent = provinceDescription;
 
-            var phrasesList = document.createElement('ul');
+            var phrasesList = document.createElement('li');
             regionPhrases.slice(1, -1).split(',').forEach(function (phrase){
                 var phraseItem = document.createElement('li');
-                phraseItem.textContent = phrase.trim();
+                phraseItem.textContent = phrase.trim().replace(/"/g, '');
                 phrasesList.appendChild(phraseItem);
             });
             document.getElementById('sidebar-phrases').innerHTML = '';
@@ -191,7 +186,7 @@ map.on('load', function () {
                         .setHTML('<div class="place-name">' + municipalityName + '</div>' + 
                         '<div class="place-postal">' + postalCode + '</div>' + '</div>' + 
                         '<div class="place-description">' + placeDescription + '</div>' + 
-                        '<div class="place-languages">' + languagesHTML + '</div>')
+                        '<div class="place-languages">Native Languages:' + languagesHTML + '</div>')
                         .addTo(map)
                         .on('close', function(){
                             //close

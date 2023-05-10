@@ -36,6 +36,7 @@ body {
 .place-languages {
     margin-top: 20px;
     font-weight: bold;
+    list-style-type: none;
 }
 
 /*.back-button {*/
@@ -144,14 +145,15 @@ body {
 .region-phrases {
     color: black;
     position: absolute;
-    top: 500px;
-    left: 0px;
+    top: 535px;
+    left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Medium;
     font-size: 15px;
     opacity: 1;
     text-align: left;
     margin-right: 30px;
+    list-style-type: none;
 }
 
 .region-description {
@@ -216,6 +218,7 @@ body {
 
     .place-languages {
         margin-top: 10px;
+        list-style-type: none;
     }
 }
 
