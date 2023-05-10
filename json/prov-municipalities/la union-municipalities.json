@@ -111,6 +111,7 @@
 			  "POSTAL_CODE": "2510",
 			  "DESCRIPTION": "Known for its stunning beaches, natural attractions such as the Tangadan Falls, and historical landmarks such as the Burgos Watchtower.",
 			  "LANGUAGES": ["Ilocano", "Tagalog"]
+			}
 		},
 		{
 			"type": "Feature",
@@ -277,7 +278,7 @@
 			  "MUNICIPALITY": "Sudipen",
 			  "POSTAL_CODE": "2520",
 			  "DESCRIPTION": "Known for its natural attractions such as the Balay Anito Falls and the Asin Hot Spring.",
-			  "LANGUAGES": ["Ilocano", "Kankanaey", "Ibaloi", "Pangasinan", "Tagalog"]
+			  "LANGUAGES": ["Ibaloi", "Ilocano", "Kankanaey", "Pangasinan", "Tagalog"]
 			}
 		},
 		{
