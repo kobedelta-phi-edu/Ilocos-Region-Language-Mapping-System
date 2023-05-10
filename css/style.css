@@ -37,106 +37,6 @@ body {
     font-weight: bold;
 }
 
-.lang-button {
-    background-color: white; /* Set the background color */
-    border: 0.3; /*Remove the border*/
-    color: black; /* Set the text color to white */
-    padding: 8px 14px; /* Set the padding */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline from the text */
-    display: inline-block; /* Set the display to inline block */
-    font-size: 15px; /* Set the font size */
-    font-family: 'Arial Unicode MS Regular';
-    font-weight: Regular;
-    margin-top: 90px; /* Add some margin at the top */
-    margin-left: 30px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background-image: url("/icon/lang.png");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    background-size: 36px;
-    padding-left: 45px;
-}
-
-.lang-button:hover {
-    background-color: #3e8e41; /* Change the background color on hover */
-    border: 0.3;
-    border-color: #3e8e41;
-    color: white;
-}
-
-.lang-icon {
-    width: 22px;
-    height: 22px;
-    background-image: url("../icon/lang.png");
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-}
-.new-container {
-    width: 360px;
-    height: 550px;
-    position: absolute;
-    top: 90px;
-    left: 40px;
-    overflow: hidden;
-    background: white;
-    opacity: 1;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.25);
-}
-
-.new-container h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.new-container h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.new-container li {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-/* Back button styles */
-.back-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 22px;
-    height: 22px;
-    background-color: #fff; /* set the background color to white */
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    background-image: url("../icon/back.png");
-    background-repeat: no-repeat;
-    background-size: 26px;
-    background-position: center;
-    cursor: pointer;
-}
-
-.back-button img {
-    max-width: 100%;
-}
-
 /*.back-button {*/
 /*    background: transparent;*/
 /*    border: none;*/
@@ -169,6 +69,7 @@ body {
     top: 90px;
     left: 40px;
     overflow: hidden;
+    overflow-y: scroll;
     background: white;
     opacity: 1;
     border-top-left-radius: 8px;
@@ -176,6 +77,19 @@ body {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Hide the scrollbar on WebKit browsers */
+.board::-webkit-scrollbar {
+    width: 0.0em;
+}
+
+.board::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.board::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 .province-name {
@@ -188,6 +102,7 @@ body {
     font-weight: Bold;
     font-size: 25px;
 }
+
 .region-name {
     color: black;
     position: absolute;
@@ -200,10 +115,48 @@ body {
     text-align: left;
 }
 
+.native-lang{
+    width: 381px;
+    color: black;
+    position: absolute;
+    top: 276px;
+    left: 32px;
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Bold;
+    font-size: 16px;
+
+}
+
+.lang-spoken {
+    color: black;
+    position: absolute;
+    top: 312px;
+    left: 32px;
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Medium;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+    margin-right: 30px;
+}
+
+.region-phrases {
+    color: black;
+    position: absolute;
+    top: 525px;
+    left: 32px;
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Medium;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+    margin-right: 30px;
+}
+
 .region-description {
     width: 295px;
     position: absolute;
-    top: 349px;
+    top: 365px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-size: 15px;

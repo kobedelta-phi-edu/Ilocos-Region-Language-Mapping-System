@@ -29,7 +29,7 @@ map.on('load', function () {
             coordinates: [120.5935433,18.1973235],
             provJson: 'json/boundary/ilocos norte-boundary.json',
             muniJson: 'json/prov-municipalities/ilocos norte-municipalities.json',
-            languages: ['Ilocano', 'Tagalog']
+            //languages: ['Ilocano', 'Tagalog']
         },
         {
             name: "Ilocos Sur",
@@ -37,7 +37,7 @@ map.on('load', function () {
             coordinates: [120.3872632,17.5755487],
             provJson: 'json/boundary/ilocos sur-boundary.json',
             muniJson: 'json/prov-municipalities/ilocos sur-municipalities.json',
-            languages: ['Ilocano', 'Kankanaey', 'Tagalog']
+            //languages: ['Ilocano', 'Kankanaey', 'Tagalog']
         },
         {
             name: "La Union",
@@ -45,7 +45,7 @@ map.on('load', function () {
             coordinates: [120.317104,16.6162676],
             provJson: 'json/boundary/la union-boundary.json',
             muniJson: 'json/prov-municipalities/la union-municipalities.json',
-            languages: ['Ilocano', 'Pangasinan', 'Kankanaey', 'Tagalog']
+            //languages: ['Ilocano', 'Pangasinan', 'Kankanaey', 'Tagalog']
         },
         {
             name: "Pangasinan",
@@ -53,7 +53,7 @@ map.on('load', function () {
             coordinates: [120.2307093,16.0206363],
             provJson: 'json/boundary/pangasinan-boundary.json',
             muniJson: 'json/prov-municipalities/pangasinan-municipalities.json',
-            languages: ['Bolinao', 'Ilocano', 'Kallahan', 'Pangasinan', 'Sambal', 'Tagalog']
+            //languages: ['Bolinao', 'Ilocano', 'Kallahan', 'Pangasinan', 'Sambal', 'Tagalog']
         }
     ];
             
@@ -110,6 +110,8 @@ map.on('load', function () {
             var displayImage = e.features[0].properties.IMAGE;
             var provinceRegion = e.features[0].properties.REGION;
             var provinceDescription = e.features[0].properties.DESCRIPTION;
+            var regionLang = e.features[0].properties.LANGUAGES;
+            var regionPhrases = e.features[0].properties.PHRASES;
 
             if (selectedProvince !== null) {
                 showFillLayerHideLabel(selectedProvince);
@@ -117,66 +119,51 @@ map.on('load', function () {
                 zoomCenterCoordinates(coordinates);
             }
 
-            document.getElementById("lang-button").addEventListener('click', function(){
+            /* var languageList = document.getElementById("sidebar-lang"); */
+
+            /* // create a link for each language
+            jsonData.LANGUAGES.forEach(function(language) {
+            var link = document.createElement("a");
+            link.href = "#" + language.link;
+            link.textContent = language.name;
+            link.addEventListener('click', function(event){
+                event.preventDefault();
                 // check if the new container has already been created
                 var newContainer = document.querySelector(".new-container");
                 if (!newContainer) {
-                    // create new container if it doesn't exist
-                    newContainer = document.createElement("div");
-                    newContainer.classList.add("new-container");
+                // create new container if it doesn't exist
+                newContainer = document.createElement("div");
+                newContainer.classList.add("new-container");
 
-                    console.log(province.languages); 
-            
-                         
-                    // create HTML elements to display the data
-                    var languages = document.createElement('h2');
-                    languages.textContent = 'Languages:';
-                    var langList = document.createElement('ul');
-                    if (provinceName == province.name){
-                        console.log('true');
-                    }
-                        var lang1 = province.languages;
-                        lang1.forEach(function(language) {
-                            // create clickable links for each language and add them to the container
-                            var langLink = document.createElement('a');
-                            langLink.textContent = language;
-                            langLink.href = '#';
-                            langLink.addEventListener('click', function() {
-                                console.log('Clicked on language:', province.languages);
-                            });
-                            var langItem = document.createElement('li');
-                            langItem.appendChild(langLink);
-                            langList.appendChild(langItem);
-                            //     });
-                                // });
-                    
-                            // append the HTML elements to the new container
-                            newContainer.appendChild(languages);
-                            newContainer.appendChild(langList);
-                    
-                                // create back button
-                            var backButton = document.createElement("button");
-                            backButton.classList.add("back-button");
-                            var backButtonImg = document.createElement("img");
-                            newContainer.appendChild(backButton);
-                    
-                                // add event listener to back button
-                            backButton.addEventListener('click', function(){
-                                    // remove new container and restore sidebar container
-                                newContainer.remove();
-                                document.getElementById("sidebar").style.display = "block";
-                            });
-                
-                                // append the new container to the page
-                            document.body.appendChild(newContainer);
-                        });
-                    
-                            // hide the sidebar container
-                            document.getElementById("sidebar").style.display = "none";
-                        }
-                    hideSideBar();
-                // }
+                // create back button
+                var backButton = document.createElement("button");
+                backButton.classList.add("back-button");
+                var backButtonImg = document.createElement("img");
+                newContainer.appendChild(backButton);
+
+                // add event listener to back button
+                backButton.addEventListener('click', function(){
+                    // remove new container and restore sidebar container
+                    newContainer.remove();
+                    document.getElementById("sidebar").style.display = "block";
+                });
+
+                // add new container to the body
+                document.body.appendChild(newContainer);
+                }
+
+                // create language container
+                var languageContainer = document.createElement("div");
+                languageContainer.id = language.link;
+                newContainer.appendChild(languageContainer);
+
+                // hide sidebar container
+                document.getElementById("sidebar").style.display = "none";
             });
+            languageList.appendChild(link);
+            });
+                             */
+
 
             // Show the sidebar
             var sidebarContainer = document.getElementById('sidebar');
@@ -186,7 +173,10 @@ map.on('load', function () {
             document.getElementById('sidebar-image').src = displayImage;
             document.getElementById('sidebar-province').textContent = provinceName;
             document.getElementById('sidebar-region').textContent = provinceRegion;
+            document.getElementById('sidebar-lang').textContent = regionLang;
             document.getElementById('sidebar-description').textContent = provinceDescription;
+            document.getElementById('sidebar-phrases').textContent = regionPhrases
+
                         
             // Add the close event for the sidebar
             document.getElementById('sidebar-close').addEventListener('click', function () {
