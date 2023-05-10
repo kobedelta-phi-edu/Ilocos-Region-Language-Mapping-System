@@ -104,33 +104,64 @@ map.on('load', function () {
             var displayImage = e.features[0].properties.IMAGE;
             var provinceRegion = e.features[0].properties.REGION;
             var provinceDescription = e.features[0].properties.DESCRIPTION;
-            var regionLang = e.features[0].properties.LANGUAGES;
-            var regionPhrases = e.features[0].properties.PHRASES;
 
             if (selectedProvince !== null) {
                 showFillLayerHideLabel(selectedProvince);
                 selectedProvince = null;  // Reset the selected province
                 zoomCenterCoordinates(coordinates);
             }
+
+            document.getElementById("lang-button").addEventListener('click', function(){
+                // check if the new container has already been created
+                var newContainer = document.querySelector(".new-container");
+                if (!newContainer) {
+                    // create new container if it doesn't exist
+                    newContainer = document.createElement("div");
+                    newContainer.classList.add("new-container");
+
+                    fetch('sample-phrases.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        // create HTML elements to display the data
+                        var languages = document.createElement('h2');
+                        languages.textContent = data.LANGUAGE;
+                        var phrases = document.createElement('p');
+                        phrases.textContent = data.PHRASES;
+
+                        // append the HTML elements to the new container
+                        newContainer.appendChild(languages);
+                        newContainer.appendChild(phrases);
+                    });
+
+                    // create back button
+                    var backButton = document.createElement("button");
+                    backButton.classList.add("back-button");
+                    var backButtonImg = document.createElement("img");
+                    newContainer.appendChild(backButton);
+
+                    // add event listener to back button
+                    backButton.addEventListener('click', function(){
+                        // remove new container and restore sidebar container
+                        newContainer.remove();
+                        document.getElementById("sidebar").style.display = "block";
+                    });
+
+                    // add new container to the body
+                    document.body.appendChild(newContainer);
+                }
+
+                hideSideBar()
+            });
+
             // Show the sidebar
             var sidebarContainer = document.getElementById('sidebar');
             sidebarContainer.style.display = 'block';
 
+            // Set the sidebar content
             document.getElementById('sidebar-image').src = displayImage;
             document.getElementById('sidebar-province').textContent = provinceName;
             document.getElementById('sidebar-region').textContent = provinceRegion;
-            document.getElementById('sidebar-lang').textContent = regionLang;
             document.getElementById('sidebar-description').textContent = provinceDescription;
-
-            var phrasesList = document.createElement('li');
-            regionPhrases.slice(1, -1).split(',').forEach(function (phrase){
-                var phraseItem = document.createElement('li');
-                phraseItem.textContent = phrase.trim().replace(/"/g, '');
-                phrasesList.appendChild(phraseItem);
-            });
-            document.getElementById('sidebar-phrases').innerHTML = '';
-            document.getElementById('sidebar-phrases').appendChild(phrasesList);
-
                         
             // Add the close event for the sidebar
             document.getElementById('sidebar-close').addEventListener('click', function () {
@@ -168,18 +199,6 @@ map.on('load', function () {
                     var postalCode = e.features[0].properties.POSTAL_CODE;
                     var placeDescription = e.features[0].properties.DESCRIPTION;
                     var placeLanguages = e.features[0].properties.LANGUAGES;
-
-                    var languagesHTML = '';
-                    if (placeLanguages) {
-                        // Split the languages by comma
-                        var languages = placeLanguages.split(',');
-                        languages.forEach(function (language) {
-                            // Trim leading/trailing spaces from each language
-                            language = language.trim().replace(/["\[\]]/g, '');
-                            // Create a clickable link for each language
-                            languagesHTML += '<li><a href="#' + encodeURIComponent(language) + '">' + language + '</a></li>';
-                        });
-                    }
                 
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
