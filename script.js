@@ -175,7 +175,15 @@ map.on('load', function () {
             document.getElementById('sidebar-region').textContent = provinceRegion;
             document.getElementById('sidebar-lang').textContent = regionLang;
             document.getElementById('sidebar-description').textContent = provinceDescription;
-            document.getElementById('sidebar-phrases').textContent = regionPhrases
+
+            var phrasesList = document.createElement('ul');
+            regionPhrases.slice(1, -1).split(',').forEach(function (phrase){
+                var phraseItem = document.createElement('li');
+                phraseItem.textContent = phrase.trim();
+                phrasesList.appendChild(phraseItem);
+            });
+            document.getElementById('sidebar-phrases').innerHTML = '';
+            document.getElementById('sidebar-phrases').appendChild(phrasesList);
 
                         
             // Add the close event for the sidebar
