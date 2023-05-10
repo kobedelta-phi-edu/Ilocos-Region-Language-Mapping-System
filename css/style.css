@@ -35,6 +35,7 @@ body {
 .place-languages {
     margin-top: 20px;
     font-weight: bold;
+    list-style-type: none;
 }
 
 .lang-button {

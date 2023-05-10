@@ -199,6 +199,18 @@ map.on('load', function () {
                     var postalCode = e.features[0].properties.POSTAL_CODE;
                     var placeDescription = e.features[0].properties.DESCRIPTION;
                     var placeLanguages = e.features[0].properties.LANGUAGES;
+
+                    var languagesHTML = '';
+                    if (placeLanguages) {
+                        // Split the languages by comma
+                        var languages = placeLanguages.split(',');
+                        languages.forEach(function (language) {
+                            // Trim leading/trailing spaces from each language
+                            language = language.trim().replace(/["\[\]]/g, '');
+                            // Create a clickable link for each language
+                            languagesHTML += '<li><a href="#' + encodeURIComponent(language) + '">' + language + '</a></li>';
+                        });
+                    }
                 
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
