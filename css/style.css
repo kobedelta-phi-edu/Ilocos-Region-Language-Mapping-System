@@ -2,10 +2,6 @@ body {
     margin: 0;
     padding: 0;
 }
-#sidebar-phrases {
-    list-style-type: disc;
-    margin-left: 1em;
-}
 
 
 #map {
@@ -148,8 +144,8 @@ body {
 .region-phrases {
     color: black;
     position: absolute;
-    top: 525px;
-    left: 32px;
+    top: 500px;
+    left: 0px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Medium;
     font-size: 15px;
