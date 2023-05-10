@@ -12,7 +12,7 @@
 			  "MUNICIPALITY": "Adams",
 			  "POSTAL_CODE" : "2922",
 			  "DESCRIPTION": "Known for its unspoiled natural beauty, including pristine rivers, waterfalls, and forests. The town offers a peaceful and secluded getaway for nature enthusiasts, hikers, and those seeking to escape the hustle and bustle of city life.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -26,7 +26,7 @@
 			  "MUNICIPALITY": "Bacarra",
 			  "POSTAL_CODE" : "2916",
 			  "DESCRIPTION": "Known for its beautiful Spanish colonial church, the Bacarra Church, and its vibrant pottery industry. The town offers a glimpse into the region's rich history and culture",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -40,7 +40,7 @@
 			  "MUNICIPALITY": "Badoc",
 			  "POSTAL_CODE" : "2904",
 			  "DESCRIPTION": "Known for its historic church, the St. John the Baptist Parish Church, and its connection to the national hero, Juan Luna, who was born and raised in the town. The town offers a glimpse into Philippine history and culture",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -54,7 +54,7 @@
 			  "MUNICIPALITY": "Banna",
 			  "POSTAL_CODE" : "2908",
 			  "DESCRIPTION": "Known for its traditional handicrafts such as abel Iloko, a handwoven textile made from cotton or cotton blend. The town is also known for its pottery, where skilled artisans create pots, vases, and other decorative items",
-			  "LANGUAGES": "Ilocano, Pangsinan Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -68,7 +68,7 @@
 			  "MUNICIPALITY": "Bangui",
 			  "POSTAL_CODE" : "2920",
 			  "DESCRIPTION": "Known for its iconic Bangui Wind Farm, which features 20 towering wind turbines that generate renewable energy. The town offers a picturesque view of the sea and the wind turbines and is a popular destination for tourists",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -82,7 +82,7 @@
 			  "MUNICIPALITY": "Batac",
 			  "POSTAL_CODE" : "2906",
 			  "DESCRIPTION": "The city offers a glimpse into Philippine history and culture, with attractions such as the Marcos Museum and Mausoleum, the Batac Riverside Empanadaan, and the Paoay Lake National Park.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -96,7 +96,7 @@
 			  "MUNICIPALITY": "Burgos",
 			  "POSTAL_CODE" : "2918",
 			  "DESCRIPTION": "Known for its stunning rock formations, such as the Kapurpurawan Rock Formation and the Cape Bojeador Lighthouse. ",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -110,7 +110,7 @@
 			  "MUNICIPALITY": "Carasi",
 			  "POSTAL_CODE" : "2911",
 			  "DESCRIPTION": "Known for its beautiful mountainous terrain, rolling hills, and picturesque waterfalls. The town offers a serene and peaceful environment for tourists",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -124,7 +124,7 @@
 			  "MUNICIPALITY": "Currimao",
 			  "POSTAL_CODE" : "2903",
 			  "DESCRIPTION": "Known for its beautiful beaches and crystal-clear waters. The town offers a peaceful and relaxing destination for beachgoers, and a chance to experience the local culture and cuisine.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -138,7 +138,7 @@
 			  "MUNICIPALITY": "Dingras",
 			  "POSTAL_CODE" : "2913",
 			  "DESCRIPTION": "Known for its rich history and cultural heritage. The town is home to the Dingras Church, a historical landmark and a significant part of the region's colonial past.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -152,7 +152,7 @@
 			  "MUNICIPALITY": "Dumalneg",
 			  "POSTAL_CODE" : "2921",
 			  "DESCRIPTION": "Known for its rugged terrain, pristine rivers, and waterfalls. It is a great destination for nature enthusiasts and adventure seekers, offering visitors a chance to experience the natural beauty of the region",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -166,7 +166,7 @@
 			  "MUNICIPALITY": "Laoag City",
 			  "POSTAL_CODE" : "2900",
 			  "DESCRIPTION": "Known for its historic sites, such as the sinking bell tower of St. William's Cathedral and the Tobacco Monopoly Monument. The town is a great place to experience Philippine culture and history.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -180,7 +180,7 @@
 			  "MUNICIPALITY": "Marcos",
 			  "POSTAL_CODE" : "2907",
 			  "DESCRIPTION": "The town offers a glimpse into the Marcos family's history and legacy, with several landmarks and museums dedicated to the late president and his family.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -194,7 +194,7 @@
 			  "MUNICIPALITY": "Nueva Era",
 			  "POSTAL_CODE" : "2909",
 			  "DESCRIPTION": "Known for its scenic mountains, rolling hills, and cascading waterfalls, such as the Kabigan Falls. The town offers a great opportunity for outdoor activities, such as trekking, hiking, and camping, and a chance to experience the beauty of the Philippine highlands.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -208,7 +208,7 @@
 			  "MUNICIPALITY": "Pagudpud",
 			  "POSTAL_CODE" : "2919",
 			  "DESCRIPTION": "Known for its pristine beaches, crystal-clear waters, and stunning sunsets. The town offers a wide range of activities, from swimming and surfing to exploring",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -222,7 +222,7 @@
 			  "MUNICIPALITY": "Paoay",
 			  "POSTAL_CODE" : "2902",
 			  "DESCRIPTION": "Known for its UNESCO World Heritage Site, the Paoay Church, which is a magnificent example of the Baroque architecture in the Philippines.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -236,7 +236,7 @@
 			  "MUNICIPALITY": "Pasuquin",
 			  "POSTAL_CODE" : "2917",
 			  "DESCRIPTION": "Known for its production of the famous Pasuquin Salt and its rich cultural heritage. The town offers a glimpse into the traditional way of salt-making, and a chance to explore the local delicacies and traditions.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -250,7 +250,7 @@
 			  "MUNICIPALITY": "Piddig",
 			  "POSTAL_CODE" : "2912",
 			  "DESCRIPTION": "Known for its beautiful natural attractions, such as the Pinacanauan River, the Sta. Rosa Lagoon, and the Kapur-purawan rock formation. The town offers a tranquil and peaceful environment for tourists seeking to explore",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -264,7 +264,7 @@
 			  "MUNICIPALITY": "Pinili",
 			  "POSTAL_CODE" : "2905",
 			  "DESCRIPTION": "Known for its traditional product, the Pinili Longganisa, which is a savory sausage made from pork, garlic, and other local spices. The town offers a great opportunity for foodies to taste the local cuisine.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -278,7 +278,7 @@
 			  "MUNICIPALITY": "San Nicolas",
 			  "POSTAL_CODE" : "2901",
 			  "DESCRIPTION": "Known for its centuries-old tradition of pottery-making and as the Garlic Capital of the North. The town also boasts historical landmarks, natural attractions, and a rich cultural experience.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -292,7 +292,7 @@
 			  "MUNICIPALITY": "Sarrat",
 			  "POSTAL_CODE" : "2914",
 			  "DESCRIPTION": "Known for its historic sites, such as the Sarrat Church, the largest church in Ilocos Norte, and the birthplace of former Philippine President Ferdinand Marcos. The town offers a glimpse of the country's rich cultural and political history.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -306,7 +306,7 @@
 			  "MUNICIPALITY": "Solsona",
 			  "POSTAL_CODE" : "2910",
 			  "DESCRIPTION": "Known for its scenic landscapes, mountain ranges, and verdant forests. The town offers a serene environment for those who seek adventure.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		},
 		{
@@ -320,7 +320,7 @@
 			  "MUNICIPALITY": "Vintar",
 			  "POSTAL_CODE" : "2915",
 			  "DESCRIPTION": "Known for its lush forests, pristine rivers, and historic landmarks such as the 17th-century Vintar Church. The town offers a great opportunity for nature lovers to experience the region's ecological diversity.",
-			  "LANGUAGES": "Ilocano, Tagalog"
+			  "LANGUAGES": ["Ilocano", "Tagalog"]
 			}
 		}
 	]

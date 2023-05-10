@@ -77,8 +77,6 @@ map.on('load', function () {
                     previousProvince = province.name;
                     selectedProvince = province; // Set the selected province
                     handleMunicipalityLabel(province);
-
-                    showSidebar(province.displayImage, provinceName, provinceRegion, provinceDescription);
                 }
             });
         }
@@ -174,11 +172,26 @@ map.on('load', function () {
                     var municipalityName = e.features[0].properties.MUNICIPALITY;
                     var postalCode = e.features[0].properties.POSTAL_CODE;
                     var placeDescription = e.features[0].properties.DESCRIPTION;
-                    var placeLanguages = e.features[0].properties.LANGUAGES//.join(",");
+                    var placeLanguages = e.features[0].properties.LANGUAGES;
+
+                    var languagesHTML = '';
+                    if (placeLanguages) {
+                        // Split the languages by comma
+                        var languages = placeLanguages.split(',');
+                        languages.forEach(function (language) {
+                            // Trim leading/trailing spaces from each language
+                            language = language.trim().replace(/["\[\]]/g, '');
+                            // Create a clickable link for each language
+                            languagesHTML += '<li><a href="#' + encodeURIComponent(language) + '">' + language + '</a></li>';
+                        });
+                    }
                 
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
-                        .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
+                        .setHTML('<div class="place-name">' + municipalityName + '</div>' + 
+                        '<div class="place-postal">' + postalCode + '</div>' + '</div>' + 
+                        '<div class="place-description">' + placeDescription + '</div>' + 
+                        '<div class="place-languages">' + languagesHTML + '</div>')
                         .addTo(map)
                         .on('close', function(){
                             //close
