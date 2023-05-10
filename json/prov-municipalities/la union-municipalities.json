@@ -12,11 +12,7 @@
 			  "MUNICIPALITY": "Agoo",
 			  "POSTAL_CODE": "2504",
 			  "DESCRIPTION": "Known for its historical landmarks, beautiful beaches, and rich cultural heritage.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
 			}
 		},
 		{
@@ -30,10 +26,7 @@
 			  "MUNICIPALITY": "Aringay",
 			  "POSTAL_CODE": "2503",
 			  "DESCRIPTION": "Known for its natural attractions such as beaches, waterfalls, and caves.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -47,10 +40,7 @@
 			  "MUNICIPALITY": "Bacnotan",
 			  "POSTAL_CODE": "2512",
 			  "DESCRIPTION": "Known for its long coastline and beautiful beaches, as well as for being the birthplace of the Philippine surfing scene.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -64,10 +54,7 @@
 			  "MUNICIPALITY": "Bagulin",
 			  "POSTAL_CODE": "2512",
 			  "DESCRIPTION": "Known for its scenic mountainous terrain and beautiful waterfalls, such as the Tangadan Falls and the Tupanggat Falls.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -81,10 +68,7 @@
 			  "MUNICIPALITY": "Balaoan",
 			  "POSTAL_CODE": "2517",
 			  "DESCRIPTION": "Known for its stunning beaches and natural attractions such as the Balaoan Sand Dunes, as well as its rich cultural heritage reflected in its historical landmarks such as the Balaoan Church and the Balaoan Watchtower.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -98,10 +82,7 @@
 			  "MUNICIPALITY": "Bangar",
 			  "POSTAL_CODE": "2519",
 			  "DESCRIPTION": "Known for its beautiful beaches and historical landmarks such as the Bangar Petrified Forest and the St. Catherine of Alexandria Church.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -115,10 +96,7 @@
 			  "MUNICIPALITY": "Bauang",
 			  "POSTAL_CODE": "2501",
 			  "DESCRIPTION": "Known for its beautiful beaches, water activities, historical landmarks, and agricultural produce.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -132,10 +110,7 @@
 			  "MUNICIPALITY": "Burgos",
 			  "POSTAL_CODE": "2510",
 			  "DESCRIPTION": "Known for its stunning beaches, natural attractions such as the Tangadan Falls, and historical landmarks such as the Burgos Watchtower.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -149,10 +124,7 @@
 			  "MUNICIPALITY": "Caba",
 			  "POSTAL_CODE": "2502",
 			  "DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Caba Wetlands and the Agoo-Damortis National Seashore Park.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -166,10 +138,7 @@
 			  "MUNICIPALITY": "Damortis",
 			  "POSTAL_CODE": "2507",
 			  "DESCRIPTION": "Known for its natural attractions such as the Damortis River and the Damortis Hanging Bridge.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -183,10 +152,7 @@
 			  "MUNICIPALITY": "Luna",
 			  "POSTAL_CODE": "2518",
 			  "DESCRIPTION": "Known for its scenic coastline and beautiful beaches, as well as for being the site of the Luna Watchtower and the Baluarte Watchtower.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -200,10 +166,7 @@
 			  "MUNICIPALITY": "Naguillian",
 			  "POSTAL_CODE": "2511",
 			  "DESCRIPTION": "Known for its natural attractions such as the Naguilian River and the Naguilian Rice Terraces, which are considered as a National Cultural Treasure.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -217,11 +180,7 @@
 			  "MUNICIPALITY": "Pugo",
 			  "POSTAL_CODE": "2508",
 			  "DESCRIPTION": "Known for its natural attractions such as the Pugo Adventure Park.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
 			}
 		},
 		{
@@ -235,11 +194,7 @@
 			  "MUNICIPALITY": "Rosario",
 			  "POSTAL_CODE": "2506",
 			  "DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Ma-Cho Temple.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
 			}
 		},
 		{
@@ -253,11 +208,7 @@
 			  "MUNICIPALITY": "San Fernando",
 			  "POSTAL_CODE": "2500",
 			  "DESCRIPTION": "Known for its beautiful beaches and historical landmarks such as the La Union Botanical Garden and the Christ the Redeemer Statue.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
 			}
 		},
 		{
@@ -271,10 +222,7 @@
 			  "MUNICIPALITY": "San Gabriel",
 			  "POSTAL_CODE": "2513",
 			  "DESCRIPTION": "Known for its natural attractions such as the Tangadan Falls, a scenic waterfall nestled in the mountains, and the Kapurpurawan Rock Formation.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Tagalog"
 			}
 		},
 		{
@@ -288,11 +236,7 @@
 			  "MUNICIPALITY": "San Juan",
 			  "POSTAL_CODE": "2514",
 			  "DESCRIPTION": "Known for its world-class surf spots such as Urbiztondo Beach, which attracts surfers from all over the world.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
 			}
 		},
 		{
@@ -306,11 +250,7 @@
 			  "MUNICIPALITY": "Santo Tomas",
 			  "POSTAL_CODE": "2505",
 			  "DESCRIPTION": "Known for its natural attractions such as the Mt. Damas and the Tinongdan Rice Terraces.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
 			}
 		},
 		{
@@ -324,11 +264,7 @@
 			  "MUNICIPALITY": "Santol",
 			  "POSTAL_CODE": "2516",
 			  "DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Sabangan Cove and the Tangadan Tunnel.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
 			}
 		},
 		{
@@ -342,13 +278,7 @@
 			  "MUNICIPALITY": "Sudipen",
 			  "POSTAL_CODE": "2520",
 			  "DESCRIPTION": "Known for its natural attractions such as the Balay Anito Falls and the Asin Hot Spring.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Ibaloi",
-				"Kankanaey",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Ibaloi, Kankanaey, Pangasinan, Tagalog"
 			}
 		},
 		{
@@ -362,11 +292,7 @@
 			  "MUNICIPALITY": "Tubao",
 			  "POSTAL_CODE": "2509",
 			  "DESCRIPTION": "Known for its beautiful beaches and natural attractions such as the Pugo Adventure Park.",
-			  "LANGUAGES": [
-				"Ilocano",
-				"Pangasinan",
-				"Tagalog"
-				]
+			  "LANGUAGES": "Ilocano, Pangasinan, Tagalog"
 			}
 		}
 	]
