@@ -118,53 +118,6 @@ map.on('load', function () {
                 selectedProvince = null;  // Reset the selected province
                 zoomCenterCoordinates(coordinates);
             }
-
-            /* var languageList = document.getElementById("sidebar-lang"); */
-
-            /* // create a link for each language
-            jsonData.LANGUAGES.forEach(function(language) {
-            var link = document.createElement("a");
-            link.href = "#" + language.link;
-            link.textContent = language.name;
-            link.addEventListener('click', function(event){
-                event.preventDefault();
-                // check if the new container has already been created
-                var newContainer = document.querySelector(".new-container");
-                if (!newContainer) {
-                // create new container if it doesn't exist
-                newContainer = document.createElement("div");
-                newContainer.classList.add("new-container");
-
-                // create back button
-                var backButton = document.createElement("button");
-                backButton.classList.add("back-button");
-                var backButtonImg = document.createElement("img");
-                newContainer.appendChild(backButton);
-
-                // add event listener to back button
-                backButton.addEventListener('click', function(){
-                    // remove new container and restore sidebar container
-                    newContainer.remove();
-                    document.getElementById("sidebar").style.display = "block";
-                });
-
-                // add new container to the body
-                document.body.appendChild(newContainer);
-                }
-
-                // create language container
-                var languageContainer = document.createElement("div");
-                languageContainer.id = language.link;
-                newContainer.appendChild(languageContainer);
-
-                // hide sidebar container
-                document.getElementById("sidebar").style.display = "none";
-            });
-            languageList.appendChild(link);
-            });
-                             */
-
-
             // Show the sidebar
             var sidebarContainer = document.getElementById('sidebar');
             sidebarContainer.style.display = 'block';
@@ -226,10 +179,7 @@ map.on('load', function () {
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
                         .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
-                        .addTo(map)
-                        .on('close', function(){
-                            geocoder.clear();
-                    });
+                        .addTo(map);
                     popup.close();
                 });
             });
