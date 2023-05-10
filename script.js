@@ -228,6 +228,7 @@ map.on('load', function () {
                         .setHTML('<div class="place-name">' + municipalityName + '</div><div class="place-postal">' + postalCode + '</div>' + '</div><div class="place-description">' + placeDescription + '</div>' + '<div class="place-languages">' + placeLanguages + '</div>')
                         .addTo(map)
                         .on('close', function(){
+                            //close
                             geocoder.clear();
                     });
                     popup.close();
