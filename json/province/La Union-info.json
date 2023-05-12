@@ -11,12 +11,20 @@
 	  "DESCRIPTION": "Known for its beautiful beaches, surfing spots, and scenic landscapes. It is a popular destination for tourists seeking to enjoy the sun, sand, and waves, and a great place to experience the local culture and cuisine.",
 	  "LANGUAGES": [
 		{
-		  "name": "dsffs", 
-		  "desc": "sdfsf"
+		  "name": "Ilocano", 
+	      "desc": "Ilocano is spoken as a first language by some 7 million people, primarily in Northern Luzon, La Union and Ilocos provinces, Cagayan Valley, Babuyan, Mindoro, and Mindanao. It is also spoken as a second language by possibly another 2 million speakers in the northern areas of Luzon as a lingua franca in trade, commerce, and everyday communication. "
 		},
 		{
-		  "name": "sdfsf", 
-		  "desc": "sdfsdffsfsdf"
+		  "name": "Pangasinan", 
+		  "desc": "Pangasinan (Pangasinense) is an Austronesian language, and one of the eight major languages of the Philippines. It is the primary and predominant language of the entire province of Pangasinan and northern Tarlac, on the northern part of Luzon's central plains geographic region, most of whom belong to the Pangasinan ethnic group. "
+		},
+		{
+		  "name": "Kankanaey", 
+		  "desc": "Kankanaey is an indigenous language spoken by the Kankanaey people, who are part of the larger Igorot ethnic group in the Philippines. It is primarily spoken in the Cordillera Central region, particularly in the province of Benguet and neighboring areas. Kankanaey belongs to the Malayo-Polynesian language family and is closely related to other Cordilleran languages."
+		},
+		{
+		  "name": "Tagalog", 
+		  "desc": "Tagalog is a language that originated in the Philippine islands. It is the first language of most Filipinos and the second language of most others. More than 50 million Filipinos speak Tagalog in the Philippines, and 24 million people speak the language worldwide."
 		}
 	  ]
 	}

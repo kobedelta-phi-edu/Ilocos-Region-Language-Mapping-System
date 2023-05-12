@@ -11,12 +11,28 @@
 	  "DESCRIPTION": "Known for its beautiful beaches, stunning waterfalls, and delicious seafood cuisine. The province offers a wide range of activities for tourists, including swimming, surfing, island hopping, and sightseeing, and is a popular destination for both local and international visitors.",
 	  "LANGUAGES": [
 		{
-		  "name": "djhjjdasa", 
-		  "desc": "qweqe"
+		  "name": "Bolinao", 
+		  "desc": "Bolinao is a member of the Central Luzon branch of the Malayo-Polynesian language family. It spoken by about 51,000 people mainly in the municipalities of Anda and Bolinao in Pangasinan province on Luzon in the Philippines."
 		},
 		{
-		  "name": "eftrt", 
-		  "desc": "dcdsdf"
+		  "name": "Ilocano", 
+		  "desc": "Ilocano is spoken as a first language by some 7 million people, primarily in Northern Luzon, La Union and Ilocos provinces, Cagayan Valley, Babuyan, Mindoro, and Mindanao. It is also spoken as a second language by possibly another 2 million speakers in the northern areas of Luzon as a lingua franca in trade, commerce, and everyday communication. "
+		},
+		{
+		  "name": "Kallahan", 
+		  "desc": "The term 'Kallahan' is sometimes also used to refer to the Kalanguya people's native language. Kalanguya was once the most spoken language in most parts of today's Benguet, Nueva Vizcaya, Ifugao, Mountain Province, and some parts of Nueva Ecija."
+		},
+		{
+		  "name": "Pangasinan", 
+		  "desc": "Pangasinan (Pangasinense) is an Austronesian language, and one of the eight major languages of the Philippines. It is the primary and predominant language of the entire province of Pangasinan and northern Tarlac, on the northern part of Luzon's central plains geographic region, most of whom belong to the Pangasinan ethnic group."
+		},
+		{
+		  "name": "Sambal", 
+		  "desc": "The Sambalic languages are a part of the Central Luzon language family spoken by the Sambals, an ethnolinguistic group on the western coastal areas of Central Luzon and the Zambales mountain ranges."
+		},
+		{
+		  "name": "Tagalog", 
+		  "desc": "Tagalog is a language that originated in the Philippine islands. It is the first language of most Filipinos and the second language of most others. More than 50 million Filipinos speak Tagalog in the Philippines, and 24 million people speak the language worldwide."
 		}
 	  ]
 	}
