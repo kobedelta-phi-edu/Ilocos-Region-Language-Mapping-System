@@ -111,6 +111,7 @@ map.on('load', function () {
                 zoomCenterCoordinates(coordinates);
             }
 
+            var prov = '';
             document.getElementById("lang-button").addEventListener('click', function(){
                 // check if the new container has already been created
                 var newContainer = document.querySelector(".new-container");
@@ -119,18 +120,60 @@ map.on('load', function () {
                     newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
 
-                    fetch('sample-phrases.json')
+                    prov = provinceName;
+                    console.log(prov);
+                    fetch('json/province/' + 'Ilocos Norte' + '-info.json')
                     .then(response => response.json())
                     .then(data => {
                         // create HTML elements to display the data
                         var languages = document.createElement('h2');
-                        languages.textContent = data.LANGUAGE;
-                        var phrases = document.createElement('p');
-                        phrases.textContent = data.PHRASES;
+                        languages.textContent = 'Languages:';
+                        var languageList = document.createElement('ul');
+
+                        // loop through each language and create list items with descriptions
+                        data.features[0].properties.LANGUAGES.forEach(language => {
+                            var languageItem = document.createElement('li');
+                            var languageName = document.createElement('span');
+                            languageName.textContent = language.name + ': ';
+                            var languageDescription = document.createElement('span');
+                            languageDescription.textContent = language.desc;
+
+                            // make the language name clickable
+                            languageName.style.cursor = 'pointer';
+                            languageName.addEventListener('click', function() {
+                                // do something when language name is clicked
+                                console.log('Clicked language:', language.name);
+                            });
+
+                            languageItem.appendChild(languageName);
+                            languageItem.appendChild(languageDescription);
+                            languageList.appendChild(languageItem);
+                        // newContainer.appendChild(phrases);
+                        // create languages list
+                        // var langList = document.createElement('ul');
+                        });
+                        console.log(languageList);
+                        newContainer.appendChild(languages);
+                        newContainer.appendChild(languageList);
+                        document.body.appendChild(newContainer);
+
+                        // var langHTML = '';
+                        // if (languages) {
+                        //     // Split the languages by comma
+                        //     var languagesArr = languages.split(',');
+                        //     languagesArr.forEach(function (language) {
+                        //         // Trim leading/trailing spaces from each language
+                        //         language = language.trim().replace(/,/g, '');
+                        //         // Create a clickable link for each language
+                        //         langHTML += '<li><a href="#' + encodeURIComponent(language) + '">' + language + '</a></li>';
+                        //     });
+                        // }
+                        // document.getElementById('sidebar-languages').textContent = langHTML;
 
                         // append the HTML elements to the new container
-                        newContainer.appendChild(languages);
-                        newContainer.appendChild(phrases);
+                        // newContainer.appendChild(langHTML);
+                        // newContainer.appendChild(phrases);
+                        // newContainer.appendChild(regionLang);
                     });
 
                     // create back button

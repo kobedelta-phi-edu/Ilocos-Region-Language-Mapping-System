@@ -1,17 +1,23 @@
 {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [120.5935433,18.1973235]
-    },
-    "properties": {
-      "PROVINCE": "Ilocos Norte",
-      "REGION": "Region I",
-      "IMAGE" : "images/ilocos_norte.jpg",
-      "DESCRIPTION": "A province located in the northern part of the Philippines, known for its rich history, cultural heritage, and natural beauty. The province offers a unique blend of historic landmarks, picturesque landscapes, and a vibrant local culture that attracts tourists from all over the world.",
-      "LANGUAGES": [
-        "Ilocano",
-        "Tagalog"
-        ]
-    }
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [120.5935433,18.1973235]
+  },
+  "properties": {
+    "PROVINCE": "Ilocos Norte",
+    "REGION": "Region I",
+    "IMAGE" : "images/ilocos_norte.jpg",
+    "DESCRIPTION": "A province located in the northern part of the Philippines, known for its rich history, cultural heritage, and natural beauty. The province offers a unique blend of historic landmarks, picturesque landscapes, and a vibrant local culture that attracts tourists from all over the world.",
+    "LANGUAGES": [
+      {
+        "name": "Ilocano", 
+        "desc": "Tagalog"
+      },
+      {
+        "name": "Tagalog", 
+        "desc": "Ilocano"
+      }
+    ]
+  }
 }
