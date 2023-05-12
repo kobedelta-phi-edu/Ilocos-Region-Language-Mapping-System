@@ -200,6 +200,9 @@ map.on('load', function () {
                                 languageName.textContent = language.name + ': ';
                                 var languageDescription = document.createElement('span');
                                 languageDescription.textContent = language.desc;
+                                languageList.classList.add('lang-list');
+                                languages.classList.add('lang-name');
+                                languageItem.classList.add('lang-item');
 
                                 // make the language name clickable
                                 languageName.style.cursor = 'pointer';

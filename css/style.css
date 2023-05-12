@@ -132,6 +132,33 @@ body {
     transform: scaleX(1);
 }
 
+.lang-list{
+    list-style-type: none;
+    width: 280px;
+    position: absolute;
+    top: 110px;
+    /* left: 0px; */
+    font-family: 'Arial Unicode MS Regular';
+    font-size: 15px;
+    opacity: 1;
+    text-align: justify;
+}
+
+.lang-item{
+  margin-bottom: 30px; /* Add some spacing between list items */
+}
+
+.lang-name{
+    width: 381px;
+    color: black;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Bold;
+    font-size: 25px;
+}
+
 /* Back button styles */
 .back-button {
     position: absolute;
