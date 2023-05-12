@@ -129,6 +129,7 @@ map.on('load', function () {
                 zoomCenterMap();
             });
 
+
             document.getElementById("lang-button").addEventListener('click', function(){
                 // check if the new container has already been created
                 var newContainer = document.querySelector(".new-container");
@@ -137,46 +138,87 @@ map.on('load', function () {
                     newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
 
-                    // prov = provinceName;
-                    
+                    // create navbar menu
+                    var nav = document.createElement('nav');
+                    var menu = document.createElement('ul');
+                    menu.classList.add('menu');
+
+                    // create menu items
+                    var languagesItem = document.createElement('li');
+                    var languagesLink = document.createElement('a');
+                    languagesLink.href = '#';
+                    languagesLink.textContent = 'Description';
+                    languagesLink.classList.add('active');
+                    languagesItem.classList.add('menu-item');
+                    languagesItem.appendChild(languagesLink);
+
+                    var descriptionItem = document.createElement('li');
+                    var descriptionLink = document.createElement('a');
+                    descriptionLink.href = '#';
+                    descriptionLink.textContent = 'Languages';
+                    descriptionItem.classList.add('menu-item');
+                    descriptionItem.appendChild(descriptionLink);
+
+                    // add hover effect to menu items
+                    menu.addEventListener('mouseover', function(e) {
+                        if (e.target.tagName === 'A') {
+                            e.target.style.textDecoration = 'underline';
+                        }
+                    });
+                    menu.addEventListener('mouseout', function(e) {
+                        if (e.target.tagName === 'A') {
+                            e.target.style.textDecoration = 'none';
+                        }
+                    });
+
+                    // append menu items to menu
+                    menu.appendChild(languagesItem);
+                    menu.appendChild(descriptionItem);
+
+                    // append menu to navbar
+                    nav.appendChild(menu);
+
+                    // append navbar to new container
+                    newContainer.appendChild(nav);
+
                     // Get the clicked province name
                     var clickedProvinceName = document.getElementById('sidebar-province').textContent;
                     console.log(clickedProvinceName);
                     // Fetch the province info JSON file based on the clicked province
                     fetch('json/province/' + clickedProvinceName + '-info.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        // create HTML elements to display the data
-                        var languages = document.createElement('h2');
-                        languages.textContent = 'Languages:';
-                        var languageList = document.createElement('ul');
+                        .then(response => response.json())
+                        .then(data => {
+                            // create HTML elements to display the data
+                            var languages = document.createElement('h2');
+                            languages.textContent = 'Languages:';
+                            var languageList = document.createElement('ul');
 
-                        // loop through each language and create list items with descriptions
-                        data.properties.LANGUAGES.forEach(language => {
-                            var languageItem = document.createElement('li');
-                            var languageName = document.createElement('span');
-                            languageName.textContent = language.name + ': ';
-                            var languageDescription = document.createElement('span');
-                            languageDescription.textContent = language.desc;
+                            // loop through each language and create list items with descriptions
+                            data.properties.LANGUAGES.forEach(language => {
+                                var languageItem = document.createElement('li');
+                                var languageName = document.createElement('span');
+                                languageName.textContent = language.name + ': ';
+                                var languageDescription = document.createElement('span');
+                                languageDescription.textContent = language.desc;
 
-                            // make the language name clickable
-                            languageName.style.cursor = 'pointer';
-                            languageName.addEventListener('click', function() {
-                                // do something when language name is clicked
-                                console.log('Clicked language:', language.name);
+                                // make the language name clickable
+                                languageName.style.cursor = 'pointer';
+                                languageName.addEventListener('click', function() {
+                                    // do something when language name is clicked
+                                    console.log('Clicked language:', language.name);
+                                });
+
+                                languageItem.appendChild(languageName);
+                                languageItem.appendChild(languageDescription);
+                                languageList.appendChild(languageItem);
                             });
 
-                            languageItem.appendChild(languageName);
-                            languageItem.appendChild(languageDescription);
-                            languageList.appendChild(languageItem);
+                            newContainer.appendChild(languages);
+                            newContainer.appendChild(languageList);
+                            document.body.appendChild(newContainer);
                         });
 
-                        newContainer.appendChild(languages);
-                        newContainer.appendChild(languageList);
-                        document.body.appendChild(newContainer);
-                    });
-
-                    // create back button
+            // create back button
                     var backButton = document.createElement("button");
                     backButton.classList.add("back-button");
                     var backButtonImg = document.createElement("img");
