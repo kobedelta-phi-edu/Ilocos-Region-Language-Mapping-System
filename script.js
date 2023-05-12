@@ -156,8 +156,20 @@ map.on('load', function () {
                     var descriptionLink = document.createElement('a');
                     descriptionLink.href = '#';
                     descriptionLink.textContent = 'Languages';
+                    descriptionLink.addEventListener('click', function() {
+                        // switch to the language menu
+                        languagesLink.classList.add('active');
+                        descriptionLink.classList.remove('active');
+                        // remove existing content from the new container
+                        while (newContainer.firstChild) {
+                            newContainer.removeChild(newContainer.firstChild);
+                        }
+                    });
+
+
                     descriptionItem.classList.add('menu-item');
                     descriptionItem.appendChild(descriptionLink);
+
 
                     // add hover effect to menu items
                     menu.addEventListener('mouseover', function(e) {
@@ -204,6 +216,12 @@ map.on('load', function () {
                                 languages.classList.add('lang-name');
                                 languageItem.classList.add('lang-item');
 
+                                languagesLink.classList.remove('active');
+                                languagesItem.classList.add('menu-item');
+                                languagesItem.appendChild(languagesLink);
+                                languagesItem.classList.add('active');
+
+
                                 // make the language name clickable
                                 languageName.style.cursor = 'pointer';
                                 languageName.addEventListener('click', function() {
@@ -219,6 +237,9 @@ map.on('load', function () {
                             newContainer.appendChild(languages);
                             newContainer.appendChild(languageList);
                             document.body.appendChild(newContainer);
+
+                            // // remove underline from the description link after the data is loaded
+                            // languagesLink.style.textDecoration = 'none';
                         });
 
             // create back button
