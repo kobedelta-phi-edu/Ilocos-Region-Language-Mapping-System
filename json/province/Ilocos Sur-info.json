@@ -1,0 +1,23 @@
+{
+	"type": "Feature",
+	"geometry": {
+	  "type": "Point",
+	  "coordinates": [120.3872632,17.5755487]
+	},
+	"properties": {
+	  "PROVINCE": "Ilocos Sur",
+	  "REGION": "Region I",
+	  "IMAGE" : "images/ilocos_sur.jpg",
+	  "DESCRIPTION": "It's famous for it's cultural heritage, picturesque landscapes, and historic sites like Vigan City, a UNESCO World Heritage Site featuring Spanish colonial architecture. It offers a unique mix of history, culture, and natural beauty that draws visitors from everywhere.",
+	  "LANGUAGES": [
+		{
+		  "name": "Ilocano", 
+		  "desc": "hjhgjklk"
+		},
+		{
+		  "name": "Tagalog", 
+		  "desc": "hgkygih"
+		}
+	  ]
+	}
+}

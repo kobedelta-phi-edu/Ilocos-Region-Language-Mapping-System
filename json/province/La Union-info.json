@@ -1,0 +1,23 @@
+{
+	"type": "Feature",
+	"geometry": {
+	  "type": "Point",
+	  "coordinates": [120.317104,16.6162676]
+	},
+	"properties": {
+	  "PROVINCE": "La Union",
+	  "REGION": "Region I",
+	  "IMAGE" : "images/la_union.jpg",
+	  "DESCRIPTION": "Known for its beautiful beaches, surfing spots, and scenic landscapes. It is a popular destination for tourists seeking to enjoy the sun, sand, and waves, and a great place to experience the local culture and cuisine.",
+	  "LANGUAGES": [
+		{
+		  "name": "dsffs", 
+		  "desc": "sdfsf"
+		},
+		{
+		  "name": "sdfsf", 
+		  "desc": "sdfsdffsfsdf"
+		}
+	  ]
+	}
+}

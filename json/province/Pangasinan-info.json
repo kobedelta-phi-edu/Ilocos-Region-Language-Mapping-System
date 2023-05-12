@@ -1,0 +1,23 @@
+{
+	"type": "Feature",
+	"geometry": {
+	  "type": "Point",
+	  "coordinates": [120.2307093,16.0206363]
+	},
+	"properties": {
+	  "PROVINCE": "Pangasinan",
+	  "REGION": "Region I",
+	  "IMAGE" : "images/pangasinan.jpeg",
+	  "DESCRIPTION": "Known for its beautiful beaches, stunning waterfalls, and delicious seafood cuisine. The province offers a wide range of activities for tourists, including swimming, surfing, island hopping, and sightseeing, and is a popular destination for both local and international visitors.",
+	  "LANGUAGES": [
+		{
+		  "name": "djhjjdasa", 
+		  "desc": "qweqe"
+		},
+		{
+		  "name": "eftrt", 
+		  "desc": "dcdsdf"
+		}
+	  ]
+	}
+}

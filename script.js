@@ -111,7 +111,24 @@ map.on('load', function () {
                 zoomCenterCoordinates(coordinates);
             }
 
-            var prov = '';
+            // Show the sidebar
+            var sidebarContainer = document.getElementById('sidebar');
+            sidebarContainer.style.display = 'block';
+
+            // Set the sidebar content
+            document.getElementById('sidebar-image').src = displayImage;
+            document.getElementById('sidebar-province').textContent = provinceName;
+            document.getElementById('sidebar-region').textContent = provinceRegion;
+            document.getElementById('sidebar-description').textContent = provinceDescription;
+                        
+            // Add the close event for the sidebar
+            document.getElementById('sidebar-close').addEventListener('click', function () {
+                sidebarContainer.style.display = 'none';
+                showFillLayerHideLabel(provinceName);
+                selectedProvince = null; // Reset the selected province
+                zoomCenterMap();
+            });
+
             document.getElementById("lang-button").addEventListener('click', function(){
                 // check if the new container has already been created
                 var newContainer = document.querySelector(".new-container");
@@ -120,9 +137,13 @@ map.on('load', function () {
                     newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
 
-                    prov = provinceName;
-                    console.log(prov);
-                    fetch('json/province/' + 'Ilocos Norte' + '-info.json')
+                    // prov = provinceName;
+                    
+                    // Get the clicked province name
+                    var clickedProvinceName = document.getElementById('sidebar-province').textContent;
+                    console.log(clickedProvinceName);
+                    // Fetch the province info JSON file based on the clicked province
+                    fetch('json/province/' + clickedProvinceName + '-info.json')
                     .then(response => response.json())
                     .then(data => {
                         // create HTML elements to display the data
@@ -131,7 +152,7 @@ map.on('load', function () {
                         var languageList = document.createElement('ul');
 
                         // loop through each language and create list items with descriptions
-                        data.features[0].properties.LANGUAGES.forEach(language => {
+                        data.properties.LANGUAGES.forEach(language => {
                             var languageItem = document.createElement('li');
                             var languageName = document.createElement('span');
                             languageName.textContent = language.name + ': ';
@@ -148,32 +169,11 @@ map.on('load', function () {
                             languageItem.appendChild(languageName);
                             languageItem.appendChild(languageDescription);
                             languageList.appendChild(languageItem);
-                        // newContainer.appendChild(phrases);
-                        // create languages list
-                        // var langList = document.createElement('ul');
                         });
-                        console.log(languageList);
+
                         newContainer.appendChild(languages);
                         newContainer.appendChild(languageList);
                         document.body.appendChild(newContainer);
-
-                        // var langHTML = '';
-                        // if (languages) {
-                        //     // Split the languages by comma
-                        //     var languagesArr = languages.split(',');
-                        //     languagesArr.forEach(function (language) {
-                        //         // Trim leading/trailing spaces from each language
-                        //         language = language.trim().replace(/,/g, '');
-                        //         // Create a clickable link for each language
-                        //         langHTML += '<li><a href="#' + encodeURIComponent(language) + '">' + language + '</a></li>';
-                        //     });
-                        // }
-                        // document.getElementById('sidebar-languages').textContent = langHTML;
-
-                        // append the HTML elements to the new container
-                        // newContainer.appendChild(langHTML);
-                        // newContainer.appendChild(phrases);
-                        // newContainer.appendChild(regionLang);
                     });
 
                     // create back button
@@ -196,23 +196,7 @@ map.on('load', function () {
                 hideSideBar()
             });
 
-            // Show the sidebar
-            var sidebarContainer = document.getElementById('sidebar');
-            sidebarContainer.style.display = 'block';
-
-            // Set the sidebar content
-            document.getElementById('sidebar-image').src = displayImage;
-            document.getElementById('sidebar-province').textContent = provinceName;
-            document.getElementById('sidebar-region').textContent = provinceRegion;
-            document.getElementById('sidebar-description').textContent = provinceDescription;
-                        
-            // Add the close event for the sidebar
-            document.getElementById('sidebar-close').addEventListener('click', function () {
-                sidebarContainer.style.display = 'none';
-                showFillLayerHideLabel(provinceName);
-                selectedProvince = null; // Reset the selected province
-                zoomCenterMap();
-            });
+            
         });
 
         // Add click event listener to the map
