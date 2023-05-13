@@ -118,15 +118,26 @@ body {
     font-size: 1.5em;
     margin-bottom: 1em;
     list-style: none;
+    background-color: rgb(238, 238, 238);
+    width: 270px;
+    height: 25px;
+    padding: 10px;
+    margin-left: 35px;
+    /* background-position: 5px center; */
+    border-radius: 10px;
 }
 
 .menu-item {
     margin: 0 1em;
+    padding: 5px;
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Bold;
+    font-size:19px;
 }
 
 .menu-item a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     position: relative;
 }
 
@@ -143,16 +154,24 @@ body {
     transition: all 0.3s ease-in-out 0s;
 }
 
+/* .menu-item a:hover{
+    font-weight: bold;
+    background-color: rgb(255, 255, 199);
+    width: px;
+    height: 25px;
+    /* padding: 5px; 
+} */
+
 .menu-item.active a:before {
     visibility: visible;
-    transform: scaleX(1);
+    transform: scaleX(0);
 }
 
 .lang-list{
     list-style-type: none;
     width: 280px;
     position: absolute;
-    top: 110px;
+    top: 120px;
     /* left: 0px; */
     font-family: 'Arial Unicode MS Regular';
     font-size: 15px;
@@ -168,7 +187,7 @@ body {
     width: 381px;
     color: black;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 40px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Bold;
