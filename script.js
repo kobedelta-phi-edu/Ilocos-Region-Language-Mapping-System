@@ -166,7 +166,6 @@ map.on('load', function () {
                         }
                     });
 
-
                     descriptionItem.classList.add('menu-item');
                     descriptionItem.appendChild(descriptionLink);
 
@@ -192,6 +191,13 @@ map.on('load', function () {
 
                     // append navbar to new container
                     newContainer.appendChild(nav);
+
+                    if (selectedProvince !== previousProvince) {
+                        if (newContainer) {
+                            newContainer.remove();
+                        }
+                        document.getElementById("sidebar").style.display = "block";
+                    }
 
                     // Get the clicked province name
                     var clickedProvinceName = document.getElementById('sidebar-province').textContent;
@@ -242,7 +248,7 @@ map.on('load', function () {
                             // languagesLink.style.textDecoration = 'none';
                         });
 
-            // create back button
+                    // create back button
                     var backButton = document.createElement("button");
                     backButton.classList.add("back-button");
                     var backButtonImg = document.createElement("img");
@@ -258,6 +264,12 @@ map.on('load', function () {
                     // add new container to the body
                     document.body.appendChild(newContainer);
                 }
+
+                map.on('click','province-labels',function () {
+                    newContainer.remove();
+                    document.getElementById("sidebar").style.display = "block";
+
+                });
 
                 hideSideBar()
             });
