@@ -29,20 +29,20 @@
 				"Makatabang ka kanákó pangkodig?"
 			],
 			"translation":[
-				"Good morning/afternoon",
-				"Nice to meet you",
-				"Thank you/so much",
-				"Excuse me",
-				"I am sorry",
-				"I do not understand",
-				"Can you help me?",
-				"What do you do?",
-				"I am looking for",
-				"I’m leaving/Going now",
-				"Let's go",
-				"How much?",
-				"Where is a good place to eat",
-				"Could you give me directions"
+			  "Good morning/afternoon",
+			  "Nice to meet you",
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat",
+			  "Could you give me directions"
 			]
 		},
 		{
@@ -138,20 +138,20 @@
 				"Mekan ka maka-sabi kanakug directions?"
 			],
 			"translation":[
-				"Good morning/afternoon",
-				"Nice to meet you",
-				"Thank you/so much",
-				"Excuse me",
-				"I am sorry",
-				"I do not understand",
-				"Can you help me?",
-				"What do you do?",
-				"I am looking for",
-				"I’m leaving/Going now",
-				"Let's go",
-				"How much?",
-				"Where is a good place to eat",
-				"Could you give me directions"
+			  "Good morning/afternoon",
+			  "Nice to meet you",
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat",
+			  "Could you give me directions"
 			]
 		},
 		{
@@ -185,7 +185,7 @@
 			  "I’m leaving/Going now",
 			  "Let's go",
 			  "How much?",
-			  "Where is a good place to eat?",
+			  "Where is a good place to eat",
 			  "Could you give me directions"
 			]
 		}

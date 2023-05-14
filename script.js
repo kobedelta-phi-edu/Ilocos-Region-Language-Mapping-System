@@ -6,7 +6,7 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/dark-v10',
     // style: 'mapbox://styles/mapbox/light-v10',
     center: [120.256, 17.193], // Region 1 center point
-    zoom: 7.2 // Zoom to Region 1 level
+    zoom: 7.5 // Zoom to Region 1 level
 });
 
 // Add the geocoder search bar
@@ -143,59 +143,59 @@ map.on('load', function () {
                     newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
 
-                    // create navbar menu
-                    var nav = document.createElement('nav');
-                    var menu = document.createElement('ul');
-                    menu.classList.add('menu');
+                    // // create navbar menu
+                    // var nav = document.createElement('nav');
+                    // var menu = document.createElement('ul');
+                    // menu.classList.add('menu');
 
-                    // create menu items
-                    var languagesItem = document.createElement('li');
-                    var languagesLink = document.createElement('a');
-                    languagesLink.href = '#';
-                    languagesLink.textContent = 'Description';
-                    languagesLink.classList.add('active');
-                    languagesItem.classList.add('menu-item');
-                    languagesItem.appendChild(languagesLink);
+                    // // create menu items
+                    // var languagesItem = document.createElement('li');
+                    // var languagesLink = document.createElement('a');
+                    // languagesLink.href = '#';
+                    // languagesLink.textContent = 'Description';
+                    // languagesLink.classList.add('active');
+                    // languagesItem.classList.add('menu-item');
+                    // languagesItem.appendChild(languagesLink);
 
-                    var descriptionItem = document.createElement('li');
-                    var descriptionLink = document.createElement('a');
-                    descriptionLink.href = '#';
-                    descriptionLink.textContent = 'Languages';
-                    descriptionLink.addEventListener('click', function() {
-                        // switch to the language menu
-                        languagesLink.classList.add('active');
-                        descriptionLink.classList.remove('active');
-                        // remove existing content from the new container
-                        while (newContainer.firstChild) {
-                            newContainer.removeChild(newContainer.firstChild);
-                        }
-                    });
+                    // var descriptionItem = document.createElement('li');
+                    // var descriptionLink = document.createElement('a');
+                    // descriptionLink.href = '#';
+                    // descriptionLink.textContent = 'Languages';
+                    // descriptionLink.addEventListener('click', function() {
+                    //     // switch to the language menu
+                    //     languagesLink.classList.add('active');
+                    //     descriptionLink.classList.remove('active');
+                    //     // remove existing content from the new container
+                    //     while (newContainer.firstChild) {
+                    //         newContainer.removeChild(newContainer.firstChild);
+                    //     }
+                    // });
 
-                    descriptionItem.classList.add('menu-item');
-                    descriptionItem.appendChild(descriptionLink);
+                    // descriptionItem.classList.add('menu-item');
+                    // descriptionItem.appendChild(descriptionLink);
 
 
-                    // add hover effect to menu items
-                    menu.addEventListener('mouseover', function(e) {
-                        if (e.target.tagName === 'A') {
-                            e.target.style.textDecoration = 'underline';
-                        }
-                    });
-                    menu.addEventListener('mouseout', function(e) {
-                        if (e.target.tagName === 'A') {
-                            e.target.style.textDecoration = 'none';
-                        }
-                    });
+                    // // add hover effect to menu items
+                    // menu.addEventListener('mouseover', function(e) {
+                    //     if (e.target.tagName === 'A') {
+                    //         e.target.style.textDecoration = 'underline';
+                    //     }
+                    // });
+                    // menu.addEventListener('mouseout', function(e) {
+                    //     if (e.target.tagName === 'A') {
+                    //         e.target.style.textDecoration = 'none';
+                    //     }
+                    // });
 
-                    // append menu items to menu
-                    menu.appendChild(languagesItem);
-                    menu.appendChild(descriptionItem);
+                    // // append menu items to menu
+                    // menu.appendChild(languagesItem);
+                    // menu.appendChild(descriptionItem);
 
-                    // append menu to navbar
-                    nav.appendChild(menu);
+                    // // append menu to navbar
+                    // nav.appendChild(menu);
 
-                    // append navbar to new container
-                    newContainer.appendChild(nav);
+                    // // append navbar to new container
+                    // newContainer.appendChild(nav);
 
 
                     // Get the clicked province name
@@ -214,17 +214,17 @@ map.on('load', function () {
                             data.properties.LANGUAGES.forEach(language => {
                                 var languageItem = document.createElement('li');
                                 var languageName = document.createElement('span');
-                                languageName.textContent = language.name + ': ';
+                                languageName.textContent = language.name;
                                 //var languageDescription = document.createElement('span');
                                 //languageDescription.textContent = language.desc;
                                 languageList.classList.add('lang-list');
                                 languages.classList.add('lang-name');
                                 languageItem.classList.add('lang-item');
 
-                                languagesLink.classList.remove('active');
-                                languagesItem.classList.add('menu-item');
-                                languagesItem.appendChild(languagesLink);
-                                languagesItem.classList.add('active');
+                                // languagesLink.classList.remove('active');
+                                // languagesItem.classList.add('menu-item');
+                                // languagesItem.appendChild(languagesLink);
+                                // languagesItem.classList.add('active');
 
 
                                 // make the language name clickable
@@ -251,7 +251,7 @@ map.on('load', function () {
                                 });
 
                                 languageItem.appendChild(languageName);
-                                languageItem.appendChild(languageDescription);
+                                // languageItem.appendChild(languageDescription);
                                 languageList.appendChild(languageItem);
                             });
 
@@ -406,7 +406,7 @@ function zoomCenterCoordinates(e){
 function zoomCenterMap(){
     map.flyTo({
         center: [120.256, 17.193],
-        zoom: 7.2
+        zoom: 7.5
     });
 }
 
