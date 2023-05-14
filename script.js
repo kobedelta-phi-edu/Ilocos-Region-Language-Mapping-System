@@ -200,9 +200,23 @@ map.on('load', function () {
                                 languageButton.textContent = language.name;
                                 languageButton.classList.add('new-langList-button');
 
-                                var langdesc = document.createElement('p');
-                                langdesc.textContent = language.desc;
-                                langdesc.classList.add('lang-desc');
+                                // make the language button clickable
+                                languageButton.addEventListener('mouseover', function() {
+                                    // Create a description element
+                                    var description = document.createElement('div');
+                                    description.textContent = language.desc;
+                                    description.classList.add('lang-desc');
+                                    // Append the description to the language button's parent element
+                                    languageButton.parentNode.appendChild(description);
+                                });
+
+                                // remove the description when the mouse leaves the language button
+                                languageButton.addEventListener('mouseout', function() {
+                                    var description = languageButton.parentNode.querySelector('.lang-desc');
+                                    if (description) {
+                                        description.remove();
+                                    }
+                                });
 
                                 languageList.classList.add('lang-list');
                                 languageItem.classList.add('lang-item');
@@ -270,7 +284,7 @@ map.on('load', function () {
                                 });
 
                                 languageItem.appendChild(languageButton);
-                                languageItem.appendChild(langdesc);
+                                // languageItem.appendChild(langdesc);
                                 languageList.appendChild(languageItem);
                             });
 
