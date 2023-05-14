@@ -47,6 +47,7 @@
 		},
 		{
 			"name": "Ilocano",
+			"desc": "Ilocano is spoken as a first language by 7 million people in Northern Luzon, La Union and Ilocos provinces, Cagayan Valley, Babuyan, Mindoro, and Mindanao, and as a second language by 2 million speakers.",
 			"phrases":[
 			  "Naimbag a bigat/malem",
 			  "Naragsakak a makaam-ammo ka",
@@ -156,6 +157,7 @@
 		},
 		{
 			"name": "Tagalog", 
+			"desc": "Tagalog is the first language of most Filipinos and is spoken by more than 50 million people in the Philippines and 24 million worldwide.",
 			"phrases":[
 			  "Magandang Umaga/Tanghali",
 			  "Kinagagalak kong makilala ka",

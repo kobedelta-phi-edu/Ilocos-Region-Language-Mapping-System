@@ -200,6 +200,10 @@ map.on('load', function () {
                                 languageButton.textContent = language.name;
                                 languageButton.classList.add('new-langList-button');
 
+                                var langdesc = document.createElement('p');
+                                langdesc.textContent = language.desc;
+                                langdesc.classList.add('lang-desc');
+
                                 languageList.classList.add('lang-list');
                                 languageItem.classList.add('lang-item');
 

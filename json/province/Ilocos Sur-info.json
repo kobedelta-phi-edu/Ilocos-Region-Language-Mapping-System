@@ -12,6 +12,7 @@
 	  "LANGUAGES": [
 		{
 			"name": "Ilocano",
+			"desc": "Ilocano is spoken as a first language by 7 million people in Northern Luzon, La Union and Ilocos provinces, Cagayan Valley, Babuyan, Mindoro, and Mindanao, and as a second language by 2 million speakers.",
 			"phrases":[
 			  "Naimbag a bigat/malem",
 			  "Naragsakak a makaam-ammo ka",
@@ -47,6 +48,7 @@
 		},
 		{
 			"name": "Kankanaey",
+			"desc": "Kankanaey is an indigenous language spoken by the Kankanaey people in the Cordillera Central region. It belongs to the Malayo-Polynesian language family and is closely related to other Cordilleran languages.",
 			"phrases":[
 			  "Mapteng/gawis ay agsapa/masdem",
 			  "Mayat ay nasabat ko sika",
@@ -82,6 +84,7 @@
 		},
 		{
 			"name": "Tagalog", 
+			"desc": "Tagalog is the first language of most Filipinos and is spoken by more than 50 million people in the Philippines and 24 million worldwide.",
 			"phrases":[
 			  "Magandang Umaga/Tanghali",
 			  "Kinagagalak kong makilala ka",
