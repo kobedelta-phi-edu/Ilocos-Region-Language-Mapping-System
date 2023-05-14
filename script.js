@@ -206,7 +206,7 @@ map.on('load', function () {
 
                                     // Create a table to display phrases and translations
                                     var languageTable = document.createElement('table');
-                                    languageTable.classList.add('language-table');
+                                    languageTable.classList.add('lang-table');
 
                                     // Create table header
                                     var tableHeaderRow = document.createElement('tr');
@@ -227,7 +227,8 @@ map.on('load', function () {
 
                                         phraseCell.textContent = phrase;
                                         translationCell.textContent = clickedLanguage.translation[index];
-
+                                        translationCell.classList.add('translation-italic');
+                                        
                                         languageRow.appendChild(phraseCell);
                                         languageRow.appendChild(translationCell);
                                         languageTable.appendChild(languageRow);

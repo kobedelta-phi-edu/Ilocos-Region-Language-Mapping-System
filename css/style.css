@@ -260,6 +260,27 @@ body {
     color: white;
 }
 
+.translation-italic {
+    font-style: italic;
+}
+
+.lang-table th {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Arial Unicode MS Regular';
+    font-size: 15px;
+}
+
+.lang-table tr {
+    background-color: #fff;
+    font-family: 'Arial Unicode MS Regular';
+    font-size: 12px;
+}
+  
+.lang-table td {
+    padding: 4px 10px;
+}
+
 /* Back button styles */
 .back-button {
     position: absolute;
