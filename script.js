@@ -89,6 +89,11 @@ map.on('load', function () {
             hideSideBar();
         }
     });
+    
+    const logo = document.getElementById('logo-name');
+    logo.addEventListener('click', function() {
+        location.reload();
+    });
 
     // Define a variable to keep track of the currently clicked layer ID
     var previousProvince = null;
@@ -129,12 +134,6 @@ map.on('load', function () {
                 zoomCenterMap();
             });
 
-            const logo = document.getElementById('logo-name');
-            logo.addEventListener('click', function() {
-                location.reload();
-            });
-
-
             document.getElementById("lang-button").addEventListener('click', function(){
                 // check if the new container has already been created
                 var newContainer = document.querySelector(".new-container");
@@ -142,61 +141,6 @@ map.on('load', function () {
                     // create new container if it doesn't exist
                     newContainer = document.createElement("div");
                     newContainer.classList.add("new-container");
-
-                    // // create navbar menu
-                    // var nav = document.createElement('nav');
-                    // var menu = document.createElement('ul');
-                    // menu.classList.add('menu');
-
-                    // // create menu items
-                    // var languagesItem = document.createElement('li');
-                    // var languagesLink = document.createElement('a');
-                    // languagesLink.href = '#';
-                    // languagesLink.textContent = 'Description';
-                    // languagesLink.classList.add('active');
-                    // languagesItem.classList.add('menu-item');
-                    // languagesItem.appendChild(languagesLink);
-
-                    // var descriptionItem = document.createElement('li');
-                    // var descriptionLink = document.createElement('a');
-                    // descriptionLink.href = '#';
-                    // descriptionLink.textContent = 'Languages';
-                    // descriptionLink.addEventListener('click', function() {
-                    //     // switch to the language menu
-                    //     languagesLink.classList.add('active');
-                    //     descriptionLink.classList.remove('active');
-                    //     // remove existing content from the new container
-                    //     while (newContainer.firstChild) {
-                    //         newContainer.removeChild(newContainer.firstChild);
-                    //     }
-                    // });
-
-                    // descriptionItem.classList.add('menu-item');
-                    // descriptionItem.appendChild(descriptionLink);
-
-
-                    // // add hover effect to menu items
-                    // menu.addEventListener('mouseover', function(e) {
-                    //     if (e.target.tagName === 'A') {
-                    //         e.target.style.textDecoration = 'underline';
-                    //     }
-                    // });
-                    // menu.addEventListener('mouseout', function(e) {
-                    //     if (e.target.tagName === 'A') {
-                    //         e.target.style.textDecoration = 'none';
-                    //     }
-                    // });
-
-                    // // append menu items to menu
-                    // menu.appendChild(languagesItem);
-                    // menu.appendChild(descriptionItem);
-
-                    // // append menu to navbar
-                    // nav.appendChild(menu);
-
-                    // // append navbar to new container
-                    // newContainer.appendChild(nav);
-
 
                     // Get the clicked province name
                     var clickedProvinceName = document.getElementById('sidebar-province').textContent;
@@ -215,17 +159,10 @@ map.on('load', function () {
                                 var languageItem = document.createElement('li');
                                 var languageName = document.createElement('span');
                                 languageName.textContent = language.name;
-                                //var languageDescription = document.createElement('span');
-                                //languageDescription.textContent = language.desc;
+
                                 languageList.classList.add('lang-list');
                                 languages.classList.add('lang-name');
                                 languageItem.classList.add('lang-item');
-
-                                // languagesLink.classList.remove('active');
-                                // languagesItem.classList.add('menu-item');
-                                // languagesItem.appendChild(languagesLink);
-                                // languagesItem.classList.add('active');
-
 
                                 // make the language name clickable
                                 languageName.style.cursor = 'pointer';
@@ -258,9 +195,6 @@ map.on('load', function () {
                             newContainer.appendChild(languages);
                             newContainer.appendChild(languageList);
                             document.body.appendChild(newContainer);
-
-                            // // remove underline from the description link after the data is loaded
-                            // languagesLink.style.textDecoration = 'none';
                         });
 
                     // create back button
@@ -285,11 +219,8 @@ map.on('load', function () {
                     document.getElementById("sidebar").style.display = "block";
 
                 });
-
                 hideSideBar()
-            });
-
-            
+            }); 
         });
 
         // Add click event listener to the map
