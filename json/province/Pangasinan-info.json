@@ -12,6 +12,7 @@
 	  "LANGUAGES": [
 		{
 			"name": "Bolinao",
+			"desc": "An Austronesian language spoken primarily in the town of Bolinao in the Philippines, known for its distinct vocabulary and grammar influenced by the Ilocano and Pangasinan languages.",
 			"phrases":[
 				"Maowen ya abak/talaw",
 				"Masamit ya pagparikna",
@@ -82,11 +83,8 @@
 			]
 		},
 		{
-		  "name": "Kallahan",
-		  "desc": "The term 'Kallahan' is sometimes also used to refer to the Kalanguya people's native language. Kalanguya was once the most spoken language in most parts of today's Benguet, Nueva Vizcaya, Ifugao, Mountain Province, and some parts of Nueva Ecija."
-		},
-		{
 			"name": "Pangasinan",
+			"desc" : "A Malayo-Polynesian language spoken primarily in the province of Pangasinan in the Philippines, known for its rich vocabulary, unique phonology, and cultural significance.",
 			"phrases":[
 			  "Masantos ya Kabwasan/Ngarem",
 			  "Malikeliket ak ed sika",
@@ -122,6 +120,7 @@
 		},
 		{
 			"name": "Sambal",
+			"desc" : "Known for its diverse dialects and influences from Tagalog and other neighboring languages.",
 			"phrases":[
 				"Magandàng umaga/hapon",
 				"Makananap ka masanting",
@@ -156,8 +155,8 @@
 			]
 		},
 		{
-			"name": "Tagalog", 
-			"desc": "Tagalog is the first language of most Filipinos and is spoken by more than 50 million people in the Philippines and 24 million worldwide.",
+			"name": "Tagalog",
+			"desc": "Tagalog is the first language of most Filipinos and is spoken by more than 50 million people in the Philippines and 24 million worldwide.", 
 			"phrases":[
 			  "Magandang Umaga/Tanghali",
 			  "Kinagagalak kong makilala ka",
