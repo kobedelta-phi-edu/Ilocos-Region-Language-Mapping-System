@@ -113,7 +113,6 @@ body {
     position: absolute;
     top: 100px;
     left: 40px;
-    /* overflow: hidden; */
     background: white;
     opacity: 1;
     border-top-left-radius: 8px;
@@ -139,7 +138,6 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
-
 }
 
 .new-province-region {
@@ -154,6 +152,29 @@ body {
     text-align: left;
 }
 
+.new-lang-button {
+    background-color: white; 
+    border: 0.3; 
+    color: black; 
+    padding: 11px 52px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 15px; 
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Regular;
+    margin-top: 0px; 
+    margin-left: -6px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 36px;
+    padding-left: 45px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-right: none;
+}
+
 .lang-list{
     list-style-type: none;
     width: 280px;
@@ -163,12 +184,10 @@ body {
     font-family: 'Arial Unicode MS Regular';
     font-size: 15px;
     opacity: 1;
-    text-align: justify;
-
 }
 
 .lang-item{
-  margin-bottom: 30px; /* Add some spacing between list items */
+  margin-bottom: 10px; /* Add some spacing between list items */
 }
 
 .lang-name{

@@ -169,23 +169,20 @@ map.on('load', function () {
                             newContainer.appendChild(provinceRegion);
 
                             // create HTML elements to display the data
-                            var languages = document.createElement('h2');
-                            languages.textContent = 'Languages:';
                             var languageList = document.createElement('ul');
 
                             // loop through each language and create list items with descriptions
                             data.properties.LANGUAGES.forEach(language => {
                                 var languageItem = document.createElement('li');
-                                var languageName = document.createElement('span');
-                                languageName.textContent = language.name;
+                                var languageButton = document.createElement('button'); 
+                                languageButton.textContent = language.name;
+                                languageButton.classList.add('new-lang-button');
 
                                 languageList.classList.add('lang-list');
-                                languages.classList.add('lang-name');
                                 languageItem.classList.add('lang-item');
 
-                                // make the language name clickable
-                                languageName.style.cursor = 'pointer';
-                                languageName.addEventListener('click', function() {
+                                // make the language button clickable
+                                languageButton.addEventListener('click', function() {
                                     while (newContainer.firstChild) {
                                         newContainer.removeChild(newContainer.firstChild);
                                     }
@@ -203,7 +200,7 @@ map.on('load', function () {
                                     });
 
                                     // Find the clicked language object in the data
-                                    var clickedLanguage = data.properties.LANGUAGES.find(language => language.name === languageName.textContent);
+                                    var clickedLanguage = data.properties.LANGUAGES.find(language => language.name === languageButton.textContent);
 
                                     // Create a table to display phrases and translations
                                     var languageTable = document.createElement('table');
@@ -237,11 +234,9 @@ map.on('load', function () {
                                     newContainer.appendChild(languageTable);
                                 });
 
-                                languageItem.appendChild(languageName);
+                                languageItem.appendChild(languageButton); // append button to language item
                                 languageList.appendChild(languageItem);
                             });
-
-                            newContainer.appendChild(languages);
                             newContainer.appendChild(languageList);
                             document.body.appendChild(newContainer);
                         });
@@ -317,7 +312,7 @@ map.on('load', function () {
                         .setHTML('<div class="place-name">' + municipalityName + '</div>' + 
                         '<div class="place-postal">' + postalCode + '</div>' + '</div>' + 
                         '<div class="place-description">' + placeDescription + '</div>' + 
-                        '<div class="place-languages">Native Languages:' + languagesHTML + '</div>')
+                        '<div class="place-languages">Languages:' + languagesHTML + '</div>')
                         .addTo(map)
                         .on('close', function(){
                             //close
