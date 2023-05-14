@@ -334,7 +334,7 @@ map.on('load', function () {
                             // Trim leading/trailing spaces from each language
                             language = language.trim().replace(/["\[\]]/g, '');
                             // Create a clickable link for each language
-                            languagesHTML += '<li><a href="#' + encodeURIComponent(language) + '">' + language + '</a></li>';
+                            languagesHTML += '<li>' + encodeURIComponent(language) + '</li>';
                         });
                     }
                 
