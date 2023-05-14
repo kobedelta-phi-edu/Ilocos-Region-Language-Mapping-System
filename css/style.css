@@ -271,6 +271,7 @@ body {
 
 .lang-desc{
     margin-bottom: 40px; /* Add some spacing between list items */
+    font-size: 14px;
     width: 345px;
     /* top: 50px; 
     width: 350px;
@@ -441,7 +442,7 @@ body {
     top: 363px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
-    font-size: 14px;
+    font-size: 15px;
     opacity: 1;
     text-align: justify;
 }
