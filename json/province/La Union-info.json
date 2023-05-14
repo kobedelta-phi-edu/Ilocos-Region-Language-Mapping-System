@@ -81,8 +81,39 @@
 			]
 		},
 		{
-		  "name": "Kankanaey", 
-		  "desc": "Kankanaey is an indigenous language spoken by the Kankanaey people, who are part of the larger Igorot ethnic group in the Philippines. It is primarily spoken in the Cordillera Central region, particularly in the province of Benguet and neighboring areas. Kankanaey belongs to the Malayo-Polynesian language family and is closely related to other Cordilleran languages."
+			"name": "Kankanaey",
+			"phrases":[
+			  "Mapteng/gawis ay agsapa/masdem",
+			  "Mayat ay nasabat ko sika",
+			  "Salamat (la) unay",
+			  "No translation",
+			  "pasensya",
+			  "Adak maawatan",
+			  "Mabalin tulungam saken?",
+			  "Sinuy am-amagem?",
+			  "An-anapek si",
+			  "Emeyak et",
+			  "Entako",
+			  "Piga?",
+			  "Intoy mayat si panganan",
+			  "Mabalin mandamag si panturungan"
+			],
+			"translation":[
+			  "Good morning/afternoon",
+			  "Nice to meet you"
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat",
+			  "Could you give me directions"
+			]
 		},
 		{
 			"name": "Tagalog", 
