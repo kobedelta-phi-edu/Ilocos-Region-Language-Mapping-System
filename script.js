@@ -151,22 +151,22 @@ map.on('load', function () {
                         .then(data => {
                             var provinceName = document.createElement('h2');
                             provinceName.textContent = data.properties.PROVINCE;
-                            provinceName.classList.add('new-province-name'); // add a class to the element
+                            provinceName.classList.add('new-province-name');
                             
                             var provinceImage = document.createElement('img');
                             provinceImage.src = data.properties.IMAGE;
                             provinceImage.alt = data.properties.PROVINCE;
-                            provinceImage.classList.add('new-province-image'); // add a class to the element
+                            provinceImage.classList.add('new-province-image'); 
                             
                             var provinceRegion = document.createElement('p');
                             provinceRegion.textContent = data.properties.REGION;
-                            provinceRegion.classList.add('new-province-region'); // add a class to the element
+                            provinceRegion.classList.add('new-province-region');
                             
                             // create description button
                             var descButton = document.createElement('button');
                             descButton.classList.add('new-desc-button');
                             descButton.textContent = 'Description';
-                            descButton.addEventListener('click', function() {// remove new container and restore previous container
+                            descButton.addEventListener('click', function() {
                                 newContainer.remove();
                                 document.getElementById("sidebar").style.display = "block";
                             });
@@ -187,7 +187,6 @@ map.on('load', function () {
                                 newContainer.remove();
                                 document.getElementById("sidebar").style.display = "none";
                                 showFillLayerHideLabel(clickedProvinceName);
-                                // selectedProvince = null; // Reset the selected province
                                 zoomCenterMap();
                             });
 
@@ -259,7 +258,7 @@ map.on('load', function () {
                                     newContainer.appendChild(languageTable);
                                 });
 
-                                languageItem.appendChild(languageButton); // append button to language item
+                                languageItem.appendChild(languageButton);
                                 languageList.appendChild(languageItem);
                             });
 
