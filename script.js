@@ -169,24 +169,20 @@ map.on('load', function () {
                             descButton.addEventListener('click', function() {// remove new container and restore previous container
                                 newContainer.remove();
                                 document.getElementById("sidebar").style.display = "block";
-                                // Handle description button click event here
                             });
 
                             // create languages button
                             var langButton = document.createElement('button');
                             langButton.classList.add('new-lang-button');
                             langButton.textContent = 'Languages';
-                            langButton.addEventListener('click', function() {
-                                // Handle languages button click event here
-                            });
 
                             // create back button
-                            var backButton = document.createElement("button");
-                            backButton.classList.add("back-button");
-                            var backButtonImg = document.createElement("img");
-                            newContainer.appendChild(backButton);
+                            var closeButton = document.createElement("button");
+                            closeButton.classList.add("close-icon");
+                            var closeButtonImg = document.createElement("img");
+                            newContainer.appendChild(closeButton);
 
-                            backButton.addEventListener('click', function(){
+                            closeButton.addEventListener('click', function(){
                                 // remove new container and restore previous container
                                 newContainer.remove();
                                 document.getElementById("sidebar").style.display = "block";
@@ -264,7 +260,7 @@ map.on('load', function () {
                                 languageList.appendChild(languageItem);
                             });
 
-                            newContainer.appendChild(backButton);
+                            newContainer.appendChild(closeButton);
                             newContainer.appendChild(languageList);
                             newContainer.appendChild(provinceName);
                             newContainer.appendChild(provinceImage);
