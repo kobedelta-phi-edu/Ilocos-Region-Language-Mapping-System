@@ -110,7 +110,7 @@ body {
 
 .new-container {
     width: 415px;
-    height: 690px;
+    height: 555px;
     position: absolute;
     top: 100px;
     left: 40px;
@@ -162,10 +162,10 @@ body {
     background-color: white; 
     border: 0.3; 
     color: black; 
-    padding: 14px 255px;
+    padding: 12px 255px;
     text-align: center; 
     text-decoration: none; 
-    /* display: inline-block;  */
+    display: inline-block; 
     font-size: 15px; 
     font-family: 'Arial Unicode MS Regular';
     font-weight: Regular;
@@ -191,15 +191,17 @@ body {
 
 .lang-list {
     list-style-type: none;
+    /* width: 255px; */
     position: absolute;
-    top: 348px;
+    top: 355px;
+    /* left: 0px; */
     font-family: 'Arial Unicode MS Regular';
     font-size: 15px;
+    /* opacity: 1; */
 }
 
 .lang-item{
-    margin-bottom: 14px;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px; /* Add some spacing between list items */
 }
 
 .new-desc-button {
@@ -268,15 +270,19 @@ body {
 }
 
 .lang-desc{
-    margin-bottom: 45px;
-    font-size: 13px;
+    margin-bottom: 40px; /* Add some spacing between list items */
+    font-size: 14px;
+    width: 345px;
+    /* top: 50px; 
+    width: 350px;
+    position: absolute;
+    top: 36px;
+    left: 32px;
     font-family: 'Arial Unicode MS Regular';
-    width: 280px;
+    font-size: 14px;
+    opacity: 1;
     text-align: justify;
-    top: 12px;
-    left: 46px;
-    position: relative;
-    margin-left: -5px; 
+    padding-bottom: 40px; /* Add some spacing between list items */
 } 
 
 .lang-header{
@@ -302,6 +308,7 @@ body {
 }
 
 .lang-table tr {
+    /* padding-inline-start: 200px; */
     background-color: #fff;
     font-family: 'Arial Unicode MS Regular';
     font-size: 12px;
@@ -368,7 +375,7 @@ body {
 
 .board {
     width: 415px;
-    height: 690px;
+    height: 555px;
     position: absolute;
     top: 100px;
     left: 40px;

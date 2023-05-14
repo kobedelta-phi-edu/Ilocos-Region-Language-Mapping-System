@@ -73,8 +73,7 @@ map.on('load', function () {
                     previousProvince = province.name;
                     selectedProvince = province; // Set the selected province
                     handleMunicipalityLabel(province);
-                    // zoomCenterCoordinates(province.name);
-                    console.log(province.name);
+                    
                     fetch('json/province/' + province.name + '-info.json')
                         .then(response => response.json())
                         .then(data => {
@@ -83,17 +82,17 @@ map.on('load', function () {
                         var displayImage = data.properties.IMAGE;
                         var provinceRegion = data.properties.REGION;
                         var provinceDescription = data.properties.DESCRIPTION;
-
+    
                         if (selectedProvince !== null) {
                             showFillLayerHideLabel(selectedProvince);
                             selectedProvince = null;  // Reset the selected province
                             // zoomCenterCoordinates(coordinates);
                         }
-
+    
                         // Show the sidebar
                         var sidebarContainer = document.getElementById('sidebar');
                         sidebarContainer.style.display = 'block';
-
+    
                         // Set the sidebar content
                         document.getElementById('sidebar-image').src = displayImage;
                         document.getElementById('sidebar-province').textContent = provinceName;
@@ -107,7 +106,7 @@ map.on('load', function () {
                             selectedProvince = null; // Reset the selected province
                             zoomCenterMap();
                         });
-
+    
                         document.getElementById("lang-button").addEventListener('click', function(){
                             // check if the new container has already been created
                             var newContainer = document.querySelector(".new-container");
@@ -115,7 +114,7 @@ map.on('load', function () {
                                 // create new container if it doesn't exist
                                 newContainer = document.createElement("div");
                                 newContainer.classList.add("new-container");
-
+    
                                 // Get the clicked province name
                                 var clickedProvinceName = document.getElementById('sidebar-province').textContent;
                                 console.log(clickedProvinceName);
@@ -144,18 +143,18 @@ map.on('load', function () {
                                             newContainer.remove();
                                             document.getElementById("sidebar").style.display = "block";
                                         });
-
+    
                                         // create languages button
                                         var langButton = document.createElement('button');
                                         langButton.classList.add('new-lang-button');
                                         langButton.textContent = 'Languages';
-
+    
                                         // create back button
                                         var closeButton = document.createElement("button");
                                         closeButton.classList.add("close-icon");
                                         var closeButtonImg = document.createElement("img");
                                         newContainer.appendChild(closeButton);
-
+    
                                         closeButton.addEventListener('click', function(){
                                             // remove new container and restore previous container
                                             newContainer.remove();
@@ -163,86 +162,72 @@ map.on('load', function () {
                                             showFillLayerHideLabel(clickedProvinceName);
                                             zoomCenterMap();
                                         });
-
+    
                                         // create HTML elements to display the data
                                         var languageList = document.createElement('ul');
-
+    
                                         // loop through each language and create list items with descriptions
                                         data.properties.LANGUAGES.forEach(language => {
                                             var languageItem = document.createElement('li');
                                             var languageButton = document.createElement('button'); 
                                             languageButton.textContent = language.name;
                                             languageButton.classList.add('new-langList-button');
-
-                                            // make the language button clickable
-                                            languageButton.addEventListener('mouseover', function() {
-                                                // Create a description element
-                                                var description = document.createElement('div');
-                                                description.textContent = language.desc;
-                                                description.classList.add('lang-desc');
-                                                // Append the description to the language button's parent element
-                                                languageButton.parentNode.appendChild(description);
-                                            });
-
-                                            // remove the description when the mouse leaves the language button
-                                            languageButton.addEventListener('mouseout', function() {
-                                                var description = languageButton.parentNode.querySelector('.lang-desc');
-                                                if (description) {
-                                                    description.remove();
-                                                }
-                                            });
-
+    
+                                            var langdesc = document.createElement('p');
+                                            langdesc.textContent = language.desc;
+                                            langdesc.classList.add('lang-desc');
+    
                                             languageList.classList.add('lang-list');
                                             languageItem.classList.add('lang-item');
-
+    
                                             // make the language button clickable
                                             languageButton.addEventListener('click', function() {
                                                 while (newContainer.firstChild) {
                                                     newContainer.removeChild(newContainer.firstChild);
                                                 }
-
+    
                                                 // create back button
                                                 var backButton = document.createElement("button");
                                                 backButton.classList.add("back-button");
                                                 var backButtonImg = document.createElement("img");
                                                 newContainer.appendChild(backButton);
-
+    
                                                 backButton.addEventListener('click', function(){
                                                     // remove new container and restore previous container
                                                     newContainer.remove();
                                                     document.getElementById("sidebar").style.display = "block";
                                                 });
-
+    
                                                 // Find the clicked language object in the data
                                                 var clickedLanguage = data.properties.LANGUAGES.find(language => language.name === languageButton.textContent);
-
+    
                                                 // Create a table to display phrases and translations
                                                 var languageTable = document.createElement('table');
                                                 languageTable.classList.add('lang-table');
-
+    
                                                 // Create table header
                                                 var tableHeaderRow = document.createElement('tr');
                                                 var phraseHeader = document.createElement('th');
                                                 phraseHeader.textContent = 'Phrases';
-
+    
                                                 var langHeader = document.createElement('p');
                                                 langHeader.classList.add('lang-header')
                                                 langHeader.textContent = language.name;
-
+    
                                                 var translationHeader = document.createElement('th');
                                                 translationHeader.textContent = 'Translation';
-
+    
                                                 tableHeaderRow.appendChild(phraseHeader);
                                                 tableHeaderRow.appendChild(translationHeader);
                                                 tableHeaderRow.appendChild(langHeader)
                                                 languageTable.appendChild(tableHeaderRow);
-
+    
                                                 // Loop through phrases and translations of the clicked language
                                                 clickedLanguage.phrases.forEach((phrase, index) => {
                                                     var languageRow = document.createElement('tr');
                                                     var phraseCell = document.createElement('td');
                                                     var translationCell = document.createElement('td');
-
+    
                                                     phraseCell.textContent = phrase;
                                                     phraseCell.classList.add("phrase-style");
                                                     translationCell.textContent = clickedLanguage.translation[index];
@@ -252,16 +237,16 @@ map.on('load', function () {
                                                     languageRow.appendChild(translationCell);
                                                     languageTable.appendChild(languageRow);
                                                 });
-
+    
                                                 newContainer.appendChild(backButton);
                                                 newContainer.appendChild(languageTable);
                                             });
-
+    
                                             languageItem.appendChild(languageButton);
-                                            // languageItem.appendChild(langdesc);
+                                            languageItem.appendChild(langdesc);
                                             languageList.appendChild(languageItem);
                                         });
-
+    
                                         newContainer.appendChild(closeButton);
                                         newContainer.appendChild(languageList);
                                         newContainer.appendChild(provinceName);
@@ -271,17 +256,17 @@ map.on('load', function () {
                                         newContainer.appendChild(langButton);
                                         document.body.appendChild(newContainer);
                                     });
-
-
+    
+    
                                 // add new container to the body
                                 document.body.appendChild(newContainer);
                             }
-
+    
                             map.on('click','province-labels',function () {
                                 newContainer.remove();
                                 document.getElementById("sidebar").style.display = "block";
                             });
-
+    
                             hideSideBar()
                         }); 
                     });
@@ -289,7 +274,7 @@ map.on('load', function () {
             });
         }
     });
-
+    
     // Add a clear event listener to the geocoder search input
     geocoder.on('clear', function () {
         // Check if there is a selected province
@@ -413,23 +398,9 @@ map.on('load', function () {
                                 languageButton.textContent = language.name;
                                 languageButton.classList.add('new-langList-button');
 
-                                // make the language button clickable
-                                languageButton.addEventListener('mouseover', function() {
-                                    // Create a description element
-                                    var description = document.createElement('div');
-                                    description.textContent = language.desc;
-                                    description.classList.add('lang-desc');
-                                    // Append the description to the language button's parent element
-                                    languageButton.parentNode.appendChild(description);
-                                });
-
-                                // remove the description when the mouse leaves the language button
-                                languageButton.addEventListener('mouseout', function() {
-                                    var description = languageButton.parentNode.querySelector('.lang-desc');
-                                    if (description) {
-                                        description.remove();
-                                    }
-                                });
+                                var langdesc = document.createElement('p');
+                                langdesc.textContent = language.desc;
+                                langdesc.classList.add('lang-desc');
 
                                 languageList.classList.add('lang-list');
                                 languageItem.classList.add('lang-item');
@@ -497,7 +468,7 @@ map.on('load', function () {
                                 });
 
                                 languageItem.appendChild(languageButton);
-                                // languageItem.appendChild(langdesc);
+                                languageItem.appendChild(langdesc);
                                 languageList.appendChild(languageItem);
                             });
 
