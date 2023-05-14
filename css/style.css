@@ -264,13 +264,10 @@ body {
     color: white;
 }
 
-.translation-italic {
+.translation-style {
     font-style: italic;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-/* .lang-table{
-    padding-block-start: 10%;
-} */
 
 .lang-table th {
     padding-top:35px;
@@ -294,6 +291,11 @@ body {
 .lang-table td {
     padding: 4px 25px;
     padding-inline-start: 20px;
+}
+
+.phrase-style {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 165px;
 }
 
 /* Back button styles */

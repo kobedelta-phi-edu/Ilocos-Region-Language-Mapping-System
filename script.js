@@ -232,6 +232,7 @@ map.on('load', function () {
                                     var tableHeaderRow = document.createElement('tr');
                                     var phraseHeader = document.createElement('th');
                                     phraseHeader.textContent = 'Phrases';
+
                                     var translationHeader = document.createElement('th');
                                     translationHeader.textContent = 'Translation';
 
@@ -246,8 +247,9 @@ map.on('load', function () {
                                         var translationCell = document.createElement('td');
 
                                         phraseCell.textContent = phrase;
+                                        phraseCell.classList.add("phrase-style");
                                         translationCell.textContent = clickedLanguage.translation[index];
-                                        translationCell.classList.add('translation-italic');
+                                        translationCell.classList.add('translation-style');
                                         
                                         languageRow.appendChild(phraseCell);
                                         languageRow.appendChild(translationCell);
