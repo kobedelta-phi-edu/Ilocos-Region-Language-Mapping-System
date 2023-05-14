@@ -215,8 +215,8 @@ map.on('load', function () {
                                 var languageItem = document.createElement('li');
                                 var languageName = document.createElement('span');
                                 languageName.textContent = language.name + ': ';
-                                var languageDescription = document.createElement('span');
-                                languageDescription.textContent = language.desc;
+                                //var languageDescription = document.createElement('span');
+                                //languageDescription.textContent = language.desc;
                                 languageList.classList.add('lang-list');
                                 languages.classList.add('lang-name');
                                 languageItem.classList.add('lang-item');
