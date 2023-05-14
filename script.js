@@ -209,17 +209,17 @@ map.on('load', function () {
                                         newContainer.removeChild(newContainer.firstChild);
                                     }
 
-                                         // create back button
-                                        var backButton = document.createElement("button");
-                                        backButton.classList.add("back-button");
-                                        var backButtonImg = document.createElement("img");
-                                        newContainer.appendChild(backButton);
+                                     // create back button
+                                    var backButton = document.createElement("button");
+                                    backButton.classList.add("back-button");
+                                    var backButtonImg = document.createElement("img");
+                                    newContainer.appendChild(backButton);
 
-                                        backButton.addEventListener('click', function(){
-                                            // remove new container and restore previous container
-                                            newContainer.remove();
-                                            document.getElementById("sidebar").style.display = "block";
-                                        });
+                                    backButton.addEventListener('click', function(){
+                                        // remove new container and restore previous container
+                                        newContainer.remove();
+                                        document.getElementById("sidebar").style.display = "block";
+                                    });
 
                                     // Find the clicked language object in the data
                                     var clickedLanguage = data.properties.LANGUAGES.find(language => language.name === languageButton.textContent);
