@@ -11,20 +11,113 @@
 	  "DESCRIPTION": "Known for its beautiful beaches, surfing spots, and scenic landscapes. It is a popular destination for tourists seeking to enjoy the sun, sand, and waves, and a great place to experience the local culture and cuisine.",
 	  "LANGUAGES": [
 		{
-		  "name": "Ilocano", 
-	      "desc": "Ilocano is spoken as a first language by some 7 million people, primarily in Northern Luzon, La Union and Ilocos provinces, Cagayan Valley, Babuyan, Mindoro, and Mindanao. It is also spoken as a second language by possibly another 2 million speakers in the northern areas of Luzon as a lingua franca in trade, commerce, and everyday communication. "
+			"name": "Ilocano",
+			"phrases":[
+			  "Naimbag a bigat/malem",
+			  "Naragsakak a makaam-ammo ka",
+			  "Agyaman la unay",
+			  "Dumalanak man",
+			  "Ladingitek",
+			  "Saan ko a maawatan",
+			  "Mabalin kadi a tulongannak?",
+			  "Ania ti tarabahom?",
+			  "Sapsapulek",
+			  "Pumanawak/Mapanak itan",
+			  "Intayon",
+			  "Mano?",
+			  "Sadino ti nasayaat a lugar a panganan",
+			  "Mabalin kadi nga ikkannak kadagiti direksion"
+			],
+			"translation":[
+			  "Good morning/afternoon",
+			  "Nice to meet you"
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat",
+			  "Could you give me directions"
+			]
 		},
 		{
-		  "name": "Pangasinan", 
-		  "desc": "Pangasinan (Pangasinense) is an Austronesian language, and one of the eight major languages of the Philippines. It is the primary and predominant language of the entire province of Pangasinan and northern Tarlac, on the northern part of Luzon's central plains geographic region, most of whom belong to the Pangasinan ethnic group. "
+			"name": "Pangasinan",
+			"phrases":[
+			  "Masantos ya Kabwasan/Ngarem",
+			  "Malikeliket ak ed sika",
+			  "Misalsalamat ak ed sika",
+			  "Perdona ak",
+			  "Dispensa mo ak",
+			  "Agko natalosan",
+			  "Sarag mo ak kasin tulongan?",
+			  "Antoy gagawaen mo?",
+			  "Aanapen ko",
+			  "Onalis ak la natan",
+			  "Onla tayo",
+			  "Pigaray bayar?",
+			  "Iner so maong a panganan",
+			  "Sarag yo ak kasin iwanwan"
+			],
+			"translation":[
+			  "Good morning/afternoon",
+			  "Nice to meet you"
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat",
+			  "Could you give me directions"
+			]
 		},
 		{
 		  "name": "Kankanaey", 
 		  "desc": "Kankanaey is an indigenous language spoken by the Kankanaey people, who are part of the larger Igorot ethnic group in the Philippines. It is primarily spoken in the Cordillera Central region, particularly in the province of Benguet and neighboring areas. Kankanaey belongs to the Malayo-Polynesian language family and is closely related to other Cordilleran languages."
 		},
 		{
-		  "name": "Tagalog", 
-		  "desc": "Tagalog is a language that originated in the Philippine islands. It is the first language of most Filipinos and the second language of most others. More than 50 million Filipinos speak Tagalog in the Philippines, and 24 million people speak the language worldwide."
+			"name": "Tagalog", 
+			"phrases":[
+			  "Magandang Umaga/Tanghali",
+			  "Kinagagalak kong makilala ka",
+			  "Maraming salamat",
+			  "Makikiraan",
+			  "Paumanhin",
+			  "Hindi ko maintindihan",
+			  "P'wede mo ba ako tulungan?",
+			  "Anong ginagawa mo?",
+			  "Hnahanap ko iyong ",
+			  "Aalis na ako/Mauna na ako",
+			  "Halika na",
+			  "Magkano?",
+			  "Saan ang magandang kainan?",
+			  "Maaari mo ba akong bigyan ng mga direksyon"
+			],
+			"translation":[
+			  "Good morning/afternoon",
+			  "Nice to meet you"
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat?",
+			  "Could you give me directions"
+			]
 		}
 	  ]
 	}
