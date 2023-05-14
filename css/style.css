@@ -77,18 +77,6 @@ body {
     color: white;
 }
 
-/* .desc-icon {
-    width: 22px;
-    height: 22px;
-    background-image: url("icon/lang.png");
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-} */
-
 .lang-button {
     background-color: white; 
     border: 0.3; 
@@ -118,18 +106,6 @@ body {
     border-color: #3e8e41;
     color: white;
 }
-
-/* .lang-icon {
-    width: 22px;
-    height: 22px;
-    background-image: url("icon/lang.png");
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-} */
 
 .new-container {
     width: 415px;

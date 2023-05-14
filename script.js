@@ -183,8 +183,39 @@ map.on('load', function () {
                                         document.getElementById("sidebar").style.display = "block";
                                     });
 
-                                    // do something when language name is clicked
-                                    console.log('Clicked language:', language.name);
+                                    // Find the clicked language object in the data
+                                    var clickedLanguage = data.properties.LANGUAGES.find(language => language.name === languageName.textContent);
+
+                                    // Create a table to display phrases and translations
+                                    var languageTable = document.createElement('table');
+                                    languageTable.classList.add('language-table');
+
+                                    // Create table header
+                                    var tableHeaderRow = document.createElement('tr');
+                                    var phraseHeader = document.createElement('th');
+                                    phraseHeader.textContent = 'Phrases';
+                                    var translationHeader = document.createElement('th');
+                                    translationHeader.textContent = 'Translation';
+
+                                    tableHeaderRow.appendChild(phraseHeader);
+                                    tableHeaderRow.appendChild(translationHeader);
+                                    languageTable.appendChild(tableHeaderRow);
+
+                                    // Loop through phrases and translations of the clicked language
+                                    clickedLanguage.phrases.forEach((phrase, index) => {
+                                        var languageRow = document.createElement('tr');
+                                        var phraseCell = document.createElement('td');
+                                        var translationCell = document.createElement('td');
+
+                                        phraseCell.textContent = phrase;
+                                        translationCell.textContent = clickedLanguage.translation[index];
+
+                                        languageRow.appendChild(phraseCell);
+                                        languageRow.appendChild(translationCell);
+                                        languageTable.appendChild(languageRow);
+                                    });
+
+                                    newContainer.appendChild(languageTable);
                                 });
 
                                 languageItem.appendChild(languageName);
@@ -216,8 +247,8 @@ map.on('load', function () {
                 map.on('click','province-labels',function () {
                     newContainer.remove();
                     document.getElementById("sidebar").style.display = "block";
-
                 });
+                
                 hideSideBar()
             }); 
         });
