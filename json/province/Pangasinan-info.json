@@ -11,8 +11,39 @@
 	  "DESCRIPTION": "Known for its beautiful beaches, stunning waterfalls, and delicious seafood cuisine. The province offers a wide range of activities for tourists, including swimming, surfing, island hopping, and sightseeing, and is a popular destination for both local and international visitors.",
 	  "LANGUAGES": [
 		{
-		  "name": "Bolinao", 
-		  "desc": "Bolinao is a member of the Central Luzon branch of the Malayo-Polynesian language family. It spoken by about 51,000 people mainly in the municipalities of Anda and Bolinao in Pangasinan province on Luzon in the Philippines."
+			"name": "Bolinao",
+			"phrases":[
+				"Maowen ya abak/talaw",
+				"Masamit ya pagparikna",
+				"Mabálig ya salamat",
+				"Patawáran mo ako",
+				"Nenay ako",
+				"Di ko makasáyan",
+				"Makatabang ka kanákó?",
+				"Ania gáwa mo?",
+				"Mekan ko la'y padumalaan",
+				"Makapit na ako",
+				"Sámbayan tayo",
+				"Magkano?",
+				"King saan ya makabawi pang sarápan?",
+				"Makatabang ka kanákó pangkodig?"
+			],
+			"translation":[
+				"Good morning/afternoon",
+				"Nice to meet you"
+				"Thank you/so much",
+				"Excuse me",
+				"I am sorry",
+				"I do not understand",
+				"Can you help me?",
+				"What do you do?",
+				"I am looking for",
+				"I’m leaving/Going now",
+				"Let's go",
+				"How much?",
+				"Where is a good place to eat",
+				"Could you give me directions"
+			]
 		},
 		{
 			"name": "Ilocano",
@@ -50,8 +81,39 @@
 			]
 		},
 		{
-		  "name": "Kallahan", 
-		  "desc": "The term 'Kallahan' is sometimes also used to refer to the Kalanguya people's native language. Kalanguya was once the most spoken language in most parts of today's Benguet, Nueva Vizcaya, Ifugao, Mountain Province, and some parts of Nueva Ecija."
+			"name": "Sambal",
+			"phrases":[
+				"Magandàng umaga/hapon",
+				"Makananap ka masanting",
+				"Mararakal a salamat",
+				"Pasensya",
+				"Nanain kayu",
+				"Di ku ngiyana-yan",
+				"Matabang ka kanaku?",
+				"Anya ing gawa mu?",
+				"Mekan akong pakaunayan",
+				"Mangapit na ako",
+				"Taman na tayo",
+				"Magkano?",
+				"King banua ya magandang kaen?",
+				"Mekan ka maka-sabi kanakug directions?"
+			],
+			"translation":[
+				"Good morning/afternoon",
+				"Nice to meet you"
+				"Thank you/so much",
+				"Excuse me",
+				"I am sorry",
+				"I do not understand",
+				"Can you help me?",
+				"What do you do?",
+				"I am looking for",
+				"I’m leaving/Going now",
+				"Let's go",
+				"How much?",
+				"Where is a good place to eat",
+				"Could you give me directions"
+			]
 		},
 		{
 			"name": "Pangasinan",
