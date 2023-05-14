@@ -149,6 +149,25 @@ map.on('load', function () {
                     fetch('json/province/' + clickedProvinceName + '-info.json')
                         .then(response => response.json())
                         .then(data => {
+                            var provinceName = document.createElement('h2');
+                            provinceName.textContent = data.properties.PROVINCE;
+                            provinceName.classList.add('new-province-name'); // add a class to the element
+                            
+                            var provinceImage = document.createElement('img');
+                            provinceImage.src = data.properties.IMAGE;
+                            provinceImage.alt = data.properties.PROVINCE;
+                            provinceImage.classList.add('new-province-image'); // add a class to the element
+                            
+                            var provinceRegion = document.createElement('p');
+                            provinceRegion.textContent = data.properties.REGION;
+                            provinceRegion.classList.add('new-province-region'); // add a class to the element
+                            
+
+                            // Append province name, image, and region to the new container
+                            newContainer.appendChild(provinceName);
+                            newContainer.appendChild(provinceImage);
+                            newContainer.appendChild(provinceRegion);
+
                             // create HTML elements to display the data
                             var languages = document.createElement('h2');
                             languages.textContent = 'Languages:';
@@ -248,7 +267,7 @@ map.on('load', function () {
                     newContainer.remove();
                     document.getElementById("sidebar").style.display = "block";
                 });
-                
+
                 hideSideBar()
             }); 
         });

@@ -123,6 +123,35 @@ body {
     box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.25);
 }
 
+.new-province-name {
+    width: 381px;
+    color: black;
+    position: absolute;
+    top: 220px;
+    left: 32px;
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Bold;
+    font-size: 23px;
+}
+
+.new-province-image img {
+    width: 450px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.new-province-region {
+    color: black;
+    position: absolute;
+    top: 250px;
+    left: 32px;
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}
+
 .lang-list{
     list-style-type: none;
     width: 280px;
