@@ -269,6 +269,17 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.lang-desc{
+    width: 350px;
+    position: absolute;
+    top: 363px;
+    left: 32px;
+    font-family: 'Arial Unicode MS Regular';
+    font-size: 13px;
+    opacity: 1;
+    text-align: justify;
+}
+
 .lang-table th {
     padding-top:35px;
     padding-bottom: 5px;
