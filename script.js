@@ -197,12 +197,6 @@ map.on('load', function () {
                     // append navbar to new container
                     newContainer.appendChild(nav);
 
-                    if (selectedProvince !== previousProvince) {
-                        if (newContainer) {
-                            newContainer.remove();
-                        }
-                        document.getElementById("sidebar").style.display = "block";
-                    }
 
                     // Get the clicked province name
                     var clickedProvinceName = document.getElementById('sidebar-province').textContent;
@@ -236,6 +230,22 @@ map.on('load', function () {
                                 // make the language name clickable
                                 languageName.style.cursor = 'pointer';
                                 languageName.addEventListener('click', function() {
+                                    while (newContainer.firstChild) {
+                                        newContainer.removeChild(newContainer.firstChild);
+                                    }
+
+                                    // create back button
+                                    var backButton = document.createElement("button");
+                                    backButton.classList.add("back-button");
+                                    var backButtonImg = document.createElement("img");
+                                    newContainer.appendChild(backButton);
+
+                                    backButton.addEventListener('click', function(){
+                                        // remove new container and restore previous container
+                                        newContainer.remove();
+                                        document.getElementById("sidebar").style.display = "block";
+                                    });
+
                                     // do something when language name is clicked
                                     console.log('Clicked language:', language.name);
                                 });
