@@ -201,7 +201,7 @@ map.on('load', function () {
                                 languageButton.classList.add('new-langList-button');
 
                                 var langdesc = document.createElement('p');
-                                langdesc.document = language.desc;
+                                langdesc.textContent = language.desc;
                                 langdesc.classList.add('lang-desc');
 
                                 languageList.classList.add('lang-list');
@@ -269,8 +269,8 @@ map.on('load', function () {
                                     newContainer.appendChild(languageTable);
                                 });
 
-                                languageItem.appendChild(langdesc);
                                 languageItem.appendChild(languageButton);
+                                languageItem.appendChild(langdesc);
                                 languageList.appendChild(languageItem);
                             });
 

@@ -201,7 +201,7 @@ body {
 }
 
 .lang-item{
-  margin-bottom: 12px; /* Add some spacing between list items */
+    margin-bottom: 40px; /* Add some spacing between list items */
 }
 
 .new-desc-button {
@@ -270,15 +270,19 @@ body {
 }
 
 .lang-desc{
+    margin-bottom: 40px; /* Add some spacing between list items */
+    width: 345px;
+    /* top: 50px; 
     width: 350px;
     position: absolute;
-    top: 363px;
+    top: 36px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
-    font-size: 13px;
+    font-size: 14px;
     opacity: 1;
     text-align: justify;
-}
+    padding-bottom: 40px; /* Add some spacing between list items */
+} 
 
 .lang-header{
     color: black;
@@ -441,6 +445,7 @@ body {
     opacity: 1;
     text-align: justify;
 }
+
 .close-icon {
     position: absolute;
     top: 10px;
