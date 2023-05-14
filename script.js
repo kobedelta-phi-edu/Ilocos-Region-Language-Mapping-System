@@ -237,11 +237,16 @@ map.on('load', function () {
                                     var phraseHeader = document.createElement('th');
                                     phraseHeader.textContent = 'Phrases';
 
+                                    var langHeader = document.createElement('p');
+                                    langHeader.classList.add('lang-header')
+                                    langHeader.textContent = language.name;
+
                                     var translationHeader = document.createElement('th');
                                     translationHeader.textContent = 'Translation';
 
                                     tableHeaderRow.appendChild(phraseHeader);
                                     tableHeaderRow.appendChild(translationHeader);
+                                    tableHeaderRow.appendChild(langHeader)
                                     languageTable.appendChild(tableHeaderRow);
 
                                     // Loop through phrases and translations of the clicked language

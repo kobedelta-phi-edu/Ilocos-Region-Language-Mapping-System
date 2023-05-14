@@ -280,9 +280,21 @@ body {
     text-align: justify;
 }
 
+.lang-header{
+    color: black;
+    position: absolute;
+    left: 46%;
+    transform: translateX(-46%);
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: bold;
+    font-size: 23px;
+    opacity: 1;
+    text-align: center;
+}
+
 .lang-table th {
-    padding-top:35px;
-    padding-bottom: 5px;
+    padding-top:65px;
+    padding-bottom: 10px;
     padding-right: 20px;
     font-weight: bold;
     text-align: center;
