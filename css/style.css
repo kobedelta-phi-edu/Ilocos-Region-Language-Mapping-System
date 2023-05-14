@@ -111,7 +111,7 @@ body {
     width: 415px;
     height: 535px;
     position: absolute;
-    top: 90px;
+    top: 100px;
     left: 40px;
     /* overflow: hidden; */
     background: white;
@@ -134,10 +134,12 @@ body {
     font-size: 23px;
 }
 
-.new-province-image img {
-    width: 450px;
+.new-province-image {
+    width: 415px;
     height: 200px;
     object-fit: cover;
+    border-radius: 8px 8px 0 0;
+
 }
 
 .new-province-region {
