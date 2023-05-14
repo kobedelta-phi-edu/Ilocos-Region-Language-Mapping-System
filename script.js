@@ -180,7 +180,17 @@ map.on('load', function () {
                                 // Handle languages button click event here
                             });
 
-                            
+                            // create back button
+                            var backButton = document.createElement("button");
+                            backButton.classList.add("back-button");
+                            var backButtonImg = document.createElement("img");
+                            newContainer.appendChild(backButton);
+
+                            backButton.addEventListener('click', function(){
+                                // remove new container and restore previous container
+                                newContainer.remove();
+                                document.getElementById("sidebar").style.display = "block";
+                            });
 
                             // create HTML elements to display the data
                             var languageList = document.createElement('ul');
@@ -200,6 +210,18 @@ map.on('load', function () {
                                     while (newContainer.firstChild) {
                                         newContainer.removeChild(newContainer.firstChild);
                                     }
+
+                                         // create back button
+                                        var backButton = document.createElement("button");
+                                        backButton.classList.add("back-button");
+                                        var backButtonImg = document.createElement("img");
+                                        newContainer.appendChild(backButton);
+
+                                        backButton.addEventListener('click', function(){
+                                            // remove new container and restore previous container
+                                            newContainer.remove();
+                                            document.getElementById("sidebar").style.display = "block";
+                                        });
 
                                     // Find the clicked language object in the data
                                     var clickedLanguage = data.properties.LANGUAGES.find(language => language.name === languageButton.textContent);
@@ -234,12 +256,15 @@ map.on('load', function () {
                                         languageTable.appendChild(languageRow);
                                     });
 
+                                    newContainer.appendChild(backButton);
                                     newContainer.appendChild(languageTable);
                                 });
 
                                 languageItem.appendChild(languageButton); // append button to language item
                                 languageList.appendChild(languageItem);
                             });
+
+                            newContainer.appendChild(backButton);
                             newContainer.appendChild(languageList);
                             newContainer.appendChild(provinceName);
                             newContainer.appendChild(provinceImage);
