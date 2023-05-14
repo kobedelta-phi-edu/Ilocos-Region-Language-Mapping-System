@@ -129,6 +129,11 @@ map.on('load', function () {
                 zoomCenterMap();
             });
 
+            const logo = document.getElementById('logo-name');
+            logo.addEventListener('click', function() {
+                location.reload();
+            });
+
 
             document.getElementById("lang-button").addEventListener('click', function(){
                 // check if the new container has already been created
