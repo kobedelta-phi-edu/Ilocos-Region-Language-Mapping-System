@@ -81,7 +81,7 @@ body {
     background-color: white; 
     border: 0.3; 
     color: black; 
-    padding: 11px 52px;
+    padding: 11px 60px;
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
@@ -109,10 +109,11 @@ body {
 
 .new-container {
     width: 415px;
-    height: 535px;
+    height: 565px;
     position: absolute;
     top: 100px;
     left: 40px;
+    overflow: hidden;
     background: white;
     opacity: 1;
     border-top-left-radius: 8px;
@@ -126,7 +127,7 @@ body {
     width: 381px;
     color: black;
     position: absolute;
-    top: 220px;
+    top: 201px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Bold;
@@ -143,7 +144,7 @@ body {
 .new-province-region {
     color: black;
     position: absolute;
-    top: 250px;
+    top: 234px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Medium;
@@ -152,11 +153,86 @@ body {
     text-align: left;
 }
 
+.new-langList-button {
+    background-color: white; 
+    border: 0.3; 
+    color: black; 
+    padding: 12px 255px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 15px; 
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Regular;
+    margin-top: -100px; 
+    margin-left: -6px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 36px;
+    padding-left: 45px;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-left: none;
+    border-right: none;
+    width: 346px;
+}
+
+.new-langList-button:hover {
+    background-color: #3e8e41; /* Change the background color on hover */
+    border: 0.3;
+    border-color: #3e8e41;
+    color: white;
+}
+
+.lang-list {
+    list-style-type: none;
+    /* width: 255px; */
+    position: absolute;
+    top: 355px;
+    /* left: 0px; */
+    font-family: 'Arial Unicode MS Regular';
+    font-size: 15px;
+    /* opacity: 1; */
+}
+
+.lang-item{
+  margin-bottom: 12px; /* Add some spacing between list items */
+}
+
+.new-desc-button {
+    background-color: white;
+    color: black;
+    padding: 11px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Arial Unicode MS Regular';
+    font-weight: Regular;
+    margin-top: 90px;
+    margin-left: 30px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 36px;
+    padding-left: 45px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.new-desc-button:hover {
+    background-color: #3e8e41; /* Change the background color on hover */
+    border: 0.3;
+    border-color: #3e8e41;
+    color: white;
+}
+
 .new-lang-button {
     background-color: white; 
     border: 0.3; 
     color: black; 
-    padding: 11px 52px;
+    padding: 11px 60px;
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
@@ -171,34 +247,15 @@ body {
     padding-left: 45px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    border-left: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
     border-right: none;
 }
 
-.lang-list{
-    list-style-type: none;
-    width: 280px;
-    position: absolute;
-    top: 120px;
-    /* left: 0px; */
-    font-family: 'Arial Unicode MS Regular';
-    font-size: 15px;
-    opacity: 1;
-}
-
-.lang-item{
-  margin-bottom: 10px; /* Add some spacing between list items */
-}
-
-.lang-name{
-    width: 381px;
-    color: black;
-    position: absolute;
-    top: 60px;
-    left: 40px;
-    font-family: 'Arial Unicode MS Regular';
-    font-weight: Bold;
-    font-size: 25px;
+.new-lang-button:hover {
+    background-color: #3e8e41;
+    border: 0.3;
+    border-color: #3e8e41;
+    color: white;
 }
 
 /* Back button styles */
@@ -250,7 +307,7 @@ body {
 
 .board {
     width: 415px;
-    height: 535px;
+    height: 565px;
     position: absolute;
     top: 100px;
     left: 40px;
@@ -311,24 +368,10 @@ body {
     margin-right: 30px;
 }
 
-.region-phrases {
-    color: black;
-    position: absolute;
-    top: 535px;
-    left: 32px;
-    font-family: 'Arial Unicode MS Regular';
-    font-weight: Medium;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-    margin-right: 30px;
-    list-style-type: none;
-}
-
 .region-desciption {
     width: 350px;
     position: absolute;
-    top: 358px;
+    top: 363px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-size: 14px;

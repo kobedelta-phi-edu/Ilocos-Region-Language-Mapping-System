@@ -162,11 +162,23 @@ map.on('load', function () {
                             provinceRegion.textContent = data.properties.REGION;
                             provinceRegion.classList.add('new-province-region'); // add a class to the element
                             
+                            // create description button
+                            var descButton = document.createElement('button');
+                            descButton.classList.add('new-desc-button');
+                            descButton.textContent = 'Description';
+                            descButton.addEventListener('click', function() {
+                                // Handle description button click event here
+                            });
 
-                            // Append province name, image, and region to the new container
-                            newContainer.appendChild(provinceName);
-                            newContainer.appendChild(provinceImage);
-                            newContainer.appendChild(provinceRegion);
+                            // create languages button
+                            var langButton = document.createElement('button');
+                            langButton.classList.add('new-lang-button');
+                            langButton.textContent = 'Languages';
+                            langButton.addEventListener('click', function() {
+                                // Handle languages button click event here
+                            });
+
+                            
 
                             // create HTML elements to display the data
                             var languageList = document.createElement('ul');
@@ -176,7 +188,7 @@ map.on('load', function () {
                                 var languageItem = document.createElement('li');
                                 var languageButton = document.createElement('button'); 
                                 languageButton.textContent = language.name;
-                                languageButton.classList.add('new-lang-button');
+                                languageButton.classList.add('new-langList-button');
 
                                 languageList.classList.add('lang-list');
                                 languageItem.classList.add('lang-item');
@@ -238,6 +250,11 @@ map.on('load', function () {
                                 languageList.appendChild(languageItem);
                             });
                             newContainer.appendChild(languageList);
+                            newContainer.appendChild(provinceName);
+                            newContainer.appendChild(provinceImage);
+                            newContainer.appendChild(provinceRegion);
+                            newContainer.appendChild(descButton);
+                            newContainer.appendChild(langButton);
                             document.body.appendChild(newContainer);
                         });
 
