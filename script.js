@@ -166,7 +166,9 @@ map.on('load', function () {
                             var descButton = document.createElement('button');
                             descButton.classList.add('new-desc-button');
                             descButton.textContent = 'Description';
-                            descButton.addEventListener('click', function() {
+                            descButton.addEventListener('click', function() {// remove new container and restore previous container
+                                newContainer.remove();
+                                document.getElementById("sidebar").style.display = "block";
                                 // Handle description button click event here
                             });
 
@@ -198,18 +200,6 @@ map.on('load', function () {
                                     while (newContainer.firstChild) {
                                         newContainer.removeChild(newContainer.firstChild);
                                     }
-
-                                    // create back button
-                                    var backButton = document.createElement("button");
-                                    backButton.classList.add("back-button");
-                                    var backButtonImg = document.createElement("img");
-                                    newContainer.appendChild(backButton);
-
-                                    backButton.addEventListener('click', function(){
-                                        // remove new container and restore previous container
-                                        newContainer.remove();
-                                        document.getElementById("sidebar").style.display = "block";
-                                    });
 
                                     // Find the clicked language object in the data
                                     var clickedLanguage = data.properties.LANGUAGES.find(language => language.name === languageButton.textContent);
@@ -258,18 +248,6 @@ map.on('load', function () {
                             document.body.appendChild(newContainer);
                         });
 
-                    // create back button
-                    var backButton = document.createElement("button");
-                    backButton.classList.add("back-button");
-                    var backButtonImg = document.createElement("img");
-                    newContainer.appendChild(backButton);
-
-                    // add event listener to back button
-                    backButton.addEventListener('click', function(){
-                        // remove new container and restore sidebar container
-                        newContainer.remove();
-                        document.getElementById("sidebar").style.display = "block";
-                    });
 
                     // add new container to the body
                     document.body.appendChild(newContainer);
