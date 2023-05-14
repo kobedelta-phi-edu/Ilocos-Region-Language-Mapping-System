@@ -185,7 +185,10 @@ map.on('load', function () {
                             closeButton.addEventListener('click', function(){
                                 // remove new container and restore previous container
                                 newContainer.remove();
-                                document.getElementById("sidebar").style.display = "block";
+                                document.getElementById("sidebar").style.display = "none";
+                                showFillLayerHideLabel(clickedProvinceName);
+                                // selectedProvince = null; // Reset the selected province
+                                zoomCenterMap();
                             });
 
                             // create HTML elements to display the data
