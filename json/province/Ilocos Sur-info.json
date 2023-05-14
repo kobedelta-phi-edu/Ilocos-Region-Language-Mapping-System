@@ -11,16 +11,109 @@
 	  "DESCRIPTION": "It's famous for it's cultural heritage, picturesque landscapes, and historic sites like Vigan City, a UNESCO World Heritage Site featuring Spanish colonial architecture. It offers a unique mix of history, culture, and natural beauty that draws visitors from everywhere.",
 	  "LANGUAGES": [
 		{
-		  "name": "Ilocano", 
-		  "desc": "Ilocano is spoken as a first language by some 7 million people, primarily in Northern Luzon, La Union and Ilocos provinces, Cagayan Valley, Babuyan, Mindoro, and Mindanao. It is also spoken as a second language by possibly another 2 million speakers in the northern areas of Luzon as a lingua franca in trade, commerce, and everyday communication. "
+			"name": "Ilocano",
+			"phrases":[
+			  "Naimbag a bigat/malem",
+			  "Naragsakak a makaam-ammo ka",
+			  "Agyaman la unay",
+			  "Dumalanak man",
+			  "Ladingitek",
+			  "Saan ko a maawatan",
+			  "Mabalin kadi a tulongannak?",
+			  "Ania ti tarabahom?",
+			  "Sapsapulek",
+			  "Pumanawak/Mapanak itan",
+			  "Intayon",
+			  "Mano?",
+			  "Sadino ti nasayaat a lugar a panganan",
+			  "Mabalin kadi nga ikkannak kadagiti direksion"
+			],
+			"translation":[
+			  "Good morning/afternoon",
+			  "Nice to meet you"
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat",
+			  "Could you give me directions"
+			]
 		},
 		{
-		  "name": "Kankanaey", 
-		  "desc": "Kankanaey is an indigenous language spoken by the Kankanaey people, who are part of the larger Igorot ethnic group in the Philippines. It is primarily spoken in the Cordillera Central region, particularly in the province of Benguet and neighboring areas. Kankanaey belongs to the Malayo-Polynesian language family and is closely related to other Cordilleran languages."
+			"name": "Kankanaey",
+			"phrases":[
+			  "Mayat ay agsapam/e-esdem",
+			  "No translation",
+			  "Iyaman",
+			  "Dumalanak man",
+			  "Ladingitek",
+			  "Saan ko a maawatan",
+			  "Mabalin kadi a tulongannak?",
+			  "Ania ti tarabahom?",
+			  "Sapsapulek",
+			  "Pumanawak/Mapanak itan",
+			  "Intayon",
+			  "Mano?",
+			  "Sadino ti nasayaat a lugar a panganan",
+			  "Mabalin kadi nga ikkannak kadagiti direksion"
+			],
+			"translation":[
+			  "Good morning/afternoon",
+			  "Nice to meet you"
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat",
+			  "Could you give me directions"
+			]
 		},
 		{
-		  "name": "Tagalog", 
-		  "desc": "Tagalog is a language that originated in the Philippine islands. It is the first language of most Filipinos and the second language of most others. More than 50 million Filipinos speak Tagalog in the Philippines, and 24 million people speak the language worldwide."
+			"name": "Tagalog", 
+			"phrases":[
+			  "Magandang Umaga/Tanghali",
+			  "Kinagagalak kong makilala ka",
+			  "Maraming salamat",
+			  "Makikiraan",
+			  "Paumanhin",
+			  "Hindi ko maintindihan",
+			  "P'wede mo ba ako tulungan?",
+			  "Anong ginagawa mo?",
+			  "Hnahanap ko iyong ",
+			  "Aalis na ako/Mauna na ako",
+			  "Halika na",
+			  "Magkano?",
+			  "Saan ang magandang kainan?",
+			  "Maaari mo ba akong bigyan ng mga direksyon"
+			],
+			"translation":[
+			  "Good morning/afternoon",
+			  "Nice to meet you"
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat?",
+			  "Could you give me directions"
+			]
 		}
 	  ]
 	}
