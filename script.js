@@ -136,86 +136,69 @@ map.on('load', function () {
 
             document.getElementById("lang-button").addEventListener('click', function(){
                 // check if the new container has already been created
-                var newContainer = document.querySelector(".new-container");
-                if (!newContainer) {
-                    // create new container if it doesn't exist
-                    newContainer = document.createElement("div");
-                    newContainer.classList.add("new-container");
+                sidebarContainer.style.display = 'none';
 
-                    // Get the clicked province name
-                    var clickedProvinceName = document.getElementById('sidebar-province').textContent;
-                    console.log(clickedProvinceName);
-                    // Fetch the province info JSON file based on the clicked province
-                    fetch('json/province/' + clickedProvinceName + '-info.json')
-                        .then(response => response.json())
-                        .then(data => {
-                            // create HTML elements to display the data
-                            var languages = document.createElement('h2');
-                            languages.textContent = 'Languages:';
-                            var languageList = document.createElement('ul');
+                var langContainter = document.getElementById("sidebar-lang");
+                langContainter.style.display = 'block';
+                // if (!newContainer) {
+                //     // create new container if it doesn't exist
+                //     newContainer = document.createElement("div");
+                //     newContainer.classList.add("sidebar-lang");
 
-                            // loop through each language and create list items with descriptions
-                            data.properties.LANGUAGES.forEach(language => {
-                                var languageItem = document.createElement('li');
-                                var languageName = document.createElement('span');
-                                languageName.textContent = language.name;
+                // Get the clicked province name
+                var clickedProvinceName = document.getElementById('sidebar-province').textContent;
+      
+                // Fetch the province info JSON file based on the clicked province
+                fetch('json/province/' + clickedProvinceName + '-info.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        var provinceName = data.properties.PROVINCE;
+                        var displayImage = data.properties.IMAGE;
+                        var provinceRegion = data.properties.REGION;
+                        // create HTML elements to display the data
 
-                                languageList.classList.add('lang-list');
-                                languages.classList.add('lang-name');
-                                languageItem.classList.add('lang-item');
+                        var languages = document.createElement('h2');
+                        languages.textContent = 'Languages:';
+                        var languageList = document.createElement('ul');
 
-                                // make the language name clickable
-                                languageName.style.cursor = 'pointer';
-                                languageName.addEventListener('click', function() {
-                                    while (newContainer.firstChild) {
-                                        newContainer.removeChild(newContainer.firstChild);
-                                    }
+                        // loop through each language and create list items with descriptions
+                        data.properties.LANGUAGES.forEach(language => {
+                            var languageItem = document.createElement('li');
+                            var languageName = document.createElement('span');
+                            languageName.textContent = language.name;
 
-                                    // create back button
-                                    var backButton = document.createElement("button");
-                                    backButton.classList.add("back-button");
-                                    var backButtonImg = document.createElement("img");
-                                    newContainer.appendChild(backButton);
+                            languageList.classList.add('lang-list');
+                            languages.classList.add('lang-name');
+                            languageItem.classList.add('lang-item');
 
-                                    backButton.addEventListener('click', function(){
-                                        // remove new container and restore previous container
-                                        newContainer.remove();
-                                        document.getElementById("sidebar").style.display = "block";
-                                    });
-
-                                    // do something when language name is clicked
-                                    console.log('Clicked language:', language.name);
-                                });
-
-                                languageItem.appendChild(languageName);
-                                // languageItem.appendChild(languageDescription);
-                                languageList.appendChild(languageItem);
+                            // make the language name clickable
+                            languageName.style.cursor = 'pointer';
+                            languageName.addEventListener('click', function() {
+                                // do something when language name is clicked
+                                console.log('Clicked language:', language.name);
                             });
-
-                            newContainer.appendChild(languages);
-                            newContainer.appendChild(languageList);
-                            document.body.appendChild(newContainer);
+                        
+                            languageItem.appendChild(languageName);
+                            languageList.appendChild(languageItem);
                         });
 
-                    // create back button
-                    var backButton = document.createElement("button");
-                    backButton.classList.add("back-button");
-                    var backButtonImg = document.createElement("img");
-                    newContainer.appendChild(backButton);
+                        document.getElementById('sidebar-image').src = displayImage;
+                        document.getElementById('sidebar-province').textContent = provinceName;
+                        document.getElementById('sidebar-region').textContent = provinceRegion;
 
-                    // add event listener to back button
-                    backButton.addEventListener('click', function(){
-                        // remove new container and restore sidebar container
-                        newContainer.remove();
-                        document.getElementById("sidebar").style.display = "block";
+                        langContainter.appendChild(languages);
+                        langContainter.appendChild(languageList);
+                        // document.body.appendChild(langContainter);
                     });
 
+                    // create back button
+
                     // add new container to the body
-                    document.body.appendChild(newContainer);
-                }
+                    // document.body.appendChild(langContainter);
+                // }
 
                 map.on('click','province-labels',function () {
-                    newContainer.remove();
+                    langContainter.remove();
                     document.getElementById("sidebar").style.display = "block";
 
                 });
