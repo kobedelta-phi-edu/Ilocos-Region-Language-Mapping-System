@@ -30,7 +30,7 @@
 			],
 			"translation":[
 				"Good morning/afternoon",
-				"Nice to meet you"
+				"Nice to meet you",
 				"Thank you/so much",
 				"Excuse me",
 				"I am sorry",
@@ -65,7 +65,46 @@
 			],
 			"translation":[
 			  "Good morning/afternoon",
-			  "Nice to meet you"
+			  "Nice to meet you",
+			  "Thank you/so much",
+			  "Excuse me",
+			  "I am sorry",
+			  "I do not understand",
+			  "Can you help me?",
+			  "What do you do?",
+			  "I am looking for",
+			  "I’m leaving/Going now",
+			  "Let's go",
+			  "How much?",
+			  "Where is a good place to eat",
+			  "Could you give me directions"
+			]
+		},
+		{
+		  "name": "Kallahan",
+		  "desc": "The term 'Kallahan' is sometimes also used to refer to the Kalanguya people's native language. Kalanguya was once the most spoken language in most parts of today's Benguet, Nueva Vizcaya, Ifugao, Mountain Province, and some parts of Nueva Ecija."
+		},
+		{
+			"name": "Pangasinan",
+			"phrases":[
+			  "Masantos ya Kabwasan/Ngarem",
+			  "Malikeliket ak ed sika",
+			  "Misalsalamat ak ed sika",
+			  "Perdona ak",
+			  "Dispensa mo ak",
+			  "Agko natalosan",
+			  "Sarag mo ak kasin tulongan?",
+			  "Antoy gagawaen mo?",
+			  "Aanapen ko",
+			  "Onalis ak la natan",
+			  "Onla tayo",
+			  "Pigaray bayar?",
+			  "Iner so maong a panganan",
+			  "Sarag yo ak kasin iwanwan"
+			],
+			"translation":[
+			  "Good morning/afternoon",
+			  "Nice to meet you",
 			  "Thank you/so much",
 			  "Excuse me",
 			  "I am sorry",
@@ -100,7 +139,7 @@
 			],
 			"translation":[
 				"Good morning/afternoon",
-				"Nice to meet you"
+				"Nice to meet you",
 				"Thank you/so much",
 				"Excuse me",
 				"I am sorry",
@@ -114,45 +153,6 @@
 				"Where is a good place to eat",
 				"Could you give me directions"
 			]
-		},
-		{
-			"name": "Pangasinan",
-			"phrases":[
-			  "Masantos ya Kabwasan/Ngarem",
-			  "Malikeliket ak ed sika",
-			  "Misalsalamat ak ed sika",
-			  "Perdona ak",
-			  "Dispensa mo ak",
-			  "Agko natalosan",
-			  "Sarag mo ak kasin tulongan?",
-			  "Antoy gagawaen mo?",
-			  "Aanapen ko",
-			  "Onalis ak la natan",
-			  "Onla tayo",
-			  "Pigaray bayar?",
-			  "Iner so maong a panganan",
-			  "Sarag yo ak kasin iwanwan"
-			],
-			"translation":[
-			  "Good morning/afternoon",
-			  "Nice to meet you"
-			  "Thank you/so much",
-			  "Excuse me",
-			  "I am sorry",
-			  "I do not understand",
-			  "Can you help me?",
-			  "What do you do?",
-			  "I am looking for",
-			  "I’m leaving/Going now",
-			  "Let's go",
-			  "How much?",
-			  "Where is a good place to eat",
-			  "Could you give me directions"
-			]
-		},
-		{
-		  "name": "Sambal", 
-		  "desc": "The Sambalic languages are a part of the Central Luzon language family spoken by the Sambals, an ethnolinguistic group on the western coastal areas of Central Luzon and the Zambales mountain ranges."
 		},
 		{
 			"name": "Tagalog", 
@@ -174,7 +174,7 @@
 			],
 			"translation":[
 			  "Good morning/afternoon",
-			  "Nice to meet you"
+			  "Nice to meet you",
 			  "Thank you/so much",
 			  "Excuse me",
 			  "I am sorry",
