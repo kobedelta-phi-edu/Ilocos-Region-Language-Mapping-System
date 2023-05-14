@@ -13,9 +13,17 @@ body {
 .mapboxgl-ctrl-geocoder {
     position: absolute;
     top: 35px;
-    left: 40px;
+    left: 100px;
     z-index: 1;
-    width: 500px;
+    width: 300px;
+    
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    left: 30px;
 }
 
 .place-name {
@@ -83,7 +91,7 @@ body {
 
 .new-container {
     width: 360px;
-    height: 550px;
+    height: 535px;
     position: absolute;
     top: 90px;
     left: 40px;
@@ -254,7 +262,7 @@ body {
 
 .board {
     width: 360px;
-    height: 550px;
+    height: 535px;
     position: absolute;
     top: 90px;
     left: 40px;
@@ -289,24 +297,12 @@ body {
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Bold;
-    font-size: 25px;
+    font-size: 23px;
 }
 .region-name {
     color: black;
     position: absolute;
-    top: 254px;
-    left: 32px;
-    font-family: 'Arial Unicode MS Regular';
-    font-weight: Medium;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-}
-
-.region-name {
-    color: black;
-    position: absolute;
-    top: 254px;
+    top: 250px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
     font-weight: Medium;
@@ -357,10 +353,10 @@ body {
 .region-desciption {
     width: 295px;
     position: absolute;
-    top: 349px;
+    top: 358px;
     left: 32px;
     font-family: 'Arial Unicode MS Regular';
-    font-size: 15px;
+    font-size: 14px;
     opacity: 1;
     text-align: justify;
 }
