@@ -49,23 +49,17 @@ body {
 }
 
 .desc-button {
-    background-color: white; /* Set the background color */
-    /* border: 0.3; Remove the border */
-    color: black; /* Set the text color to white */
-    padding: 11px 52px; /* Set the padding */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline from the text */
-    display: inline-block; /* Set the display to inline block */
-    font-size: 15px; /* Set the font size */
+    background-color: white;
+    color: black; 
+    padding: 11px 52px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 15px; 
     font-family: 'Arial Unicode MS Regular';
     font-weight: Regular;
-    margin-top: 90px; /* Add some margin at the top */
+    margin-top: 90px; 
     margin-left: 30px;
-    /* border-top-left-radius: 8px; */
-    /* border-top-right-radius: 8px; */
-    /* border-bottom-left-radius: 8px; */
-    /* border-bottom-right-radius: 8px; */
-    /* background-image: url("icon/lang.png"); */
     background-repeat: no-repeat;
     background-position: 5px center;
     background-size: 36px;
@@ -96,23 +90,18 @@ body {
 } */
 
 .lang-button {
-    background-color: white; /* Set the background color */
-    border: 0.3; /*Remove the border*/
-    color: black; /* Set the text color to white */
-    padding: 11px 52px; /* Set the padding */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline from the text */
-    display: inline-block; /* Set the display to inline block */
-    font-size: 15px; /* Set the font size */
+    background-color: white; 
+    border: 0.3; 
+    color: black; 
+    padding: 11px 52px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 15px; 
     font-family: 'Arial Unicode MS Regular';
     font-weight: Regular;
-    margin-top: 0px; /* Add some margin at the top */
+    margin-top: 0px; 
     margin-left: -6px;
-    /* border-top-left-radius: 8px; */
-    /* border-top-right-radius: 8px; */
-    /* border-bottom-left-radius: 8px; */
-    /* border-bottom-right-radius: 8px; */
-    /* background-image: url("/icon/lang.png"); */
     background-repeat: no-repeat;
     background-position: 5px center;
     background-size: 36px;
@@ -124,11 +113,10 @@ body {
 }
 
 .lang-button:hover {
-    background-color: #3e8e41; /* Change the background color on hover */
+    background-color: #3e8e41;
     border: 0.3;
     border-color: #3e8e41;
     color: white;
-    /* font-weight: bold; */
 }
 
 /* .lang-icon {
@@ -438,11 +426,6 @@ body {
     background-color: #fff; /* change the background color to white on hover */
     opacity: 1;
 }
-
-/*!* hide the background image *!*/
-/*.close-icon:hover {*/
-/*    background-image: none;*/
-/*}*/
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
